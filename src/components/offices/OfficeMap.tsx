@@ -57,10 +57,18 @@ function pinHtml(color: string) {
 export function OfficeMap({
   providers,
   userPos,
+  center = null,
+  accuracyM = null,
+  areaLabel = "",
   onClear,
 }: {
   providers: Provider[];
   userPos: LatLng | null;
+  /** centre of the area the person chose (optional) */
+  center?: LatLng | null;
+  /** location accuracy in metres (optional) */
+  accuracyM?: number | null;
+  areaLabel?: string;
   onClear: () => void;
 }) {
   const { t, pick } = useI18n();
@@ -73,6 +81,8 @@ export function OfficeMap({
   const [apiState, setApiState] = useState<"loading" | "ready" | "error">("loading");
   const [selected, setSelected] = useState<Provider | null>(null);
   const [routing, setRouting] = useState(false);
+  const cLat = center?.lat ?? null;
+  const cLng = center?.lng ?? null;
 
   // keep the latest translation helpers available to the map effect
   useEffect(() => {
@@ -128,7 +138,34 @@ export function OfficeMap({
             .bindTooltip(tRef.current("geo.youAreHere"));
           points.push([userPos.lat, userPos.lng]);
         }
-        if (points.length > 0) {
+        if (userPos && accuracyM && accuracyM > 500) {
+          L.circle([userPos.lat, userPos.lng], {
+            radius: accuracyM,
+            color: "#0e7b45",
+            weight: 1,
+            fillColor: "#0e7b45",
+            fillOpacity: 0.08,
+            interactive: false,
+          }).addTo(map);
+        }
+        if (cLat !== null && cLng !== null) {
+          const areaDot = L.circleMarker([cLat, cLng], {
+            radius: 7,
+            color: "#ffffff",
+            weight: 2,
+            fillColor: "#b45309",
+            fillOpacity: 1,
+          }).addTo(map);
+          if (areaLabel) areaDot.bindTooltip(areaLabel);
+          points.push([cLat, cLng]);
+        }
+        if (providers.length === 0 && points.length > 0) {
+          const focus: [number, number] =
+            cLat !== null && cLng !== null ? [cLat, cLng] : points[points.length - 1];
+          const zoom =
+            cLat !== null ? 11 : !accuracyM ? 13 : accuracyM > 50000 ? 8 : accuracyM > 20000 ? 9 : accuracyM > 5000 ? 11 : 13;
+          map.setView(focus, zoom);
+        } else if (points.length > 0) {
           map.fitBounds(L.latLngBounds(points), { padding: [40, 40], maxZoom: 16 });
         }
         setApiState("ready");
@@ -143,7 +180,7 @@ export function OfficeMap({
       mapRef.current = null;
       if (map) map.remove();
     };
-  }, [providers, userPos]);
+  }, [providers, userPos, cLat, cLng, accuracyM, areaLabel]);
 
   /** Draw a walking/driving route (one request per tap). Falls back to a Google Maps link. */
   const drawRoute = async (p: Provider, mode: Mode) => {

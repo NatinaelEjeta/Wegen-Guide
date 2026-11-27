@@ -12,6 +12,21 @@ const existing = new Set(data.providers.map((p) => p.id));
 const approved = await db.officeSuggestion.findMany({ where: { status: "approved" } });
 const closedWeek = { mon: "", tue: "", wed: "", thu: "", fri: "", sat: "", sun: "" };
 
+// Default services by office type (a starting guess - edit as you learn more)
+const TYPE_SERVICES = {
+  immigration: ["passport", "visa-residence-permit"],
+  civil_registry: ["birth-certificate", "marriage-certificate", "divorce-registration", "death-certificate"],
+  kebele: ["kebele-id", "lost-id-replacement", "birth-certificate", "marriage-certificate"],
+  fayda_center: ["fayda-national-id", "lost-id-replacement"],
+  tax_office: ["tin-registration", "tax-clearance"],
+  trade_bureau: ["business-license", "trade-name-registration", "business-closure"],
+  transport_authority: ["drivers-license", "vehicle-libre", "vehicle-inspection", "transport-driver-permit"],
+  land_registry: ["land-title-deed", "property-transfer", "land-lease-registration", "urban-land-holding"],
+  police_station: ["report-crime"],
+  court: ["court-filing"],
+  notary: ["notary-services", "power-of-attorney"],
+};
+
 let added = 0;
 for (const s of approved) {
   const id = `community-${s.id}`;
@@ -24,7 +39,7 @@ for (const s of approved) {
     id,
     name: { am: s.nameAm || s.name, om: s.nameOm || s.name, en: s.name },
     type: s.providerType || "other",
-    serviceIds: s.serviceIds ? s.serviceIds.split(",").filter(Boolean) : [],
+    serviceIds: s.serviceIds ? s.serviceIds.split(",").filter(Boolean) : (TYPE_SERVICES[s.providerType] ?? []),
     latitude: s.latitude,
     longitude: s.longitude,
     address: { am: addr, om: addr, en: addr },

@@ -29,6 +29,8 @@ import {
   getWoredasFor,
   getZonesFor,
   sortByDistance,
+  nearestArea,
+  areaCenter,
 } from "@/lib/geo";
 import { getServices } from "@/lib/data";
 import { useAutoLocate } from "@/lib/hooks/useAutoLocate";
@@ -125,14 +127,18 @@ export function NearestOffices({
 
   const service = serviceId ? getServices().find((s) => s.id === serviceId) : undefined;
   const serviceName = service ? pick(service.name) : "";
-  const areaName = [woreda, zone, region].find(Boolean) ?? "";
+  const nearest = useMemo(() => (position ? nearestArea(position) : null), [position]);
+  const areaName =
+    [woreda, zone, region].find(Boolean) ??
+    (nearest ? [nearest.woreda, nearest.region].filter(Boolean).join(", ") : "");
+  const chosenCenter = areaCenter(region, zone, woreda);
   const filtersOn = filters.openNow || filters.accessible || filters.online || filters.maxKm > 0;
   const roughKm = accuracy && accuracy > 5000 ? Math.round(accuracy / 1000) : 0;
   const roughText = roughKm > 0 ? emptyTexts(lang).rough.replace("{km}", String(roughKm)) : "";
   const emptyKind: EmptyKind =
     enriched.length > 0 && filtersOn
       ? "filters"
-      : usingArea
+      : areaName
         ? serviceName
           ? "serviceInArea"
           : "anyInArea"
@@ -140,7 +146,7 @@ export function NearestOffices({
           ? "serviceNone"
           : "none";
 
-  const showMapToggle = online && MAPS_KEY_PRESENT && !isLowEnd && providers.length > 0;
+  const showMapToggle = online && MAPS_KEY_PRESENT && !isLowEnd && (providers.length > 0 || !!position || !!chosenCenter);
 
   return (
     <div className="space-y-3">
@@ -223,7 +229,7 @@ export function NearestOffices({
         )}
 
         {/* manual area fallback */}
-        {(geoStatus === "denied" || geoStatus === "unsupported" || manualOpen) && (
+        {(geoStatus === "denied" || geoStatus === "unsupported" || manualOpen || roughKm > 0) && (
           <div className="mt-3 border-t border-border pt-3">
             <p className="mb-2 flex items-center gap-1.5 text-[11px] font-bold text-muted-foreground">
               <MapPin size={13} aria-hidden />
@@ -292,7 +298,7 @@ export function NearestOffices({
         )}
 
         {/* small toggle to open manual selection even when location works */}
-        {geoStatus !== "denied" && geoStatus !== "unsupported" && !manualOpen && (
+        {geoStatus !== "denied" && geoStatus !== "unsupported" && !manualOpen && !(roughKm > 0) && (
           <button
             type="button"
             onClick={() => setManualOpen(true)}
@@ -323,7 +329,14 @@ export function NearestOffices({
         </button>
       )}
       {mapVisible && (
-        <OfficeMap providers={providers} userPos={position} onClear={() => setMapVisible(false)} />
+        <OfficeMap
+          providers={providers}
+          userPos={position}
+          center={chosenCenter}
+          accuracyM={accuracy}
+          areaLabel={areaName}
+          onClear={() => setMapVisible(false)}
+        />
       )}
 
       {nearbyNote && (

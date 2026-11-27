@@ -248,6 +248,28 @@ export function filterByArea(
     (p) => haversineKm(circle.center, { lat: p.latitude, lng: p.longitude }) <= circle.radiusKm
   );
 }
+/** Nearest woreda centre to a point (offline). Null when none is within 120 km. */
+export function nearestArea(
+  from: LatLng
+): { region: string; zone: string; woreda: string; distanceKm: number } | null {
+  let best: { region: string; zone: string; woreda: string; distanceKm: number } | null = null;
+  for (const r of ADMIN_REGIONS) {
+    for (const z of r.zones) {
+      for (const w of z.woredas) {
+        if (w.lat === undefined || w.lng === undefined) continue;
+        const d = haversineKm(from, { lat: w.lat, lng: w.lng });
+        if (!best || d < best.distanceKm) best = { region: r.name, zone: z.name, woreda: w.name, distanceKm: d };
+      }
+    }
+  }
+  return best && best.distanceKm <= 120 ? best : null;
+}
+
+/** Centre point of the chosen zone/woreda (null when only a region is chosen). */
+export function areaCenter(region: string, zone: string, woreda: string): LatLng | null {
+  return areaCircle(region, zone, woreda)?.center ?? null;
+}
+
 /** Sort providers by distance from a point, enriching with distanceKm + bearing. */
 export function sortByDistance(
   providers: Provider[],
