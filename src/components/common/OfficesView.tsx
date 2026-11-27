@@ -35,7 +35,7 @@ export function OfficesView() {
 
       <div className="mt-4">
         <Disclaimer />
-        <p className="mt-2 text-[10px] text-muted-foreground">Area names: OCHA Ethiopia / CSA / BoFED (CC BY-IGO)</p>
+        <p className="mt-2 text-[10px] text-muted-foreground">Area names: OCHA Ethiopia / CSA / BoFED (CC BY-IGO). Some office locations: © OpenStreetMap contributors.</p>
       </div>
     </div>
   );

@@ -30,6 +30,12 @@ import {
   getZonesFor,
   sortByDistance,
 } from "@/lib/geo";
+import { getServices } from "@/lib/data";
+import { useAutoLocate } from "@/lib/hooks/useAutoLocate";
+import { RouteTrace } from "@/components/offices/RouteTrace";
+import { OfficeSuggestionForm } from "@/components/offices/OfficeSuggestionForm";
+import { emptyMessage, emptyTexts } from "@/lib/officeMessages";
+import type { EmptyKind } from "@/lib/officeMessages";
 import { getProviders } from "@/lib/data";
 import { ProviderCard } from "@/components/offices/ProviderCard";
 import { OfficeMap, MAPS_KEY_PRESENT } from "@/components/offices/OfficeMap";
@@ -62,10 +68,11 @@ export function NearestOffices({
   serviceId?: string;
   onServiceClick?: (serviceId: string) => void;
 }) {
-  const { t } = useI18n();
+  const { t, lang, pick } = useI18n();
   const online = useOnline();
   const { isLowEnd } = useDeviceCapability();
   const { status: geoStatus, position, accuracy, request, clear } = useGeolocation();
+  useAutoLocate();
 
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
   const [manualOpen, setManualOpen] = useState(false);
@@ -75,7 +82,7 @@ export function NearestOffices({
   const [mapVisible, setMapVisible] = useState(false);
 
   const usingDistance = !!position;
-  const usingArea = !usingDistance && (!!region || !!zone || !!woreda);
+  const usingArea = !!region || !!zone || !!woreda;
 
   const todayKey = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"][
     (new Date().getDay() + 6) % 7
@@ -85,9 +92,9 @@ export function NearestOffices({
     const list = serviceId
       ? getProviders().filter((p) => p.serviceIds.includes(serviceId))
       : getProviders();
-    if (position) return sortByDistance(list, position); // adds distanceKm + bearing, sorted
-    if (usingArea) return filterByArea(list, region, zone, woreda).map((p) => ({ ...p, distanceKm: NaN, bearing: 0 }));
-    return list.map((p) => ({ ...p, distanceKm: NaN, bearing: 0 }));
+    const scoped = usingArea ? filterByArea(list, region, zone, woreda) : list;
+    if (position) return sortByDistance(scoped, position); // adds distanceKm + bearing, sorted
+    return scoped.map((p) => ({ ...p, distanceKm: NaN, bearing: 0 }));
   }, [serviceId, position, usingArea, region, zone, woreda]);
 
   const providers = useMemo(() => {
@@ -115,6 +122,23 @@ export function NearestOffices({
     !!zone &&
     enriched.length > 0 &&
     !enriched.some((p) => p.region === region && p.zone === zone && (!woreda || p.woreda === woreda));
+
+  const service = serviceId ? getServices().find((s) => s.id === serviceId) : undefined;
+  const serviceName = service ? pick(service.name) : "";
+  const areaName = [woreda, zone, region].find(Boolean) ?? "";
+  const filtersOn = filters.openNow || filters.accessible || filters.online || filters.maxKm > 0;
+  const roughKm = accuracy && accuracy > 5000 ? Math.round(accuracy / 1000) : 0;
+  const roughText = roughKm > 0 ? emptyTexts(lang).rough.replace("{km}", String(roughKm)) : "";
+  const emptyKind: EmptyKind =
+    enriched.length > 0 && filtersOn
+      ? "filters"
+      : usingArea
+        ? serviceName
+          ? "serviceInArea"
+          : "anyInArea"
+        : serviceName
+          ? "serviceNone"
+          : "none";
 
   const showMapToggle = online && MAPS_KEY_PRESENT && !isLowEnd && providers.length > 0;
 
@@ -165,6 +189,13 @@ export function NearestOffices({
               {t("geo.resetLocation")}
             </Button>
           </div>
+        )}
+
+        {geoStatus === "ready" && position && roughKm > 0 && (
+          <p className="mt-2 flex items-start gap-1.5 text-[12px] leading-snug text-amber-800 dark:text-amber-200">
+            <CircleAlert size={14} className="mt-0.5 shrink-0" aria-hidden />
+            {roughText}
+          </p>
         )}
 
         {geoStatus === "denied" && (
@@ -350,6 +381,7 @@ export function NearestOffices({
       <div className="grid gap-3">
         {providers.map((p) => (
           <div key={p.id} className="grid gap-2">
+            <RouteTrace provider={p} />
             <TripTracker provider={p} serviceId={serviceId} />
             <ProviderCard
               provider={p}
@@ -364,7 +396,17 @@ export function NearestOffices({
         ))}
         {providers.length === 0 && (
           <div className="rounded-2xl border border-border bg-card p-6 text-center text-sm text-muted-foreground">
-            {t("office.noneMatch")}
+            <p>{emptyMessage(lang, emptyKind, { service: serviceName, area: areaName })}</p>
+            {emptyKind === "filters" ? (
+              <Button variant="outline" size="sm" className="mt-3" onClick={() => setFilters(DEFAULT_FILTERS)}>
+                {emptyTexts(lang).clearFilters}
+              </Button>
+            ) : (
+              <div className="mt-3 flex flex-col items-center gap-2">
+                <p className="text-[12px]">{emptyTexts(lang).suggestHint}</p>
+                <OfficeSuggestionForm serviceIds={serviceId ? [serviceId] : []} />
+              </div>
+            )}
           </div>
         )}
       </div>
