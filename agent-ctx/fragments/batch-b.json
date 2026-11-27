@@ -1,0 +1,1137 @@
+[
+  {
+    "id": "vehicle-libre",
+    "category": "transport",
+    "name": {
+      "am": "የመኪና ባለቤትነት መጽሐፍ (ሊብሬ)",
+      "om": "Kitaaba abbaa qabeenya konkolaachisaa (liibiree)",
+      "en": "Vehicle ownership book (libre)"
+    },
+    "shortDescription": {
+      "am": "ሊብሬ ምዝገባ እና ባለቤትነት ማስተላለፍ።",
+      "om": "Galmee liibiree fi gatiijjiirumaa abbaa qabeenyaa.",
+      "en": "Register a vehicle book and transfer ownership."
+    },
+    "requiredDocuments": [
+      {
+        "id": "national-id",
+        "text": {
+          "am": "መታወቂያ (የፋይዳ ካርድ ወይም የመንጃ ፈቃድ)",
+          "om": "Qindaa'a (Kaardii Faydaa ykn hayyama konkolaachisaa)",
+          "en": "ID (Fayda card or driving licence)"
+        }
+      },
+      {
+        "id": "purchase-invoice",
+        "text": {
+          "am": "የመኪናው የግዢ ደረሰ ከፍያ ወይም የሽያጭ ውል",
+          "om": "Ragaa kaffaltii bitaa ykn walii galtii gurguraa",
+          "en": "Purchase invoice or sales contract"
+        }
+      },
+      {
+        "id": "previous-libre",
+        "text": {
+          "am": "ከባለቤት ማስተላለፍ ከሆነ፦ የቀድሞው ባለቤት ሊብሬ",
+          "om": "Yoo abbaa qabeenya jijjiirtan: liibiree abbaa duraa",
+          "en": "If transferring ownership: previous owner's libre"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "gather-docs",
+        "icon": "FileText",
+        "title": {
+          "am": "ሰነዶችዎን ያዘጋጁ",
+          "om": "Docsii qopheessaa",
+          "en": "Prepare your documents"
+        },
+        "detail": {
+          "am": "መታወቂያ፣ የግዢ ደረሰ ከፍያ እና የቀድሞ ባለቤት ሊብሬ።",
+          "om": "Qindaa'a, ragaa kaffaltii fi liibiree abbaa duraatiif.",
+          "en": "ID, purchase invoice and the previous owner's libre."
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ትራንስፖርት ባለሥልጠና ቢሮ ይሂዱ",
+          "om": "Gara waajjira ibsistaraa deemaa",
+          "en": "Go to the transport authority office"
+        },
+        "detail": {
+          "am": "መኪናው የተመዘገበበትን ቢሮ ይጠይቁ።",
+          "om": "Konkolaachisan itti galmeeffame waajjira gaafadhaa.",
+          "en": "Ask for the office where the vehicle is registered."
+        }
+      },
+      {
+        "id": "check-numbers",
+        "icon": "Search",
+        "title": {
+          "am": "የቻሲስ እና የሞተር ቁጥሮች ይፈተሻሉ",
+          "om": "Lakkoofsa saasisaa fi mootaraa ni mirkaneessamu",
+          "en": "Chassis and engine numbers are checked"
+        },
+        "detail": {
+          "am": "ቢሮው ቁጥሮቹ ከሊብሬው ጋር እንደሚዛመዱ ያረጋግጣል።",
+          "om": "Waajjirichi lakkoofsota liibiree waliin akka wal siman mirkaneessa.",
+          "en": "The office checks they match the libre."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "ቅጹን ይሙሉ እና ይፈርሙ",
+          "om": "Foomii guutaa fi mallatteessaa",
+          "en": "Fill and sign the application form"
+        }
+      },
+      {
+        "id": "pay-fee",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያውን ይክፈሉ",
+          "om": "Kaffaltii kaffalaa",
+          "en": "Pay the fee"
+        },
+        "detail": {
+          "am": "ደረሰ ከፍያውን ይያዙ።",
+          "om": "Ragaa kaffaltii sirreeffaa.",
+          "en": "Keep the receipt."
+        }
+      },
+      {
+        "id": "collect-libre",
+        "icon": "Stamp",
+        "title": {
+          "am": "አዲሱን ሊብሬ ይውሰዱ",
+          "om": "Liibiree haaraa fudhaa",
+          "en": "Collect the new libre"
+        },
+        "detail": {
+          "am": "ከቢሮው ከመወጣትዎ በፊት ስምዎ እና ዝርዝሮቹ በትክክል እንደጻፉ ያረጋግጡ።",
+          "om": "Waajjira osoo hin baataniin, maqaan kee fi odeeffannoon sirrii akka ta'an mirkaneessaa.",
+          "en": "Before leaving, check your name and details are written correctly."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "transfer-fee",
+        "label": {
+          "am": "የባለቤትነት ምዝገባ ወይም ማስተላለፍ",
+          "om": "Galmee ykn gatiijjiirumaa abbaa qabeenyaa",
+          "en": "Libre registration or transfer"
+        },
+        "amount": "PLACEHOLDER — varies by vehicle type (verify at office)"
+      },
+      {
+        "id": "new-booklet",
+        "label": {
+          "am": "አዲስ ሊብሬ ማውጣት",
+          "om": "Liibiree haaraa baasuu",
+          "en": "New libre issue"
+        },
+        "amount": "PLACEHOLDER — small fee (verify at office)"
+      }
+    ],
+    "providerIds": [
+      "sample-transport-authority-kality"
+    ],
+    "estimatedTime": {
+      "am": "ሰነዶች ዝግጁ ከሆኑ በዚያው ቀን (ያረጋግጡ)",
+      "om": "Docsii qopheessan guyyaa tokkotti (mirkaneessaa)",
+      "en": "Same day if documents are ready (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "name-mismatch",
+        "text": {
+          "am": "የሊብሬው ስም ከሻጩ መታወቂያ ጋር ካልተዛመደ መኪና አይገዙ",
+          "om": "Liibireen isaa maqaa gurguraa waliin hin wal simne konkolaachisaa bituu hin qabdan",
+          "en": "Do not buy a vehicle if the libre name does not match the seller's ID"
+        }
+      },
+      {
+        "id": "unsigned-contract",
+        "text": {
+          "am": "የሽያጭ ውል ሳይፈረም አይቀበልም",
+          "om": "Walii galtii gurguraa mallatteese hin qabne ni didama",
+          "en": "An unsigned sale contract will be rejected"
+        }
+      },
+      {
+        "id": "transfer-promptly",
+        "text": {
+          "am": "መኪና ከገዛዎ በኋላ ባለቤትነቱን በቅርቡ አስተላልፉ",
+          "om": "Konkolaachisaa bitanii booda, abbaa qabeenya dhiyooatti jijjiiraa",
+          "en": "After buying a vehicle, transfer ownership promptly"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "car-booklet",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "vehicle-inspection",
+    "category": "transport",
+    "name": {
+      "am": "ዓመታዊ የመኪና ምርመራ",
+      "om": "Saayinsii waggaan konkolaachisaa",
+      "en": "Annual vehicle inspection"
+    },
+    "shortDescription": {
+      "am": "መኪናዎን በዓመት አንዴ ያረጋግጡ።",
+      "om": "Konkolaachisaa kee waggaa tokko tokko saayinsii godhaa.",
+      "en": "Have your vehicle checked once a year."
+    },
+    "requiredDocuments": [
+      {
+        "id": "libre",
+        "text": {
+          "am": "ሊብሬ (የተሽከርካሪ ባለቤትነት ወረቀት)",
+          "om": "Liibiree (ragaa abbaa qabeenya konkolaachisaa)",
+          "en": "Libre (vehicle ownership booklet)"
+        }
+      },
+      {
+        "id": "owner-id",
+        "text": {
+          "am": "የባለቤት ወይም የሚያስገባው ሰው መታወቂያ",
+          "om": "Qindaa'a abbaa ykn nama konkolaachisa geessu",
+          "en": "ID of the owner or the person bringing the vehicle"
+        }
+      },
+      {
+        "id": "driving-licence",
+        "text": {
+          "am": "የመንጃ ፈቃድ (መኪናውን የሚያስገባው ሰው)",
+          "om": "Hayyama konkolaachisaa nama konkolaachisa geessu",
+          "en": "Driving licence of the person bringing the vehicle"
+        }
+      },
+      {
+        "id": "previous-inspection",
+        "text": {
+          "am": "የፊኛው ዓመት የምርመራ ወረቀት፣ ካለዎት",
+          "om": "Ragaa saayinsii waggaa darbee, yoo qabaattan",
+          "en": "Last year's inspection certificate, if you have it"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "fix-first",
+        "icon": "Car",
+        "title": {
+          "am": "ከመሄድዎ በፊት መኪናውን ያስተካክሉ",
+          "om": "Dhiyoo mul'atu duratti sirreessaa",
+          "en": "Fix obvious problems before you go"
+        },
+        "detail": {
+          "am": "ብርሃናት፣ ብሬክ እና ጎማዎች አስቀድመው ይፈተሹ።",
+          "om": "Ibsa, bireekii fi konkorrootii duraatti ilaalaa.",
+          "en": "Check lights, brakes and tyres first."
+        }
+      },
+      {
+        "id": "go-center",
+        "icon": "MapPin",
+        "title": {
+          "am": "መኪናውን ወደ የምርመራ ማዕከል ያስገቡ",
+          "om": "Konkolaachisa gara waajjira saayinsii geessaa",
+          "en": "Bring the vehicle to the inspection centre"
+        },
+        "detail": {
+          "am": "ቀኑን በሊብሬዎ ላይ ይመልከቱ።",
+          "om": "Guyyaa saayinsii liibiree kee irratti ilaalaa.",
+          "en": "Check the due date on your libre."
+        }
+      },
+      {
+        "id": "vehicle-checked",
+        "icon": "ClipboardCheck",
+        "title": {
+          "am": "መኪናው ይመረመራል",
+          "om": "Konkolaachisa kee hunda ni saayinsamu",
+          "en": "The vehicle is checked"
+        },
+        "detail": {
+          "am": "ብርሃናት፣ ብሬክ እና ጎማ ይፈተሻሉ።",
+          "om": "Ibsa, bireekii fi konkorrootii ni ilaalama.",
+          "en": "Lights, brakes and tyres are checked."
+        }
+      },
+      {
+        "id": "pay-fee",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያውን ይክፈሉ",
+          "om": "Kaffaltii kaffalaa",
+          "en": "Pay the inspection fee"
+        },
+        "detail": {
+          "am": "ደረሰ ከፍያውን ይያዙ።",
+          "om": "Ragaa kaffaltii sirreeffaa.",
+          "en": "Keep the receipt."
+        }
+      },
+      {
+        "id": "collect-cert",
+        "icon": "Stamp",
+        "title": {
+          "am": "የምርመራ ማረጋገጫ ይውሰዱ",
+          "om": "Ragaa saayinsii fudhaa",
+          "en": "Collect the inspection certificate"
+        },
+        "detail": {
+          "am": "ወረቀቱን በመኪናው ውስጥ ይያዙ፤ ብዙ ጊዜ እስከ ቀጣዩ ዓመት ይሠራል።",
+          "om": "Ragaa konkolaachisaa keessatti gororumaa; baay'een hanga waggaa itti aanuus ni hojjeta.",
+          "en": "Keep it in the vehicle; usually valid until next year."
+        }
+      },
+      {
+        "id": "if-failed",
+        "icon": "AlertTriangle",
+        "title": {
+          "am": "ውድቅ ከሆነ አስተካክለው ይመለሱ",
+          "om": "Yoo dide, sirreessinee deebi'aa",
+          "en": "If it fails, repair and return"
+        },
+        "detail": {
+          "am": "ቢሮው ምን ማስተካከል እንዳለብዎ ይናገራል።",
+          "om": "Waajjirichi waan sirreessuu qabdu ni hima.",
+          "en": "The office tells you what to fix."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "inspection-fee",
+        "label": {
+          "am": "ዓመታዊ የምርመራ ክፍያ",
+          "om": "Kaffaltii saayinsii waggaan",
+          "en": "Annual inspection fee"
+        },
+        "amount": "PLACEHOLDER — varies by vehicle type (verify at office)"
+      },
+      {
+        "id": "re-inspection",
+        "label": {
+          "am": "ውድቅ ከሆነ እንደገና መቅረብ",
+          "om": "Yoo dide deebi'uu",
+          "en": "Re-inspection if it fails"
+        },
+        "amount": "PLACEHOLDER — may be free or a small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-transport-authority-kality"
+    ],
+    "estimatedTime": {
+      "am": "ወረፋ ካለ ከ1–3 ሰዓት ገደማ (ያረጋግጡ)",
+      "om": "Sararaan jiraate sa'aatii 1–3 dhiyoo (mirkaneessaa)",
+      "en": "About 1–3 hours depending on the queue (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "month-end",
+        "text": {
+          "am": "በወሩ መጨረሻ ላይ ብቻ መሄድ ረዘም ላለ ወረፋ ያመጣል፤ በመጀመሪያው ሳምንት ይሂዱ",
+          "om": "Guyyaa ji'a isa dhumaa qofa deemun sarara dheeraa fidhaa; torbanii jalqabaatti deema",
+          "en": "Going only at the end of the month means long queues — go early in the month"
+        }
+      },
+      {
+        "id": "fix-first",
+        "text": {
+          "am": "የታወቁ ጉዳዮችን አስተካክለው ካልሄዱ መኪናው ይውድቃል",
+          "om": "Dhiyoo beekamuu sirreessinee yoo hin deemin konkolaachisan ni dide",
+          "en": "If you go without fixing known problems, the vehicle will fail"
+        }
+      },
+      {
+        "id": "bring-libre",
+        "text": {
+          "am": "ሊብሬውን ሳይያዙ መሄድ አይቻልም",
+          "om": "Liibiree osoo hin baataniin deemuu hin danda'amu",
+          "en": "You cannot get inspected without your libre"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "car-booklet",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "transport-driver-permit",
+    "category": "transport",
+    "name": {
+      "am": "የትራንስፖርት አሽከርካሪ ፈቃድ",
+      "om": "Hayyama draayivara ibsistaraa",
+      "en": "Public transport and freight driver permits"
+    },
+    "shortDescription": {
+      "am": "የታክሲ/ባስ/ካርጎ አሽከርካሪ ፈቃድ።",
+      "om": "Hayyama draayivara taaksii/baasii/kaargoo.",
+      "en": "Permits for taxi, bus and freight drivers."
+    },
+    "requiredDocuments": [
+      {
+        "id": "driving-licence",
+        "text": {
+          "am": "የመንጃ ፈቃድ (ትክክለኛ እና ያልጠፋ)",
+          "om": "Hayyama konkolaachisaa kan hin dhumne",
+          "en": "A valid driving licence"
+        }
+      },
+      {
+        "id": "medical-cert",
+        "text": {
+          "am": "የጤና ማረጋገጫ",
+          "om": "Mirkaneessa fayyaa",
+          "en": "Medical fitness certificate"
+        }
+      },
+      {
+        "id": "national-id",
+        "text": {
+          "am": "መታወቂያ (የፋይዳ ካርድ ወይም ሌላ መታወቂያ)",
+          "om": "Qindaa'a (Kaardii Faydaa ykn qindaa'a biraas)",
+          "en": "ID (Fayda card or other ID)"
+        }
+      },
+      {
+        "id": "rental-letter",
+        "text": {
+          "am": "የተከራይ መኪና ከሆነ፦ የባለቤት ደብዳቤ ወይም የኪራይ ስምምነት",
+          "om": "Konkolaachisaa kirayaa yoo ta'e: dhiyoo abbaa ykn walii galtii kirayaa",
+          "en": "If the vehicle is rented: owner's letter or rental agreement"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "medical-cert",
+        "icon": "HeartPulse",
+        "title": {
+          "am": "የጤና ማረጋገጫ ያግኙ",
+          "om": "Mirkaneessa fayyaa argadhaa",
+          "en": "Get a medical fitness certificate"
+        },
+        "detail": {
+          "am": "ከታወቀ ጤና ተቋም ይውሰዱ።",
+          "om": "Dhaabbata fayyaa beekamaa irraa fudhaa.",
+          "en": "Take it from a recognized health facility."
+        }
+      },
+      {
+        "id": "gather-docs",
+        "icon": "FileText",
+        "title": {
+          "am": "ሰነዶችዎን ያዘጋጁ",
+          "om": "Docsii qopheessaa",
+          "en": "Gather your documents"
+        },
+        "detail": {
+          "am": "የመንጃ ፈቃድ፣ መታወቂያ እና የጤና ማረጋገጫ።",
+          "om": "Hayyama konkolaachisaa, qindaa'a fi mirkaneessa fayyaa.",
+          "en": "Licence, ID and medical certificate."
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ትራንስፖርት ባለሥልጠና ቢሮ ይሂዱ",
+          "om": "Gara waajjira ibsistaraa deemaa",
+          "en": "Go to the transport authority office"
+        },
+        "detail": {
+          "am": "አካባቢዎን የሚያገለግለው ቢሮ ይጠይቁ።",
+          "om": "Waajjira naannoo kee akka ta'e gaafadhaa.",
+          "en": "Ask which office serves your area."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "ቅጹን ይሙሉ እና ይፈርሙ",
+          "om": "Foomii guutaa fi mallatteessaa",
+          "en": "Fill and sign the permit form"
+        }
+      },
+      {
+        "id": "verify-id",
+        "icon": "Fingerprint",
+        "title": {
+          "am": "ማንነትዎ ይረጋገጣል",
+          "om": "Qindaa'a kee ni mirkaneessama",
+          "en": "Your identity is verified"
+        },
+        "detail": {
+          "am": "የፋይዳ ካርድዎን ይውሰዱ፤ አንዳንድ ጊዜ የጣት አሻራ ይጠየቃል።",
+          "om": "Kaardii Faydaa kee ba'aa; yeroo tokko tokko ingijjii ni fudhatama.",
+          "en": "Bring your Fayda card; sometimes fingerprints are taken."
+        }
+      },
+      {
+        "id": "collect-permit",
+        "icon": "Stamp",
+        "title": {
+          "am": "ፈቃዱን ይውሰዱ",
+          "om": "Hayyama fudhaa",
+          "en": "Collect your permit"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ በተሰጠው ቀን ይሰጣል፤ ቀኑን ይጠይቁ።",
+          "om": "Baay'een guyyaa kennameen kennama; guyyaan sun akka ta'e gaafadhaa.",
+          "en": "Usually given on a set day — ask for the date."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "permit-fee",
+        "label": {
+          "am": "የፈቃድ ክፍያ",
+          "om": "Kaffaltii hayyamaa",
+          "en": "Permit fee"
+        },
+        "amount": "PLACEHOLDER — varies by permit class (verify at office)"
+      },
+      {
+        "id": "medical-fee",
+        "label": {
+          "am": "የጤና ማረጋገጫ ክፍያ",
+          "om": "Kaffaltii mirkaneessa fayyaa",
+          "en": "Medical certificate cost"
+        },
+        "amount": "PLACEHOLDER — paid at the health facility (verify)",
+        "note": {
+          "am": "ለጤና ተቋሙ ይከፈላል።",
+          "om": "Dhaabbata fayyaaf ni kaffalama.",
+          "en": "Paid to the health facility."
+        }
+      }
+    ],
+    "providerIds": [
+      "sample-transport-authority-kality"
+    ],
+    "estimatedTime": {
+      "am": "ሰነዶች ዝግጁ ከሆኑ በዚያው ቀን፤ አንዳንድ ጊዜ ጥቂት ቀናት (ያረጋግጡ)",
+      "om": "Docsii qopheessan guyyaa tokkotti; yeroo tokko tokko guyyoota muraasa (mirkaneessaa)",
+      "en": "Same day if documents are ready; sometimes a few days (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "expired-licence",
+        "text": {
+          "am": "የመንጃ ፈቃድዎ ያልጠፋ መሆኑን ከመመዝገብዎ በፊት ያረጋግጡ",
+          "om": "Hayyama konkolaachisaa kee kan hin dhumne akka ta'e dura mirkaneessaa",
+          "en": "Check that your driving licence is not expired before you apply"
+        }
+      },
+      {
+        "id": "medical-source",
+        "text": {
+          "am": "የጤና ማረጋገጫው ከታወቀ ተቋም እና የቅርብ ጊዜ ይሁን",
+          "om": "Mirkaneessi fayyaa dhaabbata beekamaa irraa, kan dhiyoo ta'een akka ta'u",
+          "en": "Use a recognized health facility and a recent certificate"
+        }
+      },
+      {
+        "id": "permit-class",
+        "text": {
+          "am": "ፈቃዱ ከሚገዙት ተሽከርካሪ ዓይነት (ታክሲ፣ ባስ ወይም ካርጎ) ጋር የሚስማማ ይሁን",
+          "om": "Hayyamichi dachaa konkolaachisaa keetiin (taaksii, baasii ykn kaargoo) akka wal simu mirkaneessaa",
+          "en": "The permit must match the vehicle type you drive (taxi, bus or freight)"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": true,
+    "canBeDoneOnline": false,
+    "objectType": "neon-road-card",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "trade-name-registration",
+    "category": "business",
+    "name": {
+      "am": "የንግድ ስም ምዝገባ",
+      "om": "Galmee maqaa daldalaa",
+      "en": "Trade name clearance and registration"
+    },
+    "shortDescription": {
+      "am": "የንግድ ስምዎን ይምረጡ እና ያስመዝግቡ።",
+      "om": "Maqaa daldalaa kee filadhaa galmeessinee.",
+      "en": "Choose and register your trade name."
+    },
+    "requiredDocuments": [
+      {
+        "id": "national-id",
+        "text": {
+          "am": "መታወቂያ (የፋይዳ ካርድ ወይም የመንጃ ፈቃድ)",
+          "om": "Qindaa'a (Kaardii Faydaa ykn hayyama konkolaachisaa)",
+          "en": "ID (Fayda card or driving licence)"
+        }
+      },
+      {
+        "id": "premises-proof",
+        "text": {
+          "am": "የሥራ ቦታ ማረጋገጫ (የኪራይ ውል ወይም የቤት ባለቤትነት ማስረጃ)",
+          "om": "Ragaa iddoo daldalaa (walii galtii kirayaa ykn abbaa qabeenya)",
+          "en": "Proof of business premises (lease or ownership)"
+        }
+      },
+      {
+        "id": "tin-cert",
+        "text": {
+          "am": "የግብር ክፍያ ቁጥር (ቲን) ወረቀት፣ ያለዎት ከሆነ",
+          "om": "Yoo TIN (lakkoofsa gibiraa) qabaatte: ragaa TIN kee",
+          "en": "TIN certificate, if you already have one"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "name-options",
+        "icon": "FileText",
+        "title": {
+          "am": "የንግድ ስም 3–5 አማራጮች ያዘጋጁ",
+          "om": "Maqaa daldalaa 3–5 filataman qopheessaa",
+          "en": "Prepare 3–5 trade name options"
+        },
+        "detail": {
+          "am": "ስሙ ቀድሞ ከተዘጋ ሌላ እንዲመርጡ ይረዳል።",
+          "om": "Maqaan dura galmeefame yoo ta'e, kan biraatti fayyada.",
+          "en": "Helpful if your first choice is already taken."
+        }
+      },
+      {
+        "id": "go-bureau",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ የንግድ ቢሮ ይሂዱ",
+          "om": "Gara biroo daldalaa deemaa",
+          "en": "Go to the trade bureau"
+        },
+        "detail": {
+          "am": "በከተማ አስተዳደር ውስጥ ይገኛል።",
+          "om": "Bulchiinsa magaalaa keessatti argama.",
+          "en": "It is inside the city administration."
+        }
+      },
+      {
+        "id": "check-name",
+        "icon": "Search",
+        "title": {
+          "am": "ስሙ ክፍት መሆኑን ቢሮው ያረጋግጣል",
+          "om": "Biroon maqaan banamaa akka ta'e mirkaneessa",
+          "en": "The office checks the name is not taken"
+        },
+        "detail": {
+          "am": "ተይዞ ከሆነ ከአማራጮችዎ መካከል ይምረጡ።",
+          "om": "Yoo fudhatame, filataman keessaa tokko filaa.",
+          "en": "If taken, choose one of your other options."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "ቅጹን ይሙሉ እና ይፈርሙ",
+          "om": "Foomii guutaa fi mallatteessaa",
+          "en": "Fill and sign the application form"
+        }
+      },
+      {
+        "id": "pay-fee",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያውን ይክፈሉ",
+          "om": "Kaffaltii kaffalaa",
+          "en": "Pay the registration fee"
+        },
+        "detail": {
+          "am": "ደረሰ ከፍያውን ይያዙ።",
+          "om": "Ragaa kaffaltii sirreeffaa.",
+          "en": "Keep the receipt."
+        }
+      },
+      {
+        "id": "collect-paper",
+        "icon": "Stamp",
+        "title": {
+          "am": "የንግድ ስም ምዝገባ ወረቀቱን ይውሰዱ",
+          "om": "Ragaa galmee maqaa daldalaa fudhaa",
+          "en": "Collect the trade name registration paper"
+        },
+        "detail": {
+          "am": "ለንግድ ፈቃድ እና ለቲን ምዝገባ ያስፈልጋል።",
+          "om": "Fayyama daldalaa fi galmee TINiif barbaachisa.",
+          "en": "You need it for the business licence and TIN registration."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration-fee",
+        "label": {
+          "am": "የንግድ ስም ምዝገባ",
+          "om": "Galmee maqaa daldalaa",
+          "en": "Trade name registration"
+        },
+        "amount": "PLACEHOLDER — ask the office"
+      },
+      {
+        "id": "name-search",
+        "label": {
+          "am": "የስም ፍተሻ",
+          "om": "Qorannoo maqaa",
+          "en": "Name availability check"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-city-admin-bole"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ በዚያው ቀን፤ ስሙ ሲፈተሽ ጥቂት ቀናት (ያረጋግጡ)",
+      "om": "Baay'een guyyaa tokkotti; maqaan yoo qorame guyyoota muraasa (mirkaneessaa)",
+      "en": "Often same day; a few days if the name needs review (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "taken-name",
+        "text": {
+          "am": "ቀድሞ የተመዘገበ ስም ይቀረሃል — ብዙ አማራጮች ይይዙ",
+          "om": "Maqaan dura galmeefame ni didama; filataman hedduu qopheessaa",
+          "en": "A name already registered is rejected — bring several options"
+        }
+      },
+      {
+        "id": "same-name",
+        "text": {
+          "am": "በንግድ ፈቃድዎ፣ በቲን እና በምልክት ሰሌዳዎ ላይ ስሙ ተመሳሳይ ይሁን",
+          "om": "Maqaan fayyama daldalaa, TIN fi mallattoo daldalaa irratti jiru wal simu ta'uu",
+          "en": "Keep the name exactly the same on your licence, TIN and signboard"
+        }
+      },
+      {
+        "id": "lease-name",
+        "text": {
+          "am": "የኪራይ ውሉ በስምዎ ይሁን፤ ካልሆነ ከባለቤቱ ደብዳቤ ያስፈልጋል",
+          "om": "Walii galtii kirayaa maqaa keetti akka ta'e mirkaneessaa; yoo hin taane dhiyoo abbaa barbaachisa",
+          "en": "The lease must be in your name, or you need a letter from the owner"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "shop-awning",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "tin-registration",
+    "category": "business",
+    "name": {
+      "am": "የግብር መለያ ቁጥር (TIN) ምዝገባ",
+      "om": "Galmee TIN (lakkoofsa gibiraa)",
+      "en": "Tax Identification Number (TIN) registration"
+    },
+    "shortDescription": {
+      "am": "ለንግድ እና ለግብር የሚያስፈልግ የግብር ቁጥር ያግኙ።",
+      "om": "Daldalaa fi gibiraaf TIN argadhaa.",
+      "en": "Get the tax number required for business and tax."
+    },
+    "requiredDocuments": [
+      {
+        "id": "national-id",
+        "text": {
+          "am": "መታወቂያ (የፋይዳ ካርድ ከሌለ)",
+          "om": "Qindaa'a (yoo Kaardii Faydaa jiraate)",
+          "en": "ID (Fayda card if you have one)"
+        }
+      },
+      {
+        "id": "trade-license",
+        "text": {
+          "am": "የንግድ ፈቃድ ወይም የንግድ ስም ምዝገባ ወረቀት",
+          "om": "Fayyama daldalaa ykn ragaa galmee maqaa daldalaa",
+          "en": "Business licence or trade name registration paper"
+        }
+      },
+      {
+        "id": "company-papers",
+        "text": {
+          "am": "ለኩባንያ፦ የምሥረታ ወረቀቶች",
+          "om": "Dhaabbataaf: ragaa hundeeffamaa",
+          "en": "For a company: incorporation papers"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "gather-docs",
+        "icon": "FileText",
+        "title": {
+          "am": "ሰነዶችዎን ያዘጋጁ",
+          "om": "Docsii qopheessaa",
+          "en": "Prepare your documents"
+        },
+        "detail": {
+          "am": "መታወቂያ እና የንግድ ፈቃድ ወይም የስም ምዝገባ ወረቀት።",
+          "om": "Qindaa'a fi fayyama daldalaa ykn ragaa galmee maqaa.",
+          "en": "ID and business licence or trade name paper."
+        }
+      },
+      {
+        "id": "online-or-office",
+        "icon": "Wifi",
+        "title": {
+          "am": "በኦንላይን ወይም በቢሮ ይመዝገቡ",
+          "om": "Interneetaa ykn waajjiratti galmeessaa",
+          "en": "Register online or at the office"
+        },
+        "detail": {
+          "am": "ኦንላይን ኢንተርኔት እና ቅጂ ሰነዶች ያስፈልጋሉ።",
+          "om": "Interneetaa fi koopii docsii barbaachisa.",
+          "en": "Online needs internet and scanned copies of your documents."
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ገቢዎች ሚኒስቴር ቢሮ ይሂዱ",
+          "om": "Gara waajjira gibiraa deemaa",
+          "en": "Go to the revenue (tax) office"
+        },
+        "detail": {
+          "am": "አካባቢዎን የሚያገለግለውን ቅርንጫፍ ይጠይቁ።",
+          "om": "Naannoo kee tajaajilu waajjira gaafadhaa.",
+          "en": "Ask for the branch that serves your area."
+        }
+      },
+      {
+        "id": "verify-id",
+        "icon": "Fingerprint",
+        "title": {
+          "am": "ማንነትዎ ይረጋገጣል",
+          "om": "Qindaa'a kee ni mirkaneessama",
+          "en": "Your identity is verified"
+        },
+        "detail": {
+          "am": "የፋይዳ ካርድዎን ይውሰዱ፤ አንዳንድ ጊዜ የጣት አሻራ ይጠየቃል።",
+          "om": "Kaardii Faydaa kee ba'aa; yeroo tokko tokko ingijjii ni fudhatama.",
+          "en": "Bring your Fayda card; sometimes fingerprints are taken."
+        }
+      },
+      {
+        "id": "collect-tin",
+        "icon": "Stamp",
+        "title": {
+          "am": "የግብር ክፍያ ቁጥርዎን (ቲን) ይውሰዱ",
+          "om": "TIN (lakkoofsa gibiraa) kee fudhaa",
+          "en": "Receive your TIN certificate"
+        },
+        "detail": {
+          "am": "በደህና ይያዙ፤ ለግብር፣ ለፈቃድ እና ለባንክ ያስፈልጋል።",
+          "om": "Sirreeffaa; gibiraaf, fayyamaaf fi baankiif barbaachisa.",
+          "en": "Keep it safe — you need it for tax, licences and the bank."
+        }
+      },
+      {
+        "id": "start-tax",
+        "icon": "Receipt",
+        "title": {
+          "am": "ግብር ማስገባት ይጀምሩ",
+          "om": "Gibira kaffaluu jalqabaa",
+          "en": "Start filing and paying tax"
+        },
+        "detail": {
+          "am": "የመጀመሪያው ክፍያ መቼ እንደሚሆን ከቢሮው ይጠይቁ።",
+          "om": "Kaffaltii jalqabaa yoom akka ta'e waajjiratti gaafadhaa.",
+          "en": "Ask the office when your first payment is due."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "tin-registration",
+        "label": {
+          "am": "የግብር ክፍያ ቁጥር (ቲን) ምዝገባ",
+          "om": "Galmee TIN",
+          "en": "TIN registration"
+        },
+        "amount": "PLACEHOLDER — usually free (verify at office)"
+      },
+      {
+        "id": "replacement",
+        "label": {
+          "am": "ወረቀቱ ካጠፋ መተካት",
+          "om": "Yoo ragaan badde, haaraa baasuu",
+          "en": "Replacement if lost"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-tax-office-kality"
+    ],
+    "estimatedTime": {
+      "am": "ሰነዶች ዝግጁ ከሆኑ በዚያው ቀን (ያረጋግጡ)",
+      "om": "Docsii qopheessan guyyaa tokkotti (mirkaneessaa)",
+      "en": "Same day if documents are ready (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "name-match",
+        "text": {
+          "am": "በቲን እና በንግድ ፈቃድ ላይ ያለው ስም ተመሳሳይ ይሁን",
+          "om": "Maqaan TIN fi fayyama daldalaa irratti jiru wal simu ta'uu",
+          "en": "The name on your TIN and business licence must match"
+        }
+      },
+      {
+        "id": "one-tin",
+        "text": {
+          "am": "ከአንድ በላይ ቲን አይይዙ — ሁለት ጊዜ አትመዝገቡ",
+          "om": "TIN tokko ol hin qabadhaa; alatti hin galmeeffaminaa",
+          "en": "One person should hold only one TIN — do not register twice"
+        }
+      },
+      {
+        "id": "keep-safe",
+        "text": {
+          "am": "ወረቀቱን በደህና ይያዙ፤ ግብርዎን በጊዜው ካላስገቡ ቅጣት ሊኖር ይችላል",
+          "om": "Ragaa sirreeffaa; gibira yeroo irratti yoo hin kaffanne, adabbii ni ta'a",
+          "en": "Keep the certificate safe; late payment can bring penalties"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": true,
+    "canBeDoneOnline": true,
+    "objectType": "calculator-coins",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "tax-clearance",
+    "category": "business",
+    "name": {
+      "am": "የግብር ማረጋገጫ እና ክፍያ",
+      "om": "Mirkaneessa gibiraa fi kaffaltii",
+      "en": "Tax clearance and tax payment"
+    },
+    "shortDescription": {
+      "am": "ግብርዎን ይክፈሉ እና ማረጋገጫ ያግኙ።",
+      "om": "Gibira kee kaffalaa mirkaneessa argadhaa.",
+      "en": "Pay your taxes and get a clearance certificate."
+    },
+    "requiredDocuments": [
+      {
+        "id": "tin-cert",
+        "text": {
+          "am": "የግብር ክፍያ ቁጥር (ቲን) ወረቀት",
+          "om": "Ragaa TIN (lakkoofsa gibiraa)",
+          "en": "Your TIN certificate"
+        }
+      },
+      {
+        "id": "tax-records",
+        "text": {
+          "am": "የግብር ማስገቢያና የገቢ እና የወጪ መዝገቦች",
+          "om": "Galmee galii fi baasii (galmee gibiraa)",
+          "en": "Tax returns and records (income and expense books)"
+        }
+      },
+      {
+        "id": "national-id",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "ID card"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "check-arrears",
+        "icon": "Receipt",
+        "title": {
+          "am": "ያልተከፈለ ግብር ያረጋግጡ",
+          "om": "Gibira kaffalamuu hin qabne ilaalaa",
+          "en": "Check for unpaid tax"
+        },
+        "detail": {
+          "am": "ብይን ካለ በፊት ይክፈሉ፤ አለበለዚያ ማረጋገጫ አይሰጥም።",
+          "om": "Yoo kaffaltii hafte jiraate, dura kaffalaa; gaafattanillee mirkaneessa hin argattan.",
+          "en": "Pay any arrears first, or clearance will be refused."
+        }
+      },
+      {
+        "id": "complete-records",
+        "icon": "FileCheck",
+        "title": {
+          "am": "የግብር መዝገቦችዎ ሙሉ ይሁኑ",
+          "om": "Galmee gibiraa kee guutaa",
+          "en": "Make sure your tax records are complete"
+        },
+        "detail": {
+          "am": "ወርሃዊም ዓመታዊም መዝገቦችዎ ተሟልተው ይሁኑ።",
+          "om": "Galmee ji'aa fi waggaa hunduu guutuu akka ta'an mirkaneessaa.",
+          "en": "Monthly and annual records must all be complete."
+        }
+      },
+      {
+        "id": "pay-tax",
+        "icon": "Banknote",
+        "title": {
+          "am": "ግብርዎን ይክፈሉ",
+          "om": "Gibira kee kaffalaa",
+          "en": "Pay your tax"
+        },
+        "detail": {
+          "am": "በባንክ ወይም በኦንላይን፤ እያንዳንዱን ደረሰ ከፍያ ይያዙ።",
+          "om": "Baankii ykn interneetaan; ragaa kaffaltii hunda sirreeffaa.",
+          "en": "At a bank or online; keep every receipt."
+        }
+      },
+      {
+        "id": "request-clearance",
+        "icon": "Wifi",
+        "title": {
+          "am": "ማረጋገጫ ይጠይቁ",
+          "om": "Mirkaneessa gaafadhaa",
+          "en": "Request the clearance certificate"
+        },
+        "detail": {
+          "am": "በገቢዎች ሚኒስቴር ቢሮ ወይም በኦንላይን መጠየቅ ይቻላል።",
+          "om": "Waajjira gibiraa ykn interneetaan gaafachuu dandeessu.",
+          "en": "Ask at the revenue office or online."
+        }
+      },
+      {
+        "id": "office-check",
+        "icon": "FileSearch",
+        "title": {
+          "am": "ቢሮው መዝገቦችዎን ያረጋግጣል",
+          "om": "Waajjirichi galmee kee mirkaneessa",
+          "en": "The office checks your records"
+        },
+        "detail": {
+          "am": "ሰነዶችዎን ሁሉ ይያዙ።",
+          "om": "Docsii hunda waliin ba'aa.",
+          "en": "Bring all your documents."
+        }
+      },
+      {
+        "id": "collect-cert",
+        "icon": "Stamp",
+        "title": {
+          "am": "የግብር ማረጋገጫ ወረቀትዎን ይውሰዱ",
+          "om": "Mirkaneessa gibiraa fudhaa",
+          "en": "Collect your clearance certificate"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ ለተወሰነ ጊዜ ብቻ ይሠራል፤ ምን ያህል እንደሚቆይ ይጠይቁ።",
+          "om": "Baay'een yeroo murtaa'ef qofa ni hojjeta; hammam akka ta'u gaafadhaa.",
+          "en": "Usually valid for a limited time — ask how long."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "clearance-cert",
+        "label": {
+          "am": "የግብር ማረጋገጫ ወረቀት",
+          "om": "Ragaa mirkaneessa gibiraa",
+          "en": "Tax clearance certificate"
+        },
+        "amount": "PLACEHOLDER — usually free (verify at office)"
+      },
+      {
+        "id": "arrears",
+        "label": {
+          "am": "ያልተከፈለ ግብር (ብይን ካለ)",
+          "om": "Gibira kaffalamuu hin qabne (yoo jiraate)",
+          "en": "Unpaid tax arrears, if any"
+        },
+        "amount": "PLACEHOLDER — depends on your records (verify)"
+      },
+      {
+        "id": "late-penalty",
+        "label": {
+          "am": "ዘግይቶ ከከፈሉ ቅጣት",
+          "om": "Adabbii yoo daawwattan",
+          "en": "Late payment penalty"
+        },
+        "amount": "PLACEHOLDER — varies (verify at office)"
+      }
+    ],
+    "providerIds": [
+      "sample-tax-office-kality"
+    ],
+    "estimatedTime": {
+      "am": "ጥቂት ቀናት፤ መዝገቦችዎ ሙሉ ከሆኑ ፈጣን (ያረጋግጡ)",
+      "om": "Guyyoota muraasa; galmee guutaan yoo ta'e saffisa (mirkaneessaa)",
+      "en": "A few days; faster if all your records are complete (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "incomplete-records",
+        "text": {
+          "am": "የግብር መዝገቦችዎ ሳይሟሉ ማረጋገጫ መጠየቅ ዘግይታል",
+          "om": "Galmee gibiraa guutaan osoo hin ta'iin mirkaneessa gaafachuu addaan fudhata",
+          "en": "Requesting clearance before your records are complete causes delay"
+        }
+      },
+      {
+        "id": "keep-receipts",
+        "text": {
+          "am": "ደረሰ ከፍያዎችዎን ያስቀምጡ — ቢሮው ይጠይቃል",
+          "om": "Ragaa kaffaltii hunda sirreeffaa — waajjirichi ni gaafata",
+          "en": "Keep all payment receipts — the office will ask for them"
+        }
+      },
+      {
+        "id": "last-minute",
+        "text": {
+          "am": "የሚያስፈልገው ቀን ላይ ብቻ አትጠይቁ፤ ፍተሻው ጊዜ ይወስዳል",
+          "om": "Guyyaa barbaachisu qofa gaafachaa hin buutu; qorannoon yeroo fudhata",
+          "en": "Do not wait until the deadline day — checks take time"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": true,
+    "objectType": "calculator-coins",
+    "contentStatus": "ready"
+  }
+]

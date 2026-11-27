@@ -1,0 +1,958 @@
+[
+  {
+    "id": "business-closure",
+    "category": "business",
+    "name": {
+      "am": "የንግድ ሥራ መዝጊያ / የፈቃድ ሰርዘት",
+      "om": "Cufiinsa daldalaa / haquu hayyamaa",
+      "en": "Business closure / license cancellation"
+    },
+    "shortDescription": {
+      "am": "ንግድዎን በሕጋዊ መንገድ ይዝጉ።",
+      "om": "Daldala kee seeraan cufaa.",
+      "en": "Close your business the legal way."
+    },
+    "requiredDocuments": [
+      {
+        "id": "tin-certificate",
+        "text": {
+          "am": "የግብር ክፍያ ቁጥር (ቲን) ወረቀት",
+          "om": "Mirkaneessa lakkoofsa gibiraa (TIN)",
+          "en": "TIN certificate"
+        }
+      },
+      {
+        "id": "business-license",
+        "text": {
+          "am": "የንግድ ፈቃድዎ (ዋናው)",
+          "om": "Hayyama daldalaa kee (inni duraa)",
+          "en": "Your original business license"
+        }
+      },
+      {
+        "id": "tax-clearance",
+        "text": {
+          "am": "የግብር ማጽዳቢያ ወረቀት",
+          "om": "Qulqulleessaa gibiraa",
+          "en": "Tax clearance letter"
+        }
+      },
+      {
+        "id": "employee-letters",
+        "optional": true,
+        "text": {
+          "am": "ሠራተኞች ካሏችሁ፦ የሠራተኞች ዝርዝር ወይም የክፍያ ደብዳቤ",
+          "om": "Yoo hojjetaan jiraate: tarreessa hojjetaa ykn barruu kaffaltii",
+          "en": "If you have employees: staff list or payment letter"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "clear-taxes",
+        "icon": "Banknote",
+        "title": {
+          "am": "ቀሩት ግብሮችዎን በግብር ቢሮ ይክፈሉ",
+          "om": "Gibira hin kaffalamme waajjira gibiraatti kaffalaa",
+          "en": "Pay any remaining tax at the tax office"
+        },
+        "detail": {
+          "am": "የግብር ማጽዳቢያ ወረቀት ያግኙ።",
+          "om": "Qulqulleessaa gibiraa argadhaa.",
+          "en": "Get the tax clearance letter."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የመዝጊያ ማመልከቻ ይሙሉ",
+          "om": "Foomii cufiinsaa guutaa",
+          "en": "Fill the closure application"
+        },
+        "detail": {
+          "am": "ከወረቀቶችዎ ጋር በንግድ ሥራ ቢሮው ያቅርቡ።",
+          "om": "Warqeewwan kee waliin waajjira daldalaa dhiyeessaa.",
+          "en": "Submit it with your papers at the trade office."
+        }
+      },
+      {
+        "id": "return-license",
+        "icon": "Stamp",
+        "title": {
+          "am": "የንግድ ፈቃድዎን ይመልሱ",
+          "om": "Hayyama daldalaa kee deebisaa",
+          "en": "Return your business license"
+        },
+        "detail": {
+          "am": "ቢሮው ፈቃዱን ያሰርዛል።",
+          "om": "Waajjirichi hayyama haqu.",
+          "en": "The office cancels the license."
+        }
+      },
+      {
+        "id": "get-confirmation",
+        "icon": "ClipboardCheck",
+        "title": {
+          "am": "የመዝጊያ ማረጋገጫ ይውሰዱ",
+          "om": "Mirkaneessa cufiinsaa fudhaa",
+          "en": "Collect the closure confirmation"
+        },
+        "detail": {
+          "am": "ለባንክና ለሌሎች ቢሮዎች ሊያስፈልግዎት ይችላል።",
+          "om": "Bankii fi waajjirawwan biraaf barbaachisuu danda'a.",
+          "en": "You may need it for banks and other offices."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "tax-clearance",
+        "label": {
+          "am": "የግብር ማጽዳቢያ",
+          "om": "Qulqulleessaa gibiraa",
+          "en": "Tax clearance"
+        },
+        "amount": "PLACEHOLDER — often free if taxes are settled (verify)"
+      },
+      {
+        "id": "cancellation",
+        "label": {
+          "am": "የፈቃድ ሰርዘት",
+          "om": "Haquu hayyamaa",
+          "en": "License cancellation"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-tax-office-kality",
+      "sample-city-admin-bole"
+    ],
+    "estimatedTime": {
+      "am": "ግብር ሲጸዳ ከ1–3 ቀናት ገደማ፤ ቢሮውን ያረጋግጡ",
+      "om": "Gibira qulqulleeffame yoo ta'e guyyoota 1–3 dhiyoo; waajjiratti mirkaneessaa",
+      "en": "About 1–3 days if taxes are settled (confirm at the office)"
+    },
+    "commonMistakes": [
+      {
+        "id": "tax-first",
+        "text": {
+          "am": "የግብር ማጽዳቢያ ያለ ንግድ ቢሮ ማመልከቻ አይቀበልም — መጀመሪያ ግብር ቢሮ ይሂዱ",
+          "om": "Qulqulleessaa gibiraa malee waajjira daldalaa hin fudhatu — dursee waajjira gibiraatti deema",
+          "en": "The trade office will not start without tax clearance — go to the tax office first"
+        }
+      },
+      {
+        "id": "original-license",
+        "text": {
+          "am": "ዋናውን ፈቃድ ካላመጡ ቢሮው ማረጋገጫ አይሰጥም",
+          "om": "Hayyama guutuu boothin waajjirichi mirkaneessa hin kennu",
+          "en": "Without the original license the office cannot cancel it"
+        }
+      },
+      {
+        "id": "keep-trading",
+        "text": {
+          "am": "ፈቃዱ ሳይሰርዝ ንግድ መቀጠል ቅጣት ሊያስከትል ይችላል",
+          "om": "Hayyamni hin haqameen daldala itti fufuun adabbii fiduu danda'a",
+          "en": "Trading after closing without cancelling the license can bring a fine"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "shop-awning",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "investment-permit",
+    "category": "business",
+    "name": {
+      "am": "የኢንቨስትመንት ፈቃድ",
+      "om": "Hayyama invaastimentii",
+      "en": "Investment permit"
+    },
+    "shortDescription": {
+      "am": "በኢትዮጵያ ለመዋዕለ ንዋይ ፈቃድ ያግኙ።",
+      "om": "Invaastimentii Itoophiyaatti godhuuf hayyama argadhaa.",
+      "en": "Get a permit to invest in Ethiopia."
+    },
+    "requiredDocuments": [
+      {
+        "id": "passport-or-id",
+        "text": {
+          "am": "የፓስፖርት ወይም የመታወቂያ ቅጂ",
+          "om": "Kophee paspoortii ykn qindaa'aa",
+          "en": "Copy of passport or ID"
+        }
+      },
+      {
+        "id": "business-plan",
+        "text": {
+          "am": "የንግድ ሥራ እቅድ",
+          "om": "Qorannoo daldalaa",
+          "en": "Business plan"
+        }
+      },
+      {
+        "id": "tin",
+        "text": {
+          "am": "የግብር ክፍያ ቁጥር (ቲን)",
+          "om": "Lakkoofsa gibiraa (TIN)",
+          "en": "Tax identification number (TIN)"
+        }
+      },
+      {
+        "id": "lease-agreement",
+        "text": {
+          "am": "የመሬት ወይም የቢሮ ኪራይ ስምምነት",
+          "om": "Kireeffa dachee ykn manaa waajjiraa",
+          "en": "Lease agreement for land or office"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-commission",
+        "icon": "Landmark",
+        "title": {
+          "am": "ወደ ኢንቨስትመንት ኮሚሽኑ ይሂዱ",
+          "om": "Gara Komishiina Invaastimentii deemaa",
+          "en": "Go to the investment commission"
+        },
+        "detail": {
+          "am": "ለክልሎች የራሳቸው ቢሮዎች አሏቸው — የእርስዎ የት እንደሆነ ይጠይቁ።",
+          "om": "Mootummoota naannoo waajjira mataa isaanii qabu — kan isin aannuu gaafadhaa.",
+          "en": "Regions have their own offices — ask which one serves you."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የምዝገባ ቅጽ ይሙሉ",
+          "om": "Foomii galmee guutaa",
+          "en": "Fill the registration form"
+        }
+      },
+      {
+        "id": "submit-plan",
+        "icon": "FileText",
+        "title": {
+          "am": "እቅድዎንና ወረቀቶችዎን ያቅርቡ",
+          "om": "Qorannoo fi warqeewwan kee dhiyeessaa",
+          "en": "Submit your plan and documents"
+        }
+      },
+      {
+        "id": "review",
+        "icon": "FileSearch",
+        "title": {
+          "am": "ኮሚሽኑ እቅድዎን ይገመግማል",
+          "om": "Komishiinichi qorannoo kee qorata",
+          "en": "The commission reviews your plan"
+        },
+        "detail": {
+          "am": "ጥያቄ ካለ ወደኋላ ወረቀት ሊጠይቁዎት ይችላሉ።",
+          "om": "Gaaffii yoo jiraate warqee dabalataa isin gaafatu.",
+          "en": "They may ask questions or ask for more papers."
+        }
+      },
+      {
+        "id": "get-permit",
+        "icon": "Stamp",
+        "title": {
+          "am": "የኢንቨስትመንት ፈቃድዎን ይውሰዱ",
+          "om": "Hayyama invaastimentii kee fudhaa",
+          "en": "Collect your investment permit"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "የምዝገባ ክፍያ",
+          "om": "Kaffaltii galmee",
+          "en": "Registration fee"
+        },
+        "amount": "PLACEHOLDER — depends on project type (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-investment-commission"
+    ],
+    "estimatedTime": {
+      "am": "በፕሮጀክቱ መሠረት ከቀናት እስከ ሳምንታት፤ ቢሮውን ያረጋግጡ",
+      "om": "Projektii irraa hundaa'ee guyyaa hanga torban — waajjiratti mirkaneessaa",
+      "en": "From a few days to weeks, depending on the project (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "weak-plan",
+        "text": {
+          "am": "ወጪና ተስፋውን ትርፍ ያልጻፈበት እቅድ ውድቅ ወይም መዘግየት ያስከትላል",
+          "om": "Qorannoon baay'ii fi faayidaa eegama malee dhorkama ykn diddaan ta'a",
+          "en": "A plan without costs and expected income gets delayed or rejected"
+        }
+      },
+      {
+        "id": "tin-ready",
+        "text": {
+          "am": "ከመመዝገብዎ በፊት ቲን እንዳለዎት ያረጋግጡ",
+          "om": "Galmeeffuu dura TIN qabaachaa kee mirkaneessaa",
+          "en": "Check that your TIN is ready before you register"
+        }
+      },
+      {
+        "id": "permit-validity",
+        "text": {
+          "am": "ፈቃዱ የሚቆይበት ጊዜ አለው — ጊዜው ያለፈ በኋላ ማደስ ያስፈልጋል",
+          "om": "Hayyamni yeroon isaa qaba — yeroo darbee booda haaraa gochuu barbaachisa",
+          "en": "Permits have a validity period — renew it if it expires before you start"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "bar-chart-building",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "land-lease-registration",
+    "category": "land",
+    "name": {
+      "am": "የመሬት ኪራይ ምዝገባ",
+      "om": "Galmee kirayii dachee",
+      "en": "Land lease registration"
+    },
+    "shortDescription": {
+      "am": "የመሬት ኪራይ መብትዎን ያስመዝግቡ።",
+      "om": "Mirga kirayii dachee galmeessaa.",
+      "en": "Register your land lease right."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "lease-agreement",
+        "text": {
+          "am": "የኪራይ ስምምነት (የተፈረመ)",
+          "om": "Kireeffa (mallatteeffame)",
+          "en": "Signed lease agreement"
+        }
+      },
+      {
+        "id": "payment-receipt",
+        "text": {
+          "am": "የኪራይ ክፍያ ማስረጃ",
+          "om": "Ragaa kaffaltii kireeffaa",
+          "en": "Lease payment receipt"
+        }
+      },
+      {
+        "id": "site-plan",
+        "text": {
+          "am": "የስፍራው ካርታ",
+          "om": "Kaartaa iddoo",
+          "en": "Site plan of the plot"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "sign-agreement",
+        "icon": "Handshake",
+        "title": {
+          "am": "በመሬት አስተዳደሩ የኪራይ ስምምነት ይፈርሙ",
+          "om": "Bulchiinsa dachee keessatti kireeffa mallatteessaa",
+          "en": "Sign the lease agreement at land administration"
+        }
+      },
+      {
+        "id": "pay-lease",
+        "icon": "Banknote",
+        "title": {
+          "am": "ኪራዩን በባንክ ይክፈሉ",
+          "om": "Kireeffa bankiitti kaffalaa",
+          "en": "Pay the lease at the bank"
+        },
+        "detail": {
+          "am": "ማስረጃውን በደህና ይያዙ።",
+          "om": "Ragaa nageenyaan qabadhaa.",
+          "en": "Keep the receipt safe."
+        }
+      },
+      {
+        "id": "submit-docs",
+        "icon": "FileText",
+        "title": {
+          "am": "ወረቀቶችዎን ለመሬት ምዝገባ ያቅርቡ",
+          "om": "Warqeewwan kee galmee dacheetti dhiyeessaa",
+          "en": "Submit your papers to the land registry"
+        }
+      },
+      {
+        "id": "plot-check",
+        "icon": "Ruler",
+        "title": {
+          "am": "ቢሮው ስፍራውን ይለካል ወይም ያረጋግጣል",
+          "om": "Waajjirichi iddoo safara ykn mirkaneessa",
+          "en": "The office measures or checks the plot"
+        },
+        "detail": {
+          "am": "በቀኑ በስፍራው ላይ መኖር ሊጠየቁ ይችላሉ።",
+          "om": "Guyyaa safarri ta'ee iddotti akka jiraattan gaafatamuu dandeessa.",
+          "en": "You may be asked to be present on site on the day."
+        }
+      },
+      {
+        "id": "collect-certificate",
+        "icon": "Stamp",
+        "title": {
+          "am": "የኪራይ ይዞታ ሰርተፍኬትዎን ይውሰዱ",
+          "om": "Seritifikeetii kireeffaa kee fudhaa",
+          "en": "Collect your lease hold certificate"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "lease-payment",
+        "label": {
+          "am": "የኪራይ ክፍያ",
+          "om": "Kaffaltii kireeffaa",
+          "en": "Lease payment"
+        },
+        "amount": "PLACEHOLDER — depends on land size and location (verify)"
+      },
+      {
+        "id": "registration",
+        "label": {
+          "am": "የምዝገባ ክፍያ",
+          "om": "Kaffaltii galmee",
+          "en": "Registration fee"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-land-registry-kirkos"
+    ],
+    "estimatedTime": {
+      "am": "በቢሮው ከቀናት እስከ ሳምንታት ሊወስድ ይችላል፤ ያረጋግጡ",
+      "om": "Guyyaa hanga torban fudhachuu danda'a; waajjiratti mirkaneessaa",
+      "en": "Can take days to weeks, depending on the office (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "keep-receipt",
+        "text": {
+          "am": "ያለ ኦፊሴላዊ ማስረጃ መክፈል አይሆንም — ማስረጃውን ሁልጊዜ ይያዙ",
+          "om": "Ragaa ofiisiyaalaa malee kaffaluun hin ta'u — ragaa yeroo hunda qabadhaa",
+          "en": "Never pay without an official receipt — always keep it"
+        }
+      },
+      {
+        "id": "name-spelling",
+        "text": {
+          "am": "ስምዎ በወረቀቱ ላይ በተሳሳተ ፊደል ከተጻፈ ከመውጣትዎ በፊት ያስተካክሉ",
+          "om": "Maqaan kee dogoggoraan yoo barreeffame, hin baatin dura sirreessaa",
+          "en": "If your name is misspelled on the paper, fix it before you leave"
+        }
+      },
+      {
+        "id": "boundary-check",
+        "text": {
+          "am": "ድንበርና መጠኑን ከማረጋገጥዎ በፊት መፈረም ብጥብጥ ያመጣል",
+          "om": "Daangaa fi safara mirkaneessuu dura mallatteessuun walitti bu'iinsa fidu",
+          "en": "Signing before checking the plot boundaries and size causes disputes"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "house-diorama",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "property-transfer",
+    "category": "land",
+    "name": {
+      "am": "የንብረት ዝውውር፣ ውርስ እና የሽያጭ ምዝገባ",
+      "om": "Gatiijjiirumaa qabeenyaa, dhaala fi gurgura",
+      "en": "Property transfer, inheritance and sale registration"
+    },
+    "shortDescription": {
+      "am": "ንብረት ወደ ሌላ ሰው ወይም ወደ ወራሮች ያስተላልፉ።",
+      "om": "Qabeenya gara nama biraatti ykn dhaalatee gatiijjiraa.",
+      "en": "Transfer property to another person or to heirs."
+    },
+    "requiredDocuments": [
+      {
+        "id": "title-deed",
+        "text": {
+          "am": "ዲድ ወረቀት",
+          "om": "Deedii qabeenyaa",
+          "en": "Title deed"
+        }
+      },
+      {
+        "id": "both-ids",
+        "text": {
+          "am": "የሁለቱም ወገኖች መታወቂያ",
+          "om": "Qindaa'a lamaanuu",
+          "en": "ID of both parties"
+        }
+      },
+      {
+        "id": "transfer-docs",
+        "text": {
+          "am": "የውርስ ወረቀት ወይም የሽያጭ/የመስጠት ስምምነት (በሁኔታዎ)",
+          "om": "Ragaa dhaalaa ykn waliigaltee gurgura/kennaa (haala keessanitti)",
+          "en": "Inheritance paper or sale/gift agreement, depending on your case"
+        }
+      },
+      {
+        "id": "tax-clearance",
+        "text": {
+          "am": "የግብር ማጽዳቢያ",
+          "om": "Qulqulleessaa gibiraa",
+          "en": "Tax clearance"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "base-document",
+        "icon": "FileText",
+        "title": {
+          "am": "መሠረታዊ ወረቀቱን ያዘጋጁ",
+          "om": "Warqee bu'uuraa qopheessaa",
+          "en": "Prepare the base document"
+        },
+        "detail": {
+          "am": "ውርስ ከሆነ የፍርድ ቤት ወረቀት ያግኙ፤ ሽያጭ ወይም መስጠት ከሆነ ስምምነቱን በሚገባ ይፈርሙ።",
+          "om": "Dhaala yoo ta'e ragaa mannii dhaqabbadhaa; gurgura ykn kennaa yoo ta'e waliigaltee iddoo sirriitti mallatteessaa.",
+          "en": "For inheritance, get a court letter; for sale or gift, sign the agreement at the right office."
+        }
+      },
+      {
+        "id": "pay-transfer-tax",
+        "icon": "Banknote",
+        "title": {
+          "am": "የዝውውር ግብር ይክፈሉ",
+          "om": "Gibira gatiijjiirumaa kaffalaa",
+          "en": "Pay the transfer tax"
+        },
+        "detail": {
+          "am": "ማስረጃውን በደህና ይያዙ።",
+          "om": "Ragaa nageenyaan qabadhaa.",
+          "en": "Keep the receipt safe."
+        }
+      },
+      {
+        "id": "apply-together",
+        "icon": "Users",
+        "title": {
+          "am": "ሁለቱም ወገኖች ወደ መሬት ምዝገባ ይሂዱ",
+          "om": "Lamaanu gara galmee dachee deemaa",
+          "en": "Both parties go to the land registry"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ ሁለቱም በራሳቸው መኖር ይጠበቃል።",
+          "om": "Baay'een lamaanu akka ofii isaanii jiraatan barbaachisa.",
+          "en": "Usually both must be present in person."
+        }
+      },
+      {
+        "id": "review",
+        "icon": "FileSearch",
+        "title": {
+          "am": "ምዝገባው ወረቀቶችዎን ያረጋግጣል",
+          "om": "Galmee warqeewwan kee mirkaneessa",
+          "en": "The registry reviews your papers"
+        }
+      },
+      {
+        "id": "new-deed",
+        "icon": "Stamp",
+        "title": {
+          "am": "በአዲሱ ባለቤት ስም አዲስ ዲድ ወረቀት ይውሰዱ",
+          "om": "Deedii haaraa maqaa abbaa haaraa fudhaa",
+          "en": "Collect the new deed in the new owner's name"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "transfer-tax",
+        "label": {
+          "am": "የዝውውር ግብር",
+          "om": "Gibira gatiijjiirumaa",
+          "en": "Transfer tax"
+        },
+        "amount": "PLACEHOLDER — usually a percent of the property value (verify)"
+      },
+      {
+        "id": "registration",
+        "label": {
+          "am": "የምዝገባ ክፍያ",
+          "om": "Kaffaltii galmee",
+          "en": "Registration fee"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-land-registry-kirkos"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ ለሳምንታት፤ ውርስ ረዘም ሊል ይችላል፤ ያረጋግጡ",
+      "om": "Baay'een torban fudhata; dhaalan dheerachuu danda'a — mirkaneessaa",
+      "en": "Usually several weeks; inheritance can take longer (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "both-present",
+        "text": {
+          "am": "አንድ ወገን ካልተኖረ ዝውውሩ አይሠራም",
+          "om": "Tokko yoo hin jiraatin gatiijjiirumaan hin hojjetu",
+          "en": "The transfer fails if one party is absent"
+        }
+      },
+      {
+        "id": "inheritance-paper",
+        "text": {
+          "am": "የውርስ ወረቀት ያለ የውርስ ንብረት ማስተላለፍ አይቻልም",
+          "om": "Ragaa dhaalaa malee qabeenya dhaalaa gatiijjiruun hin danda'amu",
+          "en": "Inherited property cannot be transferred without inheritance papers"
+        }
+      },
+      {
+        "id": "unpaid-taxes",
+        "text": {
+          "am": "ያልተከፈሉ የድሮ የመሬት ግብሮች ዝውውሩን ያቆማሉ — መጀመሪያ ይክፈሉ",
+          "om": "Gibira dachee duraan hin kaffalamme gatiijjiirumaa dhaaba — dura kaffalaa",
+          "en": "Unpaid old land taxes stop the transfer — clear them first"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "house-diorama",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "building-permit",
+    "category": "land",
+    "name": {
+      "am": "የግንባታ ፈቃድ",
+      "om": "Hayyama ijaarsaa",
+      "en": "Building permit"
+    },
+    "shortDescription": {
+      "am": "ከመገንባትዎ በፊት የግንባታ ፈቃድ ያግኙ።",
+      "om": "Ijaraa jalqabuu dura hayyama argadhaa.",
+      "en": "Get a building permit before you construct."
+    },
+    "requiredDocuments": [
+      {
+        "id": "land-holding-doc",
+        "text": {
+          "am": "የመሬት ይዞታ ወረቀት ወይም የኪራይ ሰርተፍኬት",
+          "om": "Warqee dachee ykn seritifikeetii kireeffaa",
+          "en": "Land holding paper or lease certificate"
+        }
+      },
+      {
+        "id": "architectural-drawing",
+        "text": {
+          "am": "በሙያተኛ የተሠራ የግንባታ ንድፍ (ምስል)",
+          "om": "Dizaayinii ijaarsaa ogessaan qopheesse",
+          "en": "Architectural drawing by a licensed professional"
+        }
+      },
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "Your ID"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "hire-professional",
+        "icon": "Ruler",
+        "title": {
+          "am": "የተፈቀደላቸው ነዋጅ ወይም ኢንጂነር ይቅጥሩ",
+          "om": "Ogessa hayyama qabu ykn injinerii qaadhaa",
+          "en": "Hire a licensed architect or engineer"
+        },
+        "detail": {
+          "am": "ከተማ የሚቀበለውን ንድፍ ያዘጋጁልዎታል።",
+          "om": "Magaan fudhatu dizaayinii qopheessu.",
+          "en": "They prepare the drawings the city accepts."
+        }
+      },
+      {
+        "id": "submit",
+        "icon": "Building2",
+        "title": {
+          "am": "ንድፉንና ወረቀቶችዎን የግንባታ ፈቃድ ቢሮ ያቅርቡ",
+          "om": "Dizaayinii fi warqeewwan kee waajjira hayyama ijaarsaatti dhiyeessaa",
+          "en": "Submit drawings and papers to the building permit office"
+        }
+      },
+      {
+        "id": "review",
+        "icon": "Search",
+        "title": {
+          "am": "ቢሮው ንድፉን ይመረምራል",
+          "om": "Waajjirichi dizaayinii qorata",
+          "en": "The office reviews the drawings"
+        },
+        "detail": {
+          "am": "የከተማ ሠራተኞች ስፍራውን ሊመለከቱ ይችላሉ።",
+          "om": "Hojjetaaloota magaalaa iddoo ilaaluu danda'u.",
+          "en": "City staff may visit your plot to check it."
+        }
+      },
+      {
+        "id": "pay-fee",
+        "icon": "Banknote",
+        "title": {
+          "am": "የፈቃዱን ክፍያ ይክፈሉ",
+          "om": "Kaffaltii hayyamaa kaffalaa",
+          "en": "Pay the permit fee"
+        }
+      },
+      {
+        "id": "collect-permit",
+        "icon": "Stamp",
+        "title": {
+          "am": "ፈቃዱን ይውሰዱ — ከመገንባትዎ በፊት",
+          "om": "Hayyama fudhaa — ijaraa jalqabuu dura",
+          "en": "Collect the permit before you start building"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ ፈቃዱን በግንባታው ስፍራ ላይ ያስቀምጡ።",
+          "om": "Baay'een hayyama iddoo ijaarsaatti maxxansaa.",
+          "en": "It is usual to post the permit at the construction site."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "permit-fee",
+        "label": {
+          "am": "የግንባታ ፈቃድ ክፍያ",
+          "om": "Kaffaltii hayyama ijaarsaa",
+          "en": "Building permit fee"
+        },
+        "amount": "PLACEHOLDER — depends on building size and use (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-city-admin-bole"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ ለሳምንታት፤ የንድፍ ማጽደቅ ቀኑን ይወስናል፤ ያረጋግጡ",
+      "om": "Baay'een torban fudhata; ragaa dizaayiniin guyyaa murteessa — mirkaneessaa",
+      "en": "Usually weeks; approval of the drawings sets the timing (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "build-first",
+        "text": {
+          "am": "ፈቃድ ሳያገኙ መገንባት ቅጣት ወይም ማፍረስ ሊያስከትል ይችላል",
+          "om": "Hayyama malee ijaraa jalqabuun adabbii ykn buqqa'uu fiduu danda'a",
+          "en": "Building before the permit arrives can bring a fine or demolition"
+        }
+      },
+      {
+        "id": "unlicensed-drawing",
+        "text": {
+          "am": "በሙያ ያልተፈቀደላቸው የተሠሩ ንድፎች ውድቅ ይደራሉ",
+          "om": "Dizaayinii ogessa hin fudhatamne dhorkama",
+          "en": "Drawings not made by a licensed professional are rejected"
+        }
+      },
+      {
+        "id": "deviate",
+        "text": {
+          "am": "ከተስማማው ንድፍ ውጭ መገንባት ችግር ያመጣል",
+          "om": "Dizaayinii ragaa cinaa ijaraan rakkoo fidu",
+          "en": "Building differently from the approved drawing causes problems"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "blueprint-house",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "urban-land-holding",
+    "category": "land",
+    "name": {
+      "am": "የከተማ የመሬት ያዥታ ምዝገባ",
+      "om": "Galmee dachee magaalaa",
+      "en": "Urban land holding registration"
+    },
+    "shortDescription": {
+      "am": "የከተማ የመሬት ያዥታዎን ያረጋግጡ።",
+      "om": "Dachee magaalaa qabadhaa galmeessaa.",
+      "en": "Register your urban land holding."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "holding-certificate",
+        "text": {
+          "am": "የኪራይ ወይም የይዞታ ሰርተፍኬት",
+          "om": "Seritifikeetii kireeffaa ykn qabamaa",
+          "en": "Lease or holding certificate"
+        }
+      },
+      {
+        "id": "payment-receipts",
+        "text": {
+          "am": "የኪራይ/የመሬት ክፍያ ማስረጃዎች",
+          "om": "Ragaa kaffaltii kireeffaa ykn dachee",
+          "en": "Land or lease payment receipts"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-office",
+        "icon": "MapPin",
+        "title": {
+          "am": "ወደ ቀበሌዎ ወይም የከተማ አስተዳደር መሬት ቢሮ ይሂዱ",
+          "om": "Gara kilee keessanii ykn waajjira dachee magaalaa deemaa",
+          "en": "Go to your kebele or city land office"
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የምዝገባ ቅጽ ይሙሉ",
+          "om": "Foomii galmee guutaa",
+          "en": "Fill the registration form"
+        }
+      },
+      {
+        "id": "record-check",
+        "icon": "Search",
+        "title": {
+          "am": "ቢሮው የስፍራውን መዝገብ ያረጋግጣል",
+          "om": "Waajjirichi galmee iddoo mirkaneessa",
+          "en": "The office checks the plot records"
+        },
+        "detail": {
+          "am": "መለኪያ ሊደረግ ይችላል።",
+          "om": "Safarri ta'uu danda'a.",
+          "en": "A measurement may be done."
+        }
+      },
+      {
+        "id": "collect-certificate",
+        "icon": "Stamp",
+        "title": {
+          "am": "የይዞታ ምዝገባ ሰርተፍኬትዎን ይውሰዱ",
+          "om": "Seritifikeetii galmee qabamaa kee fudhaa",
+          "en": "Collect your holding registration certificate"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "የምዝገባ ክፍያ",
+          "om": "Kaffaltii galmee",
+          "en": "Registration fee"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      },
+      {
+        "id": "copies",
+        "label": {
+          "am": "ኮፒ / ማረጋገጫ ወረቀት",
+          "om": "Koppii / mirkaneessa",
+          "en": "Copies or confirmation letter"
+        },
+        "amount": "PLACEHOLDER — small fee"
+      }
+    ],
+    "providerIds": [
+      "sample-city-admin-bole",
+      "sample-land-registry-kirkos"
+    ],
+    "estimatedTime": {
+      "am": "ከ1–3 ሳምንት ገደማ፤ በቢሮው ይለያያል፤ ያረጋግጡ",
+      "om": "Torban 1–3 dhiyoo; waajjiratti mirkaneessaa",
+      "en": "About 1–3 weeks; varies by office (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "old-receipts",
+        "text": {
+          "am": "የድሮ የክፍያ ማስረጃዎች ማጣት መያዝዎን ማረጋገጥ ያስቸግራል",
+          "om": "Ragaa kaffaltii duraan dhabuun dhiyoo waggaa hedduu qabachuu kee mirkaneessuu rakkisa",
+          "en": "Losing old payment receipts makes proving long holding harder"
+        }
+      },
+      {
+        "id": "name-update",
+        "text": {
+          "am": "ስምዎ ተቀይሮ ቢሆን (ለምሳሌ በጋብቻ) ወረቀቱ ላይ ያስተካክሉ",
+          "om": "Maqaan kee yoo jijjiirame (fkn gaa'elumaa danda'a) warqee irratti sirreessaa",
+          "en": "If your name changed (e.g. by marriage), update the certificate"
+        }
+      },
+      {
+        "id": "transfer-update",
+        "text": {
+          "am": "በውርስ ወይም በግዢ ካስተላለፉ በኋላ ምዝገባውን በፍጥከት ያስተካክሉ — ብጥብጥን ይቀንሳል",
+          "om": "Dhaala ykn bituu booda galmee dhuunfaa sirreessaa — walitti bu'iinsa hir'isa",
+          "en": "After inheriting or buying, update the registration quickly — it prevents disputes"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "house-diorama",
+    "contentStatus": "ready"
+  }
+]

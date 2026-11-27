@@ -1,0 +1,1388 @@
+[
+  {
+    "id": "electricity-connection",
+    "category": "utilities",
+    "name": {
+      "am": "አዲስ የኤሌክትሪክ ግንኙነት እና የሜተር ምዝገባ",
+      "om": "Kunnii eliktirikii haaraa fi galmee meetirii",
+      "en": "New electricity connection and meter registration"
+    },
+    "shortDescription": {
+      "am": "ለቤትዎ የኤሌክትሪክ ግንኙነት ይጠይቁ።",
+      "om": "Manaa kee kunnii eliktirikii gaafadhaa.",
+      "en": "Request an electricity connection for your home."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "ID"
+        }
+      },
+      {
+        "id": "ownership-lease",
+        "text": {
+          "am": "የቤት ባለቤትነት ወይም የኪራይ ሰነድ",
+          "om": "Docsii mirga manaa ykn kiriiroo",
+          "en": "House ownership or lease document"
+        }
+      },
+      {
+        "id": "previous-bill",
+        "text": {
+          "am": "የቀድሞ የኤሌክትሪክ ቢል (ካለ)",
+          "om": "Bilii eliktirikii duraatiif (yoo jiraate)",
+          "en": "Previous electricity bill, if any"
+        },
+        "optional": true
+      },
+      {
+        "id": "application-form",
+        "text": {
+          "am": "የማመልከቻ ቅጽ (በቢሮው ይሞላል)",
+          "om": "Foomii iyyannoo (waajjiratti guutama)",
+          "en": "Application form (filled at the office)"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ የኤሌክትሪክ አገልግሎት ቢሮ ይሂዱ",
+          "om": "Gara waajjira tajaajila eliktirikii deemaa",
+          "en": "Go to the electricity service office"
+        },
+        "detail": {
+          "am": "ሁሉንም ሰነዶችዎ ይውሰዱ።",
+          "om": "Docsii kee hunda baadhaa.",
+          "en": "Take all your documents."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የማመልከቻ ቅጹን ይሙሉ እና ይፈርሙ",
+          "om": "Foomii iyyannoo guutaa fi mallatteessaa",
+          "en": "Fill and sign the application form"
+        }
+      },
+      {
+        "id": "pay-first",
+        "icon": "Banknote",
+        "title": {
+          "am": "የመጀመሪያ ክፍያ ይክፈሉ",
+          "om": "Kaffaltii jalqabaa kaffalaa",
+          "en": "Pay the first payment"
+        },
+        "detail": {
+          "am": "መጠኑ በሚፈልጉት አገልግሎት ሊለያይ ይችላል፤ ያረጋግጡ።",
+          "om": "Halluun sadarkaa tajaajila barbaaddaniin adda ta'uu danda'a; mirkaneessaa.",
+          "en": "The amount can differ by the service you need; confirm."
+        }
+      },
+      {
+        "id": "inspection",
+        "icon": "Search",
+        "title": {
+          "am": "ሠራተኞች ቤትዎን ይመረምራሉ",
+          "om": "Hojjettoonni manaa kee qoratu",
+          "en": "Workers inspect your house"
+        },
+        "detail": {
+          "am": "ሜተሩ የት እንደሚቀመጥ ያሳዩ።",
+          "om": "Meetiriin eessatti akka kaa'amu agarsiisaa.",
+          "en": "Show where the meter will be placed."
+        }
+      },
+      {
+        "id": "connect",
+        "icon": "Zap",
+        "title": {
+          "am": "ግንኙነቱ ይሰራል እና ሜተር ይቀመጣል",
+          "om": "Kunnii raawwatama; meetiriin kaa'ama",
+          "en": "The connection is made and the meter installed"
+        },
+        "detail": {
+          "am": "የሜተር ቁጥርዎን ያስቀምጡ።",
+          "om": "Lakkoofsa meetirii kee olkaa'aa.",
+          "en": "Keep your meter number safe."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "connection-fee",
+        "label": {
+          "am": "የግንኙነት ክፍያ",
+          "om": "Kaffaltii walqabsiisuu",
+          "en": "Connection fee"
+        },
+        "amount": "PLACEHOLDER — depends on usage level (verify)",
+        "note": {
+          "am": "በሚፈልጉት የአገልግሎት መጠን ይለያያል፤ በቢሮው ይጠይቁ።",
+          "om": "Sadarkaa tajaajila barbaaddaniin adda ta'a; waajjiratti gaafadhaa.",
+          "en": "Differs by the level of service; ask the office."
+        }
+      },
+      {
+        "id": "meter-fee",
+        "label": {
+          "am": "የሜተር ክፍያ",
+          "om": "Kaffaltii meetirii",
+          "en": "Meter fee"
+        },
+        "amount": "PLACEHOLDER — ask office (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-utility-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ማመልከቻ ከ1–2 ሰዓት፤ ግንኙነቱ በብዙ ቀናት ወይም ሳምንታት ውስጥ ይሰራል (በቢሮው ያረጋግጡ)",
+      "om": "Iyyannoo sa'aatii 1–2; kunniin guyyoota ykn torbanoota booda raawwatama (waajjiratti mirkaneessaa)",
+      "en": "Application about 1–2 hours; connection may take days or weeks (confirm at office)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-ownership",
+        "text": {
+          "am": "የቤት ባለቤትነት ወረቀት ከሌለ ጥያቄው አይቀርብም",
+          "om": "Docsii mirga manaa yoo hin jirin iyyannoon hin kennamu",
+          "en": "Without an ownership or lease document the request cannot be accepted"
+        }
+      },
+      {
+        "id": "old-debt",
+        "text": {
+          "am": "የቀድሞ ባለቤት ያልከፈለው ቢል ግንኙነቱን ሊከላከል ይችላል፤ ቀድመው ይጠይቁ",
+          "om": "Bilii biteessaa duraatii kaffaluu dhabuu walqabsiisuu dhabamsiisuu danda'a; dursee gaafadhaa",
+          "en": "Unpaid bills of the previous owner can block the connection; ask first"
+        }
+      },
+      {
+        "id": "meter-number",
+        "text": {
+          "am": "የሜተር ቁጥርዎ የሌለ ክፍያዎን ማረጋገጥ አይቻልም",
+          "om": "Lakkoofsa meetirii malee kaffaltii kee mirkaneessuu dadhaba",
+          "en": "Without your meter number you cannot confirm payments"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "lightbulb",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "water-connection",
+    "category": "utilities",
+    "name": {
+      "am": "አዲስ የውሃ ግንኙነት",
+      "om": "Kunnii bishaanii haaraa",
+      "en": "New water connection"
+    },
+    "shortDescription": {
+      "am": "ለቤትዎ የውሃ ግንኙነት ይጠይቁ።",
+      "om": "Manaa kee kunnii bishaanii gaafadhaa.",
+      "en": "Request a water connection for your home."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "ID"
+        }
+      },
+      {
+        "id": "ownership-lease",
+        "text": {
+          "am": "የቤት ባለቤትነት ወይም የኪራይ ሰነድ",
+          "om": "Docsii mirga manaa ykn kiriiroo",
+          "en": "House ownership or lease document"
+        }
+      },
+      {
+        "id": "application-form",
+        "text": {
+          "am": "የማመልከቻ ቅጽ (በቢሮው ይሞላል)",
+          "om": "Foomii iyyannoo (waajjiratti guutama)",
+          "en": "Application form (filled at the office)"
+        }
+      },
+      {
+        "id": "site-sketch",
+        "text": {
+          "am": "የስፍራው ካርታ ወይም ንድፍ",
+          "om": "Kaartaa ykn naqaa iddoo manaa",
+          "en": "Map or sketch of the site"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ የውሃ አገልግሎት ቢሮ ይሂዱ",
+          "om": "Gara waajjira tajaajila bishaanii deemaa",
+          "en": "Go to the water service office"
+        },
+        "detail": {
+          "am": "ሁሉንም ሰነዶችዎ ይውሰዱ።",
+          "om": "Docsii kee hunda baadhaa.",
+          "en": "Take all your documents."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "ቅጹን ይሙሉ እና የቤትዎን ስፍራ ይመልከቱ",
+          "om": "Foomii guutaa fi iddoo manaa kee agarsiisaa",
+          "en": "Fill the form and show your house location"
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያ ይክፈሉ",
+          "om": "Kaffalaa",
+          "en": "Pay the fee"
+        },
+        "detail": {
+          "am": "መጠኑ በቧንቧው ርቀት ላይ ሊለያይ ይችላል፤ ያረጋግጡ።",
+          "om": "Halluun fageenya paayipii irratti adda ta'uu danda'a; mirkaneessaa.",
+          "en": "The amount can depend on distance from the main pipe; confirm."
+        }
+      },
+      {
+        "id": "inspection",
+        "icon": "Search",
+        "title": {
+          "am": "ሠራተኞች ስፍራውን ይመረምራሉ",
+          "om": "Hojjettoonni iddoo qoratu",
+          "en": "Workers inspect the site"
+        }
+      },
+      {
+        "id": "connect",
+        "icon": "Droplets",
+        "title": {
+          "am": "ቧንቧው ይተካል እና ውሃ ይፈስሳል",
+          "om": "Paayipiin kana; bishaan dhangala'a",
+          "en": "The pipe is installed and water flows"
+        },
+        "detail": {
+          "am": "የደንበኛ ቁጥርዎን ያስቀምጡ።",
+          "om": "Lakkoofsa maamilaa kee olkaa'aa.",
+          "en": "Keep your customer number safe."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "connection-fee",
+        "label": {
+          "am": "የውሃ ግንኙነት ክፍያ",
+          "om": "Kaffaltii bishaan walqabsiisuu",
+          "en": "Water connection fee"
+        },
+        "amount": "PLACEHOLDER — depends on distance from main pipe (verify)",
+        "note": {
+          "am": "በቧንቧው ርቀት ይጨምራል፤ ቀድመው ይጠይቁ።",
+          "om": "Fageenya paayipiin dabalata; dursee gaafadhaa.",
+          "en": "It grows with distance from the pipe; ask first."
+        }
+      },
+      {
+        "id": "materials-fee",
+        "label": {
+          "am": "የቧንቧ ቁሳቁሶች",
+          "om": "Meeshaalee paayipii",
+          "en": "Pipe materials"
+        },
+        "amount": "PLACEHOLDER — ask office (verify)",
+        "note": {
+          "am": "አንዳንድ ቢሮዎች ቁሳቁሶችን እንዲያመጡ ይጠይቃሉ።",
+          "om": "Waajjiroonni tokko tokko meeshaa dhufuu si gaafatu.",
+          "en": "Some offices ask you to bring materials."
+        }
+      }
+    ],
+    "providerIds": [
+      "sample-utility-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ማመልከቻ ከ1–2 ሰዓት፤ ቧንቧው በብዙ ቀናት ወይም ሳምንታት ውስጥ ይተካል (በቢሮው ያረጋግጡ)",
+      "om": "Iyyannoo sa'aatii 1–2; paayipiin guyyoota ykn torbanoota booda kana (waajjiratti mirkaneessaa)",
+      "en": "Application about 1–2 hours; the pipe may take days or weeks (confirm at office)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-ownership",
+        "text": {
+          "am": "የቤት ባለቤትነት ወረቀት ከሌለ ጥያቄው አይቀርብም",
+          "om": "Docsii mirga manaa yoo hin jirin iyyannoon hin kennamu",
+          "en": "Without an ownership or lease document the request cannot be accepted"
+        }
+      },
+      {
+        "id": "distance-cost",
+        "text": {
+          "am": "ክፍያው በርቀት ይጨምራል፤ መጠኑን ቀድመው ይጠይቁ",
+          "om": "Kaffaltiin fageenyaan dabalata; halluu dursee gaafadhaa",
+          "en": "The fee grows with distance; ask the amount first"
+        }
+      },
+      {
+        "id": "customer-number",
+        "text": {
+          "am": "የደንበኛ ቁጥርዎን ማጣት ክፍያዎን ያዛባል",
+          "om": "Lakkoofsa maamilaa dhabuu kaffaltii si gorraachiisa",
+          "en": "Losing your customer number causes payment problems"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "water-glass",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "sim-registration",
+    "category": "utilities",
+    "name": {
+      "am": "ተሌኮ፦ ሲም ካርድ በፋይዳ ምዝገባ እና የጠፋ ሲም መተካት",
+      "om": "Teelikomii: galmeessa SIM Faydaan fi bakka buusuu",
+      "en": "Telecom: SIM registration with Fayda, lost SIM replacement"
+    },
+    "shortDescription": {
+      "am": "ሲምዎን በፋይዳ ይመዝገቡ ወይም የጠፋውን ይተኩ።",
+      "om": "SIM kee Faydaan galmeessaa ykn kan dhabee bakka buusaa.",
+      "en": "Register your SIM with Fayda or replace a lost one."
+    },
+    "requiredDocuments": [
+      {
+        "id": "fayda-id",
+        "text": {
+          "am": "የፋይዳ መታወቂያ (አስፈላጊ ነው)",
+          "om": "Qindaa'ina Faydaa (barbaachisa)",
+          "en": "Fayda digital ID (mandatory)"
+        }
+      },
+      {
+        "id": "sim-phone",
+        "text": {
+          "am": "ሲም ካርዱ እና ስልክዎ",
+          "om": "Kaardii SIM fi bilbilaa kee",
+          "en": "The SIM card and your phone"
+        }
+      },
+      {
+        "id": "lost-sim-info",
+        "text": {
+          "am": "ሲሙ ከጠፋ፦ የሲም ቁጥርዎ ወይም የደረሰዎት መልእክት",
+          "om": "SIM yoo dhabee: lakkoofsa SIM kee ykn ergaa isiniin dhufe",
+          "en": "If lost: your SIM number or a message you received"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-center",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ተሌኮ ማዕከል ወይም ወኪል ይሂዱ",
+          "om": "Gara wiirtuuba teelikomii ykn bitaa deemaa",
+          "en": "Go to a telecom center or agent"
+        },
+        "detail": {
+          "am": "የፋይዳ መታወቂያዎን እና ሲሙን ይውሰዱ።",
+          "om": "Qindaa'ina Faydaa fi kaardii SIM baadhaa.",
+          "en": "Take your Fayda ID and the SIM."
+        }
+      },
+      {
+        "id": "show-fayda",
+        "icon": "Fingerprint",
+        "title": {
+          "am": "የፋይዳ መታወቂያዎን ያሳዩ",
+          "om": "Qindaa'ina Faydaa agarsiisaa",
+          "en": "Show your Fayda ID"
+        },
+        "detail": {
+          "am": "መታወቂያው በሥራ ላይ ያለ እና የእርስዎ መሆኑን ያረጋግጡ።",
+          "om": "Qindaa'in akka dalgee fi kan kee ta'uu mirkaneessaa.",
+          "en": "Check the ID is valid and belongs to you."
+        }
+      },
+      {
+        "id": "capture",
+        "icon": "Camera",
+        "title": {
+          "am": "ፊትዎ እና አሻንጉልዎ ይቀረጻል",
+          "om": "Fuula kee fi sumjii kee qabatama",
+          "en": "Your face and fingerprint are captured"
+        }
+      },
+      {
+        "id": "activate",
+        "icon": "PhoneCall",
+        "title": {
+          "am": "ሲሙ በስምዎ ይመዘገባል እና ይነቃል",
+          "om": "SIM maqaa keetti galmeefamaa fi banama",
+          "en": "The SIM is registered in your name and activated"
+        },
+        "detail": {
+          "am": "ማረጋገጫ መልእክት ሊላክ ይችላል፤ ያረጋግጡ።",
+          "om": "Ergaa mirkaneessaa dhiyaachuu danda'a; mirkaneessaa.",
+          "en": "A confirmation message may arrive; check it."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "new-sim",
+        "label": {
+          "am": "አዲስ ሲም ካርድ",
+          "om": "Kaardii SIM haaraa",
+          "en": "New SIM card"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      },
+      {
+        "id": "replacement",
+        "label": {
+          "am": "የጠፋ ሲም መተካት",
+          "om": "SIM dhabee bakka buusuu",
+          "en": "Replacing a lost SIM"
+        },
+        "amount": "PLACEHOLDER — ask office (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-telecom-center-megenagna"
+    ],
+    "estimatedTime": {
+      "am": "ከ15–30 ደቂቃ ገደማ፤ መስመር ላይ ረጅም ሰዓት ሊውል ይችላል (ያረጋግጡ)",
+      "om": "Daqiiqaa 15–30 dhiyoo; sararri waan guddaa ta'ee yeroo fudhachuu danda'a (mirkaneessaa)",
+      "en": "About 15–30 minutes; queues can take longer (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "own-name",
+        "text": {
+          "am": "ሲሙን በሌላ ሰው ስም አይመዝገቡ፤ ሊታገድ ይችላል",
+          "om": "SIM maqaa nama biraatiin hin galmeessinaa; duubamuu danda'a",
+          "en": "Do not register the SIM in another person's name; it may be blocked"
+        }
+      },
+      {
+        "id": "no-fayda",
+        "text": {
+          "am": "ፋይዳ መታወቂያ ሳይዘው ሄደው ወደኋላ ይመለሳሉ",
+          "om": "Qindaa'ina Faydaa malee deebi'uu dirqama",
+          "en": "Going without your Fayda ID means being sent back"
+        }
+      },
+      {
+        "id": "keep-number",
+        "text": {
+          "am": "የሲም ቁጥርዎን ያስቀምጡ፤ ሲሙ ሲጠፋ ያስፈልጋል",
+          "om": "Lakkoofsa SIM kee olkaa'aa; SIM dhabee yoo barbaaddan barbaachisa",
+          "en": "Keep your SIM number safe; it is needed to replace a lost SIM"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": true,
+    "canBeDoneOnline": false,
+    "objectType": "phone-signal",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "waste-municipal-fees",
+    "category": "utilities",
+    "name": {
+      "am": "የቆሻሻ አገልግሎት እና የከተማ ክፍያዎች",
+      "om": "Tajaajila faayinaa fi kaffaltii magaalaa",
+      "en": "Waste collection and municipal fees"
+    },
+    "shortDescription": {
+      "am": "የቆሻሻ አገልግሎት እና የከተማ ክፍያዎችን ማግኘት/መክፈል።",
+      "om": "Tajaajila faayinaa fi kaffaltii magaalaa argachuu/kaffaluu.",
+      "en": "Access waste services and pay municipal fees."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "ID"
+        }
+      },
+      {
+        "id": "ownership-lease",
+        "text": {
+          "am": "የቤት ባለቤትነት ወይም የኪራይ ሰነድ",
+          "om": "Docsii mirga manaa ykn kiriiroo",
+          "en": "House ownership or lease document"
+        }
+      },
+      {
+        "id": "previous-receipt",
+        "text": {
+          "am": "የቀድሞ ደረሰኝ (ካለ)",
+          "om": "Rasiisha duraatiif (yoo jiraate)",
+          "en": "Previous receipt, if any"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ከተማ ወይም የክፍለ ከተማ ቢሮ ይሂዱ",
+          "om": "Gara waajjira magaalaa ykn kiloleejiinii deemaa",
+          "en": "Go to the city or sub-city office"
+        },
+        "detail": {
+          "am": "ለቆሻሻ አገልግሎት ክፍሉን ይጠይቁ።",
+          "om": "Kutaa tajaajila faayinaa gaafadhaa.",
+          "en": "Ask for the waste service desk."
+        }
+      },
+      {
+        "id": "register",
+        "icon": "PenLine",
+        "title": {
+          "am": "ለቆሻሻ አገልግሎት ይመዝገቡ",
+          "om": "Tajaajila faayinaatiif galmeessaa",
+          "en": "Register for waste service"
+        },
+        "detail": {
+          "am": "የክፍያ ቀንዎን ይጠይቁ።",
+          "om": "Guyyaa kaffaltii kee gaafadhaa.",
+          "en": "Ask your payment day."
+        }
+      },
+      {
+        "id": "pay-monthly",
+        "icon": "Wallet",
+        "title": {
+          "am": "ወርሃዊ ክፍያ ይክፈሉ",
+          "om": "Kaffaltii ji'aa kaffalaa",
+          "en": "Pay the monthly fee"
+        },
+        "detail": {
+          "am": "አንዳንድ ከተሞች በቴሌብር መክፈል ይችላሉ፤ በቢሮው ይጠይቁ።",
+          "om": "Magaalaan tokko tokko Telebirr kaffaluu danda'a; waajjiratti gaafadhaa.",
+          "en": "Some cities allow Telebirr payment; ask the office."
+        }
+      },
+      {
+        "id": "keep-receipt",
+        "icon": "Receipt",
+        "title": {
+          "am": "ደረሰኞችዎን ያስቀምጡ",
+          "om": "Rasiisha kee olkaa'aa",
+          "en": "Keep your receipts"
+        },
+        "detail": {
+          "am": "ለወደፊት ማስረጃ ያስፈልጋል።",
+          "om": "Ragaan boodaaf barbaachisa.",
+          "en": "You may need proof later."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "monthly-fee",
+        "label": {
+          "am": "ወርሃዊ የቆሻሻ ክፍያ",
+          "om": "Kaffaltii ji'aa faayinaa",
+          "en": "Monthly waste fee"
+        },
+        "amount": "PLACEHOLDER — varies by house size (verify)"
+      },
+      {
+        "id": "arrears",
+        "label": {
+          "am": "የቀድሞ ያልተከፈለ ክፍያ",
+          "om": "Kaffaltii kaffaluu dhabee",
+          "en": "Unpaid past fees"
+        },
+        "amount": "PLACEHOLDER — ask office (verify)",
+        "note": {
+          "am": "ያልተከፈለ ከነበረ እንዴት እንደሚፈታ በቢሮው ይጠይቁ።",
+          "om": "Yoo kaffaluu dhabee jiraate akkamitti akka furamu waajjiratti gaafadhaa.",
+          "en": "If you have arrears, ask the office how to settle them."
+        }
+      }
+    ],
+    "providerIds": [
+      "sample-utility-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ምዝገባ ከ30 ደቂቃ–1 ሰዓት፤ ክፍያው በየወሩ በተወሰነ ቀን (ያረጋግጡ)",
+      "om": "Galmeen daqiiqaa 30–sa'aatii 1; kaffaltiin guyyaa murtaa'e ji'aatiin (mirkaneessaa)",
+      "en": "Registration about 30 minutes–1 hour; payment monthly on a set day (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-receipt",
+        "text": {
+          "am": "ደረሰኝ ሳይያዙ ክፍያዎን ማስረጋገጥ አይቻልም",
+          "om": "Rasiisha malee kaffaltii kee mirkaneessuu dadhaba",
+          "en": "Without a receipt you cannot prove you paid"
+        }
+      },
+      {
+        "id": "skip-months",
+        "text": {
+          "am": "ወራት ማለፍ የተከማቸ ዕዳ ይፈጥራል",
+          "om": "Ji'a dabarsuun kaffaltii walitti qabata",
+          "en": "Skipping months builds up arrears"
+        }
+      },
+      {
+        "id": "who-pays",
+        "text": {
+          "am": "ባለቤትና ኪራያዊ ማን እንደሚከፍል ቀድመው ይስማሙ",
+          "om": "Kan biteessaa fi kan kiriiroo eenyu akka kaffalu dursee walsimaa",
+          "en": "Owner and tenant should agree first on who pays"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "paper-folder",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "labor-contract-dispute",
+    "category": "work",
+    "name": {
+      "am": "የሥራ ውል እና የሥራ እገዳ ክስ ሂደት",
+      "om": "Walduraaduu hojii fi dhimmii walitti bu'iinsa hojii",
+      "en": "Employment contract and labor dispute process"
+    },
+    "shortDescription": {
+      "am": "የሥራ ውልዎን ይረዱ እና ችግር ሲኖር የሚከተለውን መንገድ።",
+      "om": "Walduraaduu hojii kee beekaa fi rakkoo yoo ta'e kallattiin.",
+      "en": "Understand your work contract and what to do in a dispute."
+    },
+    "requiredDocuments": [
+      {
+        "id": "employment-contract",
+        "text": {
+          "am": "የሥራ ውል (የፈርመው ቅጂ)",
+          "om": "Walduraaduu hojii (kopii mallatteeffame)",
+          "en": "Employment contract (signed copy)"
+        }
+      },
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "ID"
+        }
+      },
+      {
+        "id": "payslips-evidence",
+        "text": {
+          "am": "የደመወዝ ማስረጃ ወይም ሌሎች ማስረጃዎች",
+          "om": "Mirkaneessa mindaa ykn mirkaneessa addaa",
+          "en": "Payslips or other evidence"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "talk-employer",
+        "icon": "Handshake",
+        "title": {
+          "am": "በመጀመሪያ ከሹመትተኛዎ ጋር ይወያዩ",
+          "om": "Jalqaba biteessaa kee waliin haasawaa",
+          "en": "First talk with your employer"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ ችግሩ በውይይት ይፈታል።",
+          "om": "Baay'een rakkoon haasawaan furama.",
+          "en": "Many problems are solved by talking."
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ የሥራ ቢሮ ይሂዱ",
+          "om": "Gara waajjira hojii deemaa",
+          "en": "Go to the labor office"
+        },
+        "detail": {
+          "am": "ውልዎን እና ማስረጃዎችዎን ይውሰዱ።",
+          "om": "Walduraaduu fi mirkaneessa kee baadhaa.",
+          "en": "Take your contract and evidence."
+        }
+      },
+      {
+        "id": "file",
+        "icon": "FileText",
+        "title": {
+          "am": "ቅሬታዎን ይመዝገቡ",
+          "om": "Kanii gaddaa galmeessaa",
+          "en": "File your complaint"
+        },
+        "detail": {
+          "am": "የቅሬታ ቁጥርና ቀን ያስቀምጡ።",
+          "om": "Lakkoofsa fi guyyaa galmeessa olkaa'aa.",
+          "en": "Keep the complaint number and date."
+        }
+      },
+      {
+        "id": "mediation",
+        "icon": "Users",
+        "title": {
+          "am": "ቢሮው ለመታረስ ይሞክራል",
+          "om": "Waajjirin waldhorguu taasisa",
+          "en": "The office tries mediation"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ በስምምነት ይፈታል።",
+          "om": "Baay'een waliigalteen furama.",
+          "en": "Often it is settled by agreement."
+        }
+      },
+      {
+        "id": "tribunal",
+        "icon": "Scale",
+        "title": {
+          "am": "ካልተስማማ ወደ የሥራ እገዳ ችሎት",
+          "om": "Yoo waliigalteen hin jiraatin gara mana murtii hojii deemaa",
+          "en": "If no agreement, go to the labor tribunal"
+        },
+        "detail": {
+          "am": "በችሎት ማዕከል አማካሪ ማግኘት ይችላሉ።",
+          "om": "Mana murtii keessatti gorsa gaafachuu dandeessaa.",
+          "en": "At the court you can ask for advice."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "complaint",
+        "label": {
+          "am": "ቅሬታ መመዝገብ",
+          "om": "Kanii gaddaa galmeessuu",
+          "en": "Filing a complaint"
+        },
+        "amount": "PLACEHOLDER — usually free (verify)",
+        "note": {
+          "am": "በየሥራ ቢሮው ብዙ ጊዜ በነፃ ነው፤ ያረጋግጡ።",
+          "om": "Waajjira hojii keessatti baay'een bilisaa; mirkaneessaa.",
+          "en": "Usually free at the labor office; confirm."
+        }
+      },
+      {
+        "id": "tribunal-fee",
+        "label": {
+          "am": "የችሎት ክፍያ (ካስፈለገ)",
+          "om": "Kaffaltii mana murtii (yoo barbaachise)",
+          "en": "Tribunal fee, if required"
+        },
+        "amount": "PLACEHOLDER — ask office (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-labor-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ማመልከቻ ከ1 ሰዓት ገደማ፤ መፍትሄ በሳምንታት ወይም በወራት ሊወስድ ይችላል (በቢሮው ያረጋግጡ)",
+      "om": "Iyyannoo sa'aatii 1 dhiyoo; furmaanni torbanoota ykn ji'a fudhachuu danda'a (waajjiratti mirkaneessaa)",
+      "en": "Filing about 1 hour; resolution may take weeks or months (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-contract",
+        "text": {
+          "am": "የፈርመው የሥራ ውል ከሌለ ማስረጃ ማግኘት አስቸጋሪ ነው",
+          "om": "Walduraaduu mallatteeffame yoo hin jirin mirkaneessa arguu rakkisa",
+          "en": "Without a signed contract it is hard to prove your case"
+        }
+      },
+      {
+        "id": "delay",
+        "text": {
+          "am": "ለማመልከብ የጊዜ ገደብ አለ፤ አዘግይተው አይሂዱ",
+          "om": "Iyyannoon yeroo murtaa'e qaba; booda hin deemin",
+          "en": "There is a time limit to complain; do not delay"
+        }
+      },
+      {
+        "id": "keep-number",
+        "text": {
+          "am": "የቅሬታ ቁጥርዎን አይጥፉ፤ ለመከታተል ያስፈልጋል",
+          "om": "Lakkoofsa kanii gaddaa hin balleessin; itti aanuu barbaachisa",
+          "en": "Do not lose your complaint number; you need it to follow up"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "handshake-contract",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "pension-registration",
+    "category": "work",
+    "name": {
+      "am": "ጡረታ እና ማህበራዊ ዋስትና ምዝገባ/ጥያቄ",
+      "om": "Galmee fi gaaffii guddifamaa fi mijjaa hawaasaa",
+      "en": "Pension and social security registration/claim"
+    },
+    "shortDescription": {
+      "am": "ጡረታ ይመዝገቡ ወይም ጥቅምዎን ይጠይቁ።",
+      "om": "Guddifama galmeessaa ykn mirga kee gaafadhaa.",
+      "en": "Register for pension or claim your benefit."
+    },
+    "requiredDocuments": [
+      {
+        "id": "employer-letter",
+        "text": {
+          "am": "የቀጠሮ ደብዳቤ ከሹመትተኛዎ",
+          "om": "Barreeffama qooddoo biteessaa irraa",
+          "en": "Employment letter from your employer"
+        }
+      },
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "ID"
+        }
+      },
+      {
+        "id": "employer-tin",
+        "text": {
+          "am": "የሹመትተኛዎ የግብር ከፋይ መለያ ቁጥር (ቲን)",
+          "om": "Lakkoofsa TIN biteessaa kee",
+          "en": "Your employer's tax ID number (TIN)"
+        }
+      },
+      {
+        "id": "employment-contract",
+        "text": {
+          "am": "የሥራ ውል",
+          "om": "Walduraaduu hojii",
+          "en": "Employment contract"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-agency",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ጡረታ ኤጀንሲ ይሂዱ",
+          "om": "Gara ejjensa pensiyoona deemaa",
+          "en": "Go to the pension agency"
+        },
+        "detail": {
+          "am": "ከሹመትተኛዎ ደብዳቤ ይውሰዱ።",
+          "om": "Barreeffama biteessaa kee baadhaa.",
+          "en": "Take the letter from your employer."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የምዝገባ ቅጹን ይሙሉ",
+          "om": "Foomii galmeessa guutaa",
+          "en": "Fill the registration form"
+        },
+        "detail": {
+          "am": "ስምዎ ከመታወቂያዎ ጋር እንደሚመሳከር ያረጋግጡ።",
+          "om": "Maqaan kee qindaa'a waliin wal simuu isaa mirkaneessaa.",
+          "en": "Check your name matches your ID."
+        }
+      },
+      {
+        "id": "submit",
+        "icon": "FileCheck",
+        "title": {
+          "am": "ሰነዶችዎን ያስረክቡ",
+          "om": "Docsii kee kennaa",
+          "en": "Submit your documents"
+        },
+        "detail": {
+          "am": "የደረሰኝ ወረቀት ይጠይቁ።",
+          "om": "Rasiisha gaafadhaa.",
+          "en": "Ask for a receipt."
+        }
+      },
+      {
+        "id": "contribute",
+        "icon": "Wallet",
+        "title": {
+          "am": "አስተዋጽኦዎ እንደሚቆረጥ ያረጋግጡ",
+          "om": "Kaffaltiin ji'aa mindaa keerraa akka haaramu mirkaneessaa",
+          "en": "Check that contributions are deducted"
+        },
+        "detail": {
+          "am": "ከደመወዝዎ በየወሩ ይቆረጣል፤ መከፈሉን ይመልከቱ።",
+          "om": "Mindaa keerraan ji'a guutuu haarama; kaffalamaa jiruu ilaalaa.",
+          "en": "It is deducted from your salary each month; verify it is paid."
+        }
+      },
+      {
+        "id": "keep-record",
+        "icon": "Receipt",
+        "title": {
+          "am": "የጡረታ ቁጥርዎን ያስቀምጡ",
+          "om": "Lakkoofsa pensiyoona kee olkaa'aa",
+          "en": "Keep your pension number"
+        },
+        "detail": {
+          "am": "የአስተዋጽኦ ዘመንዎ ጥቅምዎን ይወስናል።",
+          "om": "Yeroo dheeraa kaffalatan mirga kee murteessa.",
+          "en": "The years you contribute decide your benefit."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "የጡረታ ምዝገባ",
+          "om": "Galmeessa pensiyoona",
+          "en": "Pension registration"
+        },
+        "amount": "PLACEHOLDER — usually free for workers (verify)"
+      },
+      {
+        "id": "contribution",
+        "label": {
+          "am": "ወርሃዊ አስተዋጽኦ",
+          "om": "Kaffaltii ji'aa pensiyoona",
+          "en": "Monthly contribution"
+        },
+        "amount": "PLACEHOLDER — share of salary (verify)",
+        "note": {
+          "am": "ከደመወዝዎ ይቆረጣል፤ መጠኑን በኤጀንሲው ይጠይቁ።",
+          "om": "Mindaa keerraan haarama; halluu ejjensatti gaafadhaa.",
+          "en": "Deducted from salary; ask the agency for the rate."
+        }
+      }
+    ],
+    "providerIds": [
+      "sample-labor-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ምዝገባ ከ1–2 ሰዓት፤ አስተዋጽኦው በየወሩ በተወሰነ ቀን ይቆረጣል (ያረጋግጡ)",
+      "om": "Galmeen sa'aatii 1–2; kaffaltiin guyyaa murtaa'e ji'aatiin haarama (mirkaneessaa)",
+      "en": "Registration about 1–2 hours; contribution deducted monthly on a set day (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "employer-not-registered",
+        "text": {
+          "am": "ሹመትተኛዎ ካልተመዘገበ አስተዋጽኦዎ ላይቀመጥ ይችላል፤ ይጠይቁ",
+          "om": "Biteessi galmeefamuu baatee kaffaltiin sun hin kuasamu; gaafadhaa",
+          "en": "If your employer is not registered your money may not be saved; ask"
+        }
+      },
+      {
+        "id": "name-mismatch",
+        "text": {
+          "am": "በመታወቂያዎ ካለ የተለየ ስም ጥቅም ማግኘት ይከብዳል",
+          "om": "Maqaan qindaa'a adda ta'e mirga arguu rakkisa",
+          "en": "A name different from your ID makes claiming hard"
+        }
+      },
+      {
+        "id": "keep-number",
+        "text": {
+          "am": "የጡረታ ቁጥርዎን ማጣት ጥቅምዎን ማግኘት ያዘግያል",
+          "om": "Lakkoofsa pensiyoona dhabuu mirga arguu akka booddee taasisa",
+          "en": "Losing your pension number delays your claim"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": true,
+    "canBeDoneOnline": false,
+    "objectType": "coin-stack-clock",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "social-protection",
+    "category": "work",
+    "name": {
+      "am": "የማህበራዊ ጥበቃ / የደህንነት ማዋረድ ፕሮግራም መረጃ",
+      "om": "Odeeffannoo gargaarsa hawaasaa",
+      "en": "Social protection / safety net program information"
+    },
+    "shortDescription": {
+      "am": "የድጋፍ ፕሮግራሞችን እንዴት እንደሚገኙ።",
+      "om": "Meeshaalee gargaarsaa akkamitti akka argamtani.",
+      "en": "How to access support programs."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "ID"
+        }
+      },
+      {
+        "id": "kebele-residence",
+        "text": {
+          "am": "የቀበሌ የመኖሪያ ደብዳቤ",
+          "om": "Ragaa jiraachaa kebeelaa",
+          "en": "Kebele residence letter"
+        }
+      },
+      {
+        "id": "household-info",
+        "text": {
+          "am": "የቤተሰብ መረጃ (ብዛት እና ገቢ)",
+          "om": "Odeeffannoo maatii (lakkoofsa fi galii)",
+          "en": "Household details (size and income)"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-kebele",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ቀበሌዎ ወይም የክፍለ ከተማ ቢሮ ይሂዱ",
+          "om": "Gara kebeelaa kee ykn waajjira kiloleejiinii deemaa",
+          "en": "Go to your kebele or sub-city office"
+        },
+        "detail": {
+          "am": "የድጋፍ ፕሮግራሞች ብዙ ጊዜ በቀበሌ ይጀመራሉ።",
+          "om": "Sagantaan gargaarsaa baay'een kebeleatti jalqabama.",
+          "en": "Support programs usually start at the kebele."
+        }
+      },
+      {
+        "id": "ask-programs",
+        "icon": "Search",
+        "title": {
+          "am": "ምን ድጋፍ እንዳለ ይጠይቁ",
+          "om": "Gargaarsi maal akka jiru gaafadhaa",
+          "en": "Ask what support is available"
+        },
+        "detail": {
+          "am": "ፕሮግራሞች በአካባቢዎ ይለያያሉ።",
+          "om": "Sagantaan iddoo gara garaatti adda.",
+          "en": "Programs differ by area."
+        }
+      },
+      {
+        "id": "register",
+        "icon": "PenLine",
+        "title": {
+          "am": "የቤተሰብ መረጃዎን ይመዝገቡ",
+          "om": "Odeeffannoo maatii kee galmeessaa",
+          "en": "Register your household details"
+        },
+        "detail": {
+          "am": "ትክክለኛ መረጃ ይስጡ።",
+          "om": "Odeeffannoo dhugaa kennaa.",
+          "en": "Give true information."
+        }
+      },
+      {
+        "id": "assessment",
+        "icon": "Users",
+        "title": {
+          "am": "ኃላፊዎች ቤተሰብዎን ይመረምራሉ",
+          "om": "Gaaffiin maatii kee qoratama",
+          "en": "Officials assess your household"
+        },
+        "detail": {
+          "am": "ወደ ቤትዎ ጉብኝት ሊሆን ይችላል።",
+          "om": "Mana keetti dalaguu danda'a.",
+          "en": "A home visit may happen."
+        }
+      },
+      {
+        "id": "follow-up",
+        "icon": "CalendarClock",
+        "title": {
+          "am": "ውሳኔውን ይከታተሉ",
+          "om": "Murteessaan itti aanee deggeraa",
+          "en": "Follow up on the decision"
+        },
+        "detail": {
+          "am": "ዝርዝሩ መቼ እንደሚታይ ይጠይቁ።",
+          "om": "Tarreessi yommuu akka mul'atu gaafadhaa.",
+          "en": "Ask when lists are announced."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "ምዝገባ",
+          "om": "Galmeessa",
+          "en": "Registration"
+        },
+        "amount": "PLACEHOLDER — usually free (verify)",
+        "note": {
+          "am": "ስም ለማስገባት ለማንም መክፈል የለብዎትም፤ ካጠየቁዎት ቢሮውን ያሳውቁ።",
+          "om": "Tarreessa galmeessuuf namni tokko kaffaluu si hin barbaachisu; yoo gaafatan waajjiratti himaa.",
+          "en": "You should not pay anyone to be listed; report demands to the office."
+        }
+      }
+    ],
+    "providerIds": [
+      "sample-labor-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ምዝገባ ከ30 ደቂቃ–1 ሰዓት፤ ውሳኔው በብዙ ቀናት ወይም ወራት ውስጥ ይታወቃል (ያረጋግጡ)",
+      "om": "Galmeen daqiiqaa 30–sa'aatii 1; murteessiin guyyoota ykn ji'a booda beekama (mirkaneessaa)",
+      "en": "Registration about 30 minutes–1 hour; decision in days or months (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "pay-to-list",
+        "text": {
+          "am": "ስም ለማስገባት ለማንም አትክፈሉ፤ በነፃ መሆን አለበት",
+          "om": "Tarreessa galmeessuuf namni tokko kaffalaa hin taane; bilisaa ta'uu qaba",
+          "en": "Never pay anyone to be listed; this should be free"
+        }
+      },
+      {
+        "id": "wrong-info",
+        "text": {
+          "am": "የተጣሉ መረጃዎች ስምዎን ከዝርዝሩ ሊያስወግዱ ይችላሉ",
+          "om": "Odeeffannoon sobaa maqaa kee tarreessa irraa haquu danda'u",
+          "en": "False information can remove you from the list"
+        }
+      },
+      {
+        "id": "follow-up",
+        "text": {
+          "am": "ስም ካመዘገቡ በኋላ ብቻ አትጠብቁ፤ በቀበሌ ይጠይቁ",
+          "om": "Galmeessuu booda eegaa hin taane; kebeleatti itti aanee gaafadhaa",
+          "en": "Do not just register and wait; follow up at the kebele"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "umbrella-family",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "disability-support",
+    "category": "work",
+    "name": {
+      "am": "የአካለ አቅም ደጋፊ እና መለያ",
+      "om": "Deeggarsa fi qindaa'a hiyyeessota",
+      "en": "Disability support and identification"
+    },
+    "shortDescription": {
+      "am": "የአካለ አቅም ያላቸው ሰዎች ድጋፍ እና መለያ።",
+      "om": "Deeggarsa fi qindaa'a namoota hiyyeessaa.",
+      "en": "Support and ID for persons with disabilities."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "ID"
+        }
+      },
+      {
+        "id": "medical-cert",
+        "text": {
+          "am": "የሕክምና ማረጋገጫ ወረቀት (ከጤና ተቋም)",
+          "om": "Ragaa fayyaa (man'a keeniyaarraa)",
+          "en": "Medical assessment certificate (from a health center)"
+        }
+      },
+      {
+        "id": "kebele-letter",
+        "text": {
+          "am": "የቀበሌ ደብዳቤ",
+          "om": "Barreeffama kebeelaa",
+          "en": "Kebele letter"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "medical",
+        "icon": "HeartPulse",
+        "title": {
+          "am": "ከጤና ተቋም ማረጋገጫ ይውሰዱ",
+          "om": "Man'a keeniyaa irraa ragaa fudhaa",
+          "en": "Get a certificate from a health center"
+        },
+        "detail": {
+          "am": "ሐኪሙ ችሎታዎን ይመረምራል።",
+          "om": "Ogeessi fayyaa haala fayyaa kee qorata.",
+          "en": "A doctor assesses your condition."
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ቀበሌ ወይም የክፍለ ከተማ ቢሮ ይሂዱ",
+          "om": "Gara kebeelaa ykn waajjira kiloleejiinii deemaa",
+          "en": "Go to the kebele or sub-city office"
+        },
+        "detail": {
+          "am": "ምን ድጋፍ እንዳለ ይጠይቁ።",
+          "om": "Gargaarsi maal akka jiru gaafadhaa.",
+          "en": "Ask what support exists."
+        }
+      },
+      {
+        "id": "register",
+        "icon": "PenLine",
+        "title": {
+          "am": "የመለያ ቅጹን ይሙሉ",
+          "om": "Foomii qindaa'ina guutaa",
+          "en": "Fill the identification form"
+        },
+        "detail": {
+          "am": "የሰነዶችዎ ቅጂ ይውሰዱ።",
+          "om": "Kopii docsii kee baadhaa.",
+          "en": "Bring copies of your documents."
+        }
+      },
+      {
+        "id": "card",
+        "icon": "Stamp",
+        "title": {
+          "am": "የመለያ ካርድዎን ይውሰዱ",
+          "om": "Kaardii qindaa'ina kee fudhaa",
+          "en": "Collect your identification card"
+        },
+        "detail": {
+          "am": "አንዳንድ አገልግሎቶች ካርዱን ይጠይቃሉ።",
+          "om": "Tajaajillonni tokko tokko kaardii gaafatu.",
+          "en": "Some services ask for this card."
+        }
+      },
+      {
+        "id": "follow-up",
+        "icon": "CalendarClock",
+        "title": {
+          "am": "ድጋፉን ይከታተሉ",
+          "om": "Deeggarsa itti aanee deggeraa",
+          "en": "Follow up on the support"
+        },
+        "detail": {
+          "am": "ድጋፉ በአካባቢዎ ይለያያል፤ ይጠይቁ።",
+          "om": "Deeggarsi iddoo adda addaatti adda; gaafadhaa.",
+          "en": "Support differs by area; ask."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "ምዝገባ እና መለያ",
+          "om": "Galmeessa fi qindaa'ina",
+          "en": "Registration and ID card"
+        },
+        "amount": "PLACEHOLDER — usually free (verify)"
+      },
+      {
+        "id": "medical-cert",
+        "label": {
+          "am": "የሕክምና ማረጋገጫ",
+          "om": "Ragaa fayyaa",
+          "en": "Medical certificate"
+        },
+        "amount": "PLACEHOLDER — small fee may apply (verify)",
+        "note": {
+          "am": "በአንዳንድ የመንግሥት ጤና ተቋማት በነፃ ሊሆን ይችላል፤ ይጠይቁ።",
+          "om": "Man'a keeniyaa mootummaa tokko tokko keessatti bilisaa ta'uu danda'a; gaafadhaa.",
+          "en": "May be free at some government health centers; ask."
+        }
+      }
+    ],
+    "providerIds": [
+      "sample-labor-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ማረጋገጫ እና ምዝገባ ከ1–2 ሰዓት፤ ካርዱ በብዙ ቀናት (ያረጋግጡ)",
+      "om": "Ragaan fi galmeen sa'aatii 1–2; kaardiin guyyoota booda (mirkaneessaa)",
+      "en": "Certificate and registration about 1–2 hours; card in days (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-medical-cert",
+        "text": {
+          "am": "ያለ የሕክምና ማረጋገጫ መለያ አይሰጥም",
+          "om": "Ragaa fayyaa malee qindaa'inni hin kennamu",
+          "en": "No ID card is given without the medical certificate"
+        }
+      },
+      {
+        "id": "expired-cert",
+        "text": {
+          "am": "ማረጋገጫው የሚቆይበትን ጊዜ ይጠይቁ፤ የድሮ አይቀርብም",
+          "om": "Ragaan yeroon isaa yoo darbe hin fudhatamu; haaraa fudhaa",
+          "en": "Ask how long the certificate stays valid; an old one may be refused"
+        }
+      },
+      {
+        "id": "bring-help",
+        "text": {
+          "am": "ችግር ካለ የቤተሰብ አባል እንዲያልክዎ ይጠይቁ",
+          "om": "Yoo gargaarsa barbaaddan nama maatii kee waliin deemu gaafadhaa",
+          "en": "If you need help, ask a family member to accompany you"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "umbrella-family",
+    "contentStatus": "ready"
+  }
+]

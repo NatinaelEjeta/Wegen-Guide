@@ -1,0 +1,1293 @@
+[
+  {
+    "id": "police-clearance",
+    "category": "justice",
+    "name": {
+      "am": "የፖሊስ ማረጋገጫ ወረቀት",
+      "om": "Mirkaneessa poolisii",
+      "en": "Police clearance certificate"
+    },
+    "shortDescription": {
+      "am": "ለሥራ ወይም ለጉዞ የፖሊስ ማረጋገጫ ያግኙ።",
+      "om": "Hojii ykn imalaaf mirkaneessa poolisii argadhaa.",
+      "en": "Get a police clearance for work or travel."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "የመታወቂያ ካርድዎ",
+          "om": "Qindaa'a kee",
+          "en": "Your ID card"
+        }
+      },
+      {
+        "id": "fayda-id",
+        "text": {
+          "am": "የፋይዳ ዲጂታል መታወቂያ (ካለዎት)",
+          "om": "Qindaa'a dijitaalaa Faydaa (yoo qabaattan)",
+          "en": "Fayda digital ID (if you have one)"
+        },
+        "optional": true
+      },
+      {
+        "id": "photo",
+        "text": {
+          "am": "የመገለጫ ፎቶግራፍ (ቢሮው ከጠየቀ)",
+          "om": "Suuraa qulqullina qabdu (waajjirichi yoo gaafate)",
+          "en": "Passport photo (if the office asks)"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-station",
+        "icon": "Building2",
+        "title": {
+          "am": "የሚኖሩበት አውራጃ ፖሊስ ጃንዳ ይሂዱ",
+          "om": "Naannoo jiraattanitti waajjira poolisii deemaa",
+          "en": "Go to the police station of your residential area"
+        },
+        "detail": {
+          "am": "ማረጋገጫው ለሚኖሩበት ቦታ ይሰጣል።",
+          "om": "Mirkaneessi iddoo jiraattaniif kennameera.",
+          "en": "The clearance is usually issued for where you live."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "FileText",
+        "title": {
+          "am": "የጥያቄ ቅጹን ይሙሉ",
+          "om": "Foomii gaaffii guutaa",
+          "en": "Fill the request form"
+        }
+      },
+      {
+        "id": "fingerprint",
+        "icon": "Fingerprint",
+        "title": {
+          "am": "አሻራዎን እና መረጃዎን ያስመዝጉ",
+          "om": "Adda basii fi odeeffannoo kee galmeessaa",
+          "en": "Record your fingerprints and details"
+        }
+      },
+      {
+        "id": "record-check",
+        "icon": "Search",
+        "title": {
+          "am": "ፖሊሱ መዝገቡን ይፈልጋል",
+          "om": "Poolisiin galmee isaa qorateessa",
+          "en": "The police search their records"
+        },
+        "detail": {
+          "am": "የወንጀል መዝገብ እንደሌለ ይፈተሻል።",
+          "om": "Galmee yakkaa akka hin jirre mirkaneessa.",
+          "en": "They check that there is no criminal record."
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "የፖሊስ ማረጋገጫ ወረቀቱን ይውሰዱ",
+          "om": "Mirkaneessa poolisii fudhaa",
+          "en": "Collect your clearance certificate"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "service-fee",
+        "label": {
+          "am": "የማረጋገጫ አገልግሎት",
+          "om": "Tajaajila mirkaneessaa",
+          "en": "Clearance service"
+        },
+        "amount": "PLACEHOLDER — often free or small fee (verify)"
+      },
+      {
+        "id": "photo-copies",
+        "label": {
+          "am": "ፎቶ እና ኮፒ",
+          "om": "Suuraa fi Copy",
+          "en": "Photo and copies"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-police-station-kirkos"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ በቀን ወይም በበርካታ ቀናት ይሰጣል፤ በጃንዳው ያረጋግጡ",
+      "om": "Yeroo baay'ee guyyaa tokko ykn guyyoota muraasatti kennameera; waajjiratti mirkaneessaa",
+      "en": "Often the same day or within a few days — confirm at the station"
+    },
+    "commonMistakes": [
+      {
+        "id": "wrong-area",
+        "text": {
+          "am": "ማረጋገጫው ከሚኖሩበት አውራጃ ይጠየቃል፤ ከሌላ ቦታ ሲጠይቁ ወደኋላ ይመለሳሉ",
+          "om": "Mirkaneessi naannoo jiraattan irraa gaafatama; iddoo biraatiin deebi'uu danda'a",
+          "en": "Request it from the area where you live; elsewhere you may be sent back"
+        }
+      },
+      {
+        "id": "no-photo",
+        "text": {
+          "am": "ፎቶግራፍ ሳያመጡ ሲሄዱ እንደገና ሊመለሱ ይችላሉ",
+          "om": "Suuraa malee deeman deebi'uu dirqama",
+          "en": "Going without a photo may send you back"
+        }
+      },
+      {
+        "id": "name-match",
+        "text": {
+          "am": "ስምዎ በመታወቂያዎ እና በቅጹ ላይ እንደተመሳሰለ ያረጋግጡ",
+          "om": "Maqaa kee qindaa'a irraa fi foomii irratti akka wal fakkaatu mirkaneessaa",
+          "en": "Make sure your name is written the same on your ID and the form"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": true,
+    "canBeDoneOnline": false,
+    "objectType": "shield-badge",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "court-filing",
+    "category": "justice",
+    "name": {
+      "am": "የፍርድ ቤት ክስ፣ ወንቀጽ እና የጉዳይ ሁኔታ",
+      "om": "Cinaa manneen murtii, waxanni fi haala dhimmichaa",
+      "en": "Court filing, summons and case status"
+    },
+    "shortDescription": {
+      "am": "ወደ ፍርድ ቤት እንዴት እንደሚከሱ እና ጉዳይዎን እንደሚከታተሉ።",
+      "om": "Akka mana murtii cinaa goddanuu fi dhimma kee hordofuuf.",
+      "en": "How to file a case and follow its status."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "የመታወቂያ ካርድዎ",
+          "om": "Qindaa'a kee",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "evidence",
+        "text": {
+          "am": "ጉዳይዎን የደግፉ ሰነዶች (ስምምነት፣ ደረሰኝ፣ ፎቶ)",
+          "om": "Docsii dhimmicha deeggaran (waliigaltee, raasasa, suuraa)",
+          "en": "Documents that support your claim (contracts, receipts, photos)"
+        }
+      },
+      {
+        "id": "case-copies",
+        "text": {
+          "am": "ለተከሳሽ ሁሉ የወንቀጹ ኮፒ",
+          "om": "Copy waxannichaa nama hundaaf",
+          "en": "Copies of your filing for every party"
+        }
+      },
+      {
+        "id": "fee-receipt",
+        "text": {
+          "am": "የፍርድ ቤት ክፍያ ደረሰኝ (ክፍያ ያስፈልግ ይችላል — ይጠይቁ)",
+          "om": "Raasasa kaffaltii mana murtii (kaffaltii barbaachisuu danda'a — gaafadhaa)",
+          "en": "Court fee receipt (a fee may apply — ask)"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "registry",
+        "icon": "Landmark",
+        "title": {
+          "am": "ወደ ፍርድ ቤቱ የክስ መዝገብ ቢሮ ይሂዱ",
+          "om": "Gara waajjira galmee cinaa mana murtii deemaa",
+          "en": "Go to the court registry office"
+        },
+        "detail": {
+          "am": "ጉዳይዎ የሚቀርብበት ፍርድ ቤት እንድታውቁ አስቀድሞ ይጠይቁ።",
+          "om": "Dhimmi kee mana murtii kam irratti darbu dursee gaafadhaa.",
+          "en": "Ask first which court handles your case."
+        }
+      },
+      {
+        "id": "plaint",
+        "icon": "FileText",
+        "title": {
+          "am": "ወንቀጽዎን ያዘጋጁ",
+          "om": "Waxannicha qopheessaa",
+          "en": "Prepare your claim (plaint)"
+        },
+        "detail": {
+          "am": "ለመጻፍ ችግር ካለዎት እርዳታ ይጠይቁ።",
+          "om": "Barreessuu yoo dandeessan hin qabne, gargaarsa gaafadhaa.",
+          "en": "If you cannot write it, ask for help."
+        }
+      },
+      {
+        "id": "submit",
+        "icon": "Stamp",
+        "title": {
+          "am": "ወንቀጹን እና ማስረጃዎችዎን ያስገቡ",
+          "om": "Waxannicha fi ragoota kee dhiyeessaa",
+          "en": "Submit the plaint with your evidence"
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያ ያስፈልግ ይችላል፤ ደረሰኝ ይውሰዱ",
+          "om": "Kaffaltii barbaachisuu danda'a; raasasa qabadhaa",
+          "en": "Pay any fee and keep the receipt"
+        }
+      },
+      {
+        "id": "follow-case",
+        "icon": "CalendarClock",
+        "title": {
+          "am": "የዳኝነት ቀኑን ይውሰዱ እና ጉዳይዎን ይከታተሉ",
+          "om": "Guyyaa murtaa'e fudhaa; dhimma kee hordofaa",
+          "en": "Take the hearing date and follow your case"
+        },
+        "detail": {
+          "am": "በተመዘገበው ቀን በጊዜው ይቅረቡ።",
+          "om": "Guyyaa murtaa'erratti sa'aawwan isaa dursaa.",
+          "en": "Arrive on time on the day given."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "filing-fee",
+        "label": {
+          "am": "የክስ ምዝገባ ክፍያ",
+          "om": "Kaffaltii galmee cinaa",
+          "en": "Case filing fee"
+        },
+        "amount": "PLACEHOLDER — varies by case type (verify)"
+      },
+      {
+        "id": "copies",
+        "label": {
+          "am": "የሰነድ ኮፒ",
+          "om": "Copy docsii",
+          "en": "Document copies"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-high-court-kirkos"
+    ],
+    "estimatedTime": {
+      "am": "ምዝገባው በቀን ገደማ ይጨረሳል፤ ጉዳዩ ለሳምንታት ወይም ለወራት ሊቀጥል ይችላል (ቢሮውን ይጠይቁ)",
+      "om": "Galmee guyyaa tokko dhiyoo xumurama; dhimmi torbanoota ykn ji'aafudhachuu danda'a (gaafadhaa)",
+      "en": "Filing often takes less than a day; a case can take weeks or months (ask)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-evidence",
+        "text": {
+          "am": "ማስረጃ ሳያመጡ ክስ ቢቀርብ ጉዳዩ ይወድቃል",
+          "om": "Ragaa malee galmeessiisuun dhimmichi kufuu danda'a",
+          "en": "Filing without evidence can make the case fail"
+        }
+      },
+      {
+        "id": "wrong-court",
+        "text": {
+          "am": "ጉዳዩ የሚቀርብበት ትክክለኛ ፍርድ ቤት አለ፤ አስቀድሞ ያረጋግጡ",
+          "om": "Dhimmi mana murtii sirriitti galmeefamu qaba; dursee gaafadhaa",
+          "en": "Cases must be filed at the right court — check first"
+        }
+      },
+      {
+        "id": "missing-copies",
+        "text": {
+          "am": "ለተከሳሾች ኮፒ ካልተዘጋጃ ምዝገባው ይታዘጋል",
+          "om": "Copy nama biraatiif malee galmee daangessama",
+          "en": "Without copies for the other parties, filing is delayed"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "scales",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "power-of-attorney",
+    "category": "justice",
+    "name": {
+      "am": "የተወካይነት ሥልጣን (ፓወር ኦቭ አትርኒ) እና የሰነድ ማረጋገጫ",
+      "om": "Hayyama bakka bu'aaf fi mirkaneessa docsii",
+      "en": "Power of attorney and document authentication"
+    },
+    "shortDescription": {
+      "am": "ሌላ ሰው ስለዎት እንዲሠራ ሥልጣን ይስጡ።",
+      "om": "Nama biraatti akka kee karraatti hojjachuuf hayyama keni.",
+      "en": "Give someone legal authority to act for you."
+    },
+    "requiredDocuments": [
+      {
+        "id": "grantor-id",
+        "text": {
+          "am": "ሥልጣን የሚሰጠው ሰው መታወቂያ",
+          "om": "Qindaa'a nama hayyama kenne",
+          "en": "ID of the person giving the authority"
+        }
+      },
+      {
+        "id": "attorney-details",
+        "text": {
+          "am": "የተወካዩ ሙሉ ስም እና መታወቂያ/መረጃ",
+          "om": "Maqaa guutuu bakka bu'aaf qindaa'a isaa",
+          "en": "The attorney's full name and ID or details"
+        }
+      },
+      {
+        "id": "subject-doc",
+        "text": {
+          "am": "ሥልጣኑ የሚመለከተው ሰነድ (ለምሳሌ የመሬት ወረቀት፣ የባንክ መረጃ)",
+          "om": "Docsii hayyamni itti hojjatu (fkn: ragaa dachee, odeeffannoo baankii)",
+          "en": "The document the authority covers (e.g. land certificate, bank details)"
+        }
+      },
+      {
+        "id": "revoke-prior",
+        "text": {
+          "am": "የቀድሞ ሥልጣን ካለ፦ የማቋረጫ ወረቀት",
+          "om": "Hayyama duraatiif jiraate: ragaa haquu",
+          "en": "If an earlier power exists: its cancellation"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "draft",
+        "icon": "PenLine",
+        "title": {
+          "am": "የሥልጣን ወረቀቱን ያዘጋጁ",
+          "om": "Barreeffama hayyamaa qopheessaa",
+          "en": "Prepare the power of attorney document"
+        },
+        "detail": {
+          "am": "በቢሮው ወይም በባለሙያ እርዳታ ይጻፋል።",
+          "om": "Waajjiratti ykn ogeessa gargaarsaan barreeffama.",
+          "en": "It is usually written at the office or with a professional's help."
+        }
+      },
+      {
+        "id": "grantor-present",
+        "icon": "Users",
+        "title": {
+          "am": "የሚሰጠው ሰው በራሱ ቀርቦ ይፈርማል",
+          "om": "Nama hayyama kenne ofiin dhufee mallatteessa",
+          "en": "The grantor must come in person and sign"
+        }
+      },
+      {
+        "id": "verify",
+        "icon": "Stamp",
+        "title": {
+          "am": "ቢሮው ፊርማውን እና ሰነዱን ያረጋግጣል",
+          "om": "Waajjirichi mallatteessa fi docsii mirkaneessa",
+          "en": "The office verifies the signature and document"
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያ ይክፈሉ እና ደረሰኝ ይውሰዱ",
+          "om": "Kaffalaa; raasasa qabadhaa",
+          "en": "Pay the fee and keep the receipt"
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Receipt",
+        "title": {
+          "am": "የተፈረመውን ሰነድ ይውሰዱ",
+          "om": "Docsii mallatteeffame fudhaa",
+          "en": "Collect the signed document"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "authentication",
+        "label": {
+          "am": "የሰነድ ማረጋገጫ ክፍያ",
+          "om": "Kaffaltii mirkaneessa docsii",
+          "en": "Document authentication fee"
+        },
+        "amount": "PLACEHOLDER — varies (verify)"
+      },
+      {
+        "id": "copies",
+        "label": {
+          "am": "ኮፒ",
+          "om": "Copy",
+          "en": "Copies"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-high-court-kirkos",
+      "sample-notary-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ በቀን ውስጥ ይፈፀማል፤ ቢሮውን ያረጋግጡ",
+      "om": "Yeroo baay'ee guyyaa tokko keessatti xumurama; waajjiratti gaafadhaa",
+      "en": "Often done within a day — confirm with the office"
+    },
+    "commonMistakes": [
+      {
+        "id": "vague-scope",
+        "text": {
+          "am": "ሥልጣኑ ምን እንደሚካተትበት በግልጽ አስፃፉ፤ ግልጽ ያልሆነ ሥልጣን ችግር ያመጣል",
+          "om": "Bakka bu'aan maal akka hojjatu ifa taasisaa; hayyamni ifaa hin taane rakkoo fidu",
+          "en": "Write clearly what the attorney may do; vague powers cause problems"
+        }
+      },
+      {
+        "id": "proxy-sign",
+        "text": {
+          "am": "የሚሰጠው ሰው በሌላ ሰው አስፈርሞ መቀርብ አይችልም",
+          "om": "Nama hayyama kenne nama biraatti erguun hin danda'amu",
+          "en": "The grantor cannot send someone else to sign in their place"
+        }
+      },
+      {
+        "id": "check-details",
+        "text": {
+          "am": "ስሞች፣ ቀኖች እና ቁጥሮች በሰነዱ ላይ እንደተስተካከሉ ከፊርማ በፊት ያረጋግጡ",
+          "om": "Maqaa, guyyaa fi lakkoofsota docsii keessatti mallatteessuu dura mirkaneessaa",
+          "en": "Check names, dates and numbers in the document before signing"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "pen-signing",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "report-crime",
+    "category": "justice",
+    "name": {
+      "am": "ወንጀል ወይም የጠፋ ንብረት ለፖሊስ ማሳወቅ",
+      "om": "Yakkaa ykn qabeenya dhabee poolisii beeksizuu",
+      "en": "Reporting a crime or lost property to the police"
+    },
+    "shortDescription": {
+      "am": "ወደ ፖሊስ ማሳወቂያ እንዴት እንደሚደረግ።",
+      "om": "Akka poolisiitti beeksiftuuf.",
+      "en": "How to report to the police."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "የመታወቂያ ካርድዎ (ያለ መታወቂያ ማሳወቅ ይቻላል፤ ነገር ግን እባክዎ ያመጡ)",
+          "om": "Qindaa'a kee (malee beeksisuun danda'ama; garuu yoo jiraate ba'aa)",
+          "en": "Your ID (you can report without it, but bring it if you can)"
+        },
+        "optional": true
+      },
+      {
+        "id": "evidence",
+        "text": {
+          "am": "ማስረጃዎች፦ ፎቶ፣ ደረሰኝ፣ መልእክት መረጃ",
+          "om": "Ragaa yoo jiraate: suuraa, raasasa, odeeffannoo ergaa",
+          "en": "Any evidence: photos, receipts, message records"
+        },
+        "optional": true
+      },
+      {
+        "id": "witness-info",
+        "text": {
+          "am": "የምስክሮች ስም እና አድራሻ (ካሉ)",
+          "om": "Maqaa fi teessoo ragootaa (yoo jiraatan)",
+          "en": "Names and addresses of witnesses, if any"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "emergency-call",
+        "icon": "PhoneCall",
+        "title": {
+          "am": "በአደጋ ጊዜ ወዲያውኑ ፖሊስን ይደውሉ",
+          "om": "Yeroo hatattamaa dursee poolisii bilbilaa",
+          "en": "In an emergency, call the police right away"
+        },
+        "detail": {
+          "am": "የፖሊስ አስቸኳይ ስልክ ብዙ ጊዜ 991 ነው (ያረጋግጡ)።",
+          "om": "Lakkoofsi bilbilaa poolisii yeroo baay'ee 991 dha (mirkaneessaa).",
+          "en": "The police emergency number is often 991 (confirm)."
+        }
+      },
+      {
+        "id": "go-station",
+        "icon": "MapPin",
+        "title": {
+          "am": "የሚኖሩበት ወይም የተከሰተበት ቦታ ጃንዳ ይሂዱ",
+          "om": "Naannoo jiraattan ykn dhufetti waajjira poolisii deemaa",
+          "en": "Go to the station for your area or where it happened"
+        }
+      },
+      {
+        "id": "statement",
+        "icon": "FileText",
+        "title": {
+          "am": "የሆነውን እንደሆነ አብራራ፤ መዝገቡን ይፈርሙ",
+          "om": "Waa'ee dhufee ibsaa; galmeen mallatteessaa",
+          "en": "Explain what happened and sign the record"
+        }
+      },
+      {
+        "id": "hand-evidence",
+        "icon": "Camera",
+        "title": {
+          "am": "ያለዎትን ማስረጃ ያሳዩ",
+          "om": "Ragaa qabdan agarsiisaa",
+          "en": "Show any evidence you have"
+        }
+      },
+      {
+        "id": "case-number",
+        "icon": "Receipt",
+        "title": {
+          "am": "የጉዳይ ቁጥሩን ወይም የመዝገቡን ቅጂ ይውሰዱ",
+          "om": "Lakkoofsa dhimmichaa ykn copy galmeen fudhaa",
+          "en": "Take the case number or a copy of the record"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "report-filing",
+        "label": {
+          "am": "ማሳወቂያ ምዝገባ",
+          "om": "Galmee beeksisa",
+          "en": "Filing the report"
+        },
+        "amount": "PLACEHOLDER — usually free (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-police-station-kirkos"
+    ],
+    "estimatedTime": {
+      "am": "ማሳወቂያው ብዙ ጊዜ ሰዓት ገደማ ይወስዳል፤ ምርመራው ለበርካታ ቀናት ወይም ለወራት ሊቀጥል ይችላል",
+      "om": "Beeksisni yeroo baay'ee sa'aatii dhiyoo fudhata; qoranni guyyoota ykn ji'aafudhachuu danda'a",
+      "en": "The report often takes about an hour; the investigation may take days or months"
+    },
+    "commonMistakes": [
+      {
+        "id": "delay",
+        "text": {
+          "am": "ማሳወቂያውን ማዘግየት ምርመራውን ያስቸግራል፤ ወዲያውኑ ይሂዱ",
+          "om": "Yeroo dheeraa eeguu qorannoo rakkisa; dhiyoo beeksisaa",
+          "en": "Waiting too long makes the investigation harder — report early"
+        }
+      },
+      {
+        "id": "no-case-number",
+        "text": {
+          "am": "የጉዳይ ቁጥር ያለ ጉዳይዎን መከታተል ወይም ማረጋገጫ መጠየቅ አይቻልም",
+          "om": "Lakkoofsa dhimmichaa malee hordoffii ykn mirkaneessa gaafachuu hin danda'attu",
+          "en": "Without the case number you cannot follow up or request a certificate later"
+        }
+      },
+      {
+        "id": "touch-scene",
+        "text": {
+          "am": "ፖሊስ ከመምጣቱ በፊት በቦታው ነገር አታንቀሳቅሱ",
+          "om": "Poolisiin hin dhufin iddoo sanii qabeenyaa hin sochoosinaa",
+          "en": "Do not move things around at the scene before police arrive"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "shield-badge",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "notary-services",
+    "category": "justice",
+    "name": {
+      "am": "የሰነድ ማረጋገጫ አገልግሎት (ኖታሪ)",
+      "om": "Tajaajila nootarii",
+      "en": "Notary services (certified copies, signatures)"
+    },
+    "shortDescription": {
+      "am": "የሰነድ ኮፒ ማረጋገጫ እና የፊርማ ማስረጃ።",
+      "om": "Mirkaneessa copy docsii fi mallatteessaa.",
+      "en": "Certified copies and signature verification."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "የመታወቂያ ካርድዎ",
+          "om": "Qindaa'a kee",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "original-docs",
+        "text": {
+          "am": "ዋናው ሰነድ (ኦሪጅናል)",
+          "om": "Docsii haarawaa (oorijinaalaa)",
+          "en": "The original document(s)"
+        }
+      },
+      {
+        "id": "copies",
+        "text": {
+          "am": "የተዘጋጁ ኮፒዎች (በቢሮው ኮፒ ማድረግ ይቻላል)",
+          "om": "Copy qopheessitan (waajjiratti copy godhuun danda'ama)",
+          "en": "Copies, if you have them (you can often copy at the office)"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "confirm-type",
+        "icon": "FileSearch",
+        "title": {
+          "am": "ሰነድዎ በኖታሪ ቢሮ እንደሚረጋገጥ ያረጋግጡ",
+          "om": "Docsii kee waajjira nootaraa keessatti akka mirkaneeffamu gaafadhaa",
+          "en": "Check your document is handled at the notary office"
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "በመታወቂያዎ ወደ ኖታሪ ቢሮ ይሂዱ",
+          "om": "Qindaa'a waliin gara waajjira nootaraa deemaa",
+          "en": "Go to the notary office with your ID"
+        }
+      },
+      {
+        "id": "sign-front",
+        "icon": "PenLine",
+        "title": {
+          "am": "በባለሥልጠናው ፊት ለፊት ይፈርሙ",
+          "om": "Nama tajaajilan duratti mallatteessaa",
+          "en": "Sign in front of the officer"
+        }
+      },
+      {
+        "id": "stamp",
+        "icon": "Stamp",
+        "title": {
+          "am": "ቢሮው ፊርማውን አረጋግጦ ማህተም ያደርጋል",
+          "om": "Waajjirichi mallatteessa mirkaneessee sirkumsii godha",
+          "en": "The office verifies the signature and stamps the copy"
+        }
+      },
+      {
+        "id": "pay-collect",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያ ይክፈሉ እና የተረጋገጠውን ሰነድ ይውሰዱ",
+          "om": "Kaffalaa; docsii mirkaneeffame fudhaa",
+          "en": "Pay the fee and collect the certified document"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "certification",
+        "label": {
+          "am": "የፊርማ/ሰነድ ማረጋገጫ",
+          "om": "Mirkaneessa mallatteessaa/docsii",
+          "en": "Signature/document certification"
+        },
+        "amount": "PLACEHOLDER — per document (verify)"
+      },
+      {
+        "id": "copies",
+        "label": {
+          "am": "ኮፒ",
+          "om": "Copy",
+          "en": "Copies"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-notary-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ ሰዓት ገደማ ይወስዳል፤ ወረፋ ካለ ያረጋግጡ",
+      "om": "Yeroo baay'ee sa'aatii dhiyoo fudhata; waajjiratti gaafadhaa",
+      "en": "Often under an hour; queues can add time (ask)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-original",
+        "text": {
+          "am": "ዋናውን ሰነድ ሳያመጡ ማረጋገጫ አይሰራም",
+          "om": "Docsii haarawaa malee mirkaneessi hin hojjetu",
+          "en": "Certification fails without the original document"
+        }
+      },
+      {
+        "id": "blank-fields",
+        "text": {
+          "am": "ከፊርማ በፊት ባዶ ቦታዎች እንደሌሉ ያረጋግጡ፤ ከዛ በኋላ መሙላት አይቻልም",
+          "om": "Mallatteessuu dura bakki duwwaa akka hin jirre ilaalaa; booda guutuu hin danda'attu",
+          "en": "Check no fields are blank before signing; you cannot fill them after"
+        }
+      },
+      {
+        "id": "translation",
+        "text": {
+          "am": "ትርጉም እንደሚያስፈልግ አስቀድሞ ይጠይቁ",
+          "om": "Hiikkaan barbaachisuu danda'a — dursee gaafadhaa",
+          "en": "A translation may be needed — ask first"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "pen-signing",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "farmer-registration",
+    "category": "farming",
+    "name": {
+      "am": "የገበሬ ምዝገባ እና የግብርና ግቤት ተደራሽነት",
+      "om": "Galmee qonnaan bulaa fi meeshaalee qonnaa",
+      "en": "Farmer registration and agricultural input access"
+    },
+    "shortDescription": {
+      "am": "ወይራ ይመዝገቡ እና ማዳበሪያ/ዘሮችን ያግኙ።",
+      "om": "Galmee qonnaan bulaa argadhaa; walqabsiisaa ykn ija argadhaa.",
+      "en": "Register as a farmer and access fertilizer/seed."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "የመታወቂያ ካርድዎ",
+          "om": "Qindaa'a kee",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "residence-letter",
+        "text": {
+          "am": "የቀበሌ የመኖሪያ ወረቀት",
+          "om": "Erbaa (ragaa jiraachaa) qe'eeyyee",
+          "en": "Kebele residence letter"
+        }
+      },
+      {
+        "id": "land-details",
+        "text": {
+          "am": "የመሬትዎ መረጃ (የመሬት ወረቀት ወይም የይዞታ ማስረጃ)",
+          "om": "Odeeffannoo dachee kee (ragaa dachee ykn ragaa qabamaa)",
+          "en": "Your farmland details (land certificate or proof of holding)"
+        }
+      },
+      {
+        "id": "photo",
+        "text": {
+          "am": "የመገለጫ ፎቶግራፍ (ቢሮው ከጠየቀ)",
+          "om": "Suuraa (yoo waajjirichi gaafate)",
+          "en": "Passport photo (if the office asks)"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-agri",
+        "icon": "Wheat",
+        "title": {
+          "am": "ወደ ወረዳው የግብርና ቢሮ ይሂዱ",
+          "om": "Gara waajjira qonnaa woredaa deemaa",
+          "en": "Go to the woreda agriculture office"
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "ClipboardList",
+        "title": {
+          "am": "የገበሬ ምዝገባ ቅጹን ይሙሉ",
+          "om": "Foomii galmee qonnaan bulaa guutaa",
+          "en": "Fill the farmer registration form"
+        }
+      },
+      {
+        "id": "verify-land",
+        "icon": "Search",
+        "title": {
+          "am": "ባለሥልጠናው የመሬትዎን መረጃ ያረጋግጣል",
+          "om": "Ogeessi odeeffannoo dachee kee mirkaneessa",
+          "en": "The officer checks your land details"
+        },
+        "detail": {
+          "am": "በሜዳዎ ላይ ሊመለከት ይችላል።",
+          "om": "Dachee kee ilaaluu danda'a.",
+          "en": "They may visit your plot."
+        }
+      },
+      {
+        "id": "enter-register",
+        "icon": "BookOpen",
+        "title": {
+          "am": "በመዝገቡ ይመዘገቡ",
+          "om": "Galmee qonnaan bulaa keessa galmaa'aa",
+          "en": "You are entered in the farmer register"
+        }
+      },
+      {
+        "id": "get-inputs",
+        "icon": "Wallet",
+        "title": {
+          "am": "ማዳበሪያ እና ዘር በምዝገባዎ ይቀርባሉ",
+          "om": "Ija fi abaalcaasaa galmee kee barruun argattu",
+          "en": "Fertilizer and seed are supplied through your registration"
+        },
+        "detail": {
+          "am": "የአቅርቦቱን ሁኔታ በቢሮው ይጠይቁ።",
+          "om": "Haala kenniinsaa waajjiratti gaafadhaa.",
+          "en": "Ask the office how supply is arranged."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "ምዝገባ",
+          "om": "Galmee",
+          "en": "Registration"
+        },
+        "amount": "PLACEHOLDER — often free (verify)"
+      },
+      {
+        "id": "inputs",
+        "label": {
+          "am": "የግብርና ግቤት (ማዳበሪያ/ዘር) ክፍያ",
+          "om": "Kaffaltii meeshaa qonnaa (ija fi abaalcaasaa)",
+          "en": "Input cost (fertilizer/seed, if you buy)"
+        },
+        "amount": "PLACEHOLDER — market price (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-agri-office-laga-tafo"
+    ],
+    "estimatedTime": {
+      "am": "ምዝገባው ብዙ ጊዜ በቀን ገደማ ይጨረሳል፤ በግብርና ቢሮው ያረጋግጡ",
+      "om": "Galmee yeroo baay'ee guyyaa tokko dhiyoo xumurama; waajjira qonnaatti mirkaneessaa",
+      "en": "Registration often finishes within a day — confirm at the agriculture office"
+    },
+    "commonMistakes": [
+      {
+        "id": "late-season",
+        "text": {
+          "am": "ከግብርና ግቤት አቅርቦት ከመጀመሩ በፊት ይመዘገቡ፤ ዘግይቶ መመዘገብ ግቤት ሊያጣ ይችላል",
+          "om": "Yeroo ijaan fi abaalcaasaan kennamu ka'uudura galmaa'aa; yeroo dheeraa eeguu ta'aan hin argachuu danda'a",
+          "en": "Register before the input season starts; late registration may miss supply"
+        }
+      },
+      {
+        "id": "incomplete-land",
+        "text": {
+          "am": "የመሬት መረጃዎ ካልተሟላ ምዝገባው ሊታዘጋ ይችላል",
+          "om": "Odeeffannoo dachee guutu malee galmee daangessama",
+          "en": "Incomplete land details can delay your registration"
+        }
+      },
+      {
+        "id": "shared-land",
+        "text": {
+          "am": "መሬት በጋራ ወይም በተከራይ ካለ ሁኔታውን እንደሆነ አስፃፉ፤ አለበለዚያ ችግር ይፈጠራል",
+          "om": "Dacheen walduraa duubaan ykn baasii yoo ta'e, haala sana ifa taasisaa; yoo ta'atee rakkoo fidu",
+          "en": "If the land is shared or rented, state it clearly; otherwise problems arise"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "farm-field",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "rural-land-certificate",
+    "category": "farming",
+    "name": {
+      "am": "የገጠር የመሬት ባለቤትነት ሰርተፍኬት",
+      "om": "Ragaa dachee gammadojjii",
+      "en": "Rural land certificate"
+    },
+    "shortDescription": {
+      "am": "የገጠር የመሬት መብትዎን ሰርተፍኬት ያግኙ።",
+      "om": "Ragaa mirga dachee gammadojjii argadhaa.",
+      "en": "Get the certificate for your rural land right."
+    },
+    "requiredDocuments": [
+      {
+        "id": "farmer-reg",
+        "text": {
+          "am": "የገበሬ ምዝገባ ማስረጃ",
+          "om": "Ragaa galmee qonnaan bulaa",
+          "en": "Proof of farmer registration"
+        }
+      },
+      {
+        "id": "id-card",
+        "text": {
+          "am": "የመታወቂያ ካርድዎ",
+          "om": "Qindaa'a kee",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "holding-evidence",
+        "text": {
+          "am": "የመሬት ይዞታዎ ማስረጃ (ከቀበሌ ወይም ከምስክሮች)",
+          "om": "Ragaa dachee qabdan (qe'eeyyee ykn ragootaa irraa)",
+          "en": "Evidence of your land holding (from kebele or witnesses)"
+        }
+      },
+      {
+        "id": "witness-ids",
+        "text": {
+          "am": "የሁለት ምስክሮች መታወቂያ",
+          "om": "Qindaa'a ragootaa lamaan",
+          "en": "IDs of two witnesses"
+        }
+      },
+      {
+        "id": "old-land-doc",
+        "text": {
+          "am": "የቀድሞ የመሬት ወረቀት (ካለዎት)",
+          "om": "Docsii dachee duraatiif (yoo qabaattan)",
+          "en": "Any older land paper, if you have one"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "check-registration",
+        "icon": "FileCheck",
+        "title": {
+          "am": "የገበሬ ምዝገባዎ እንዳለ ያረጋግጡ",
+          "om": "Galmee qonnaan bulaa akka jiru mirkaneessaa",
+          "en": "Make sure your farmer registration is in place"
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ የመሬት ወይም የግብርና ቢሮ ይሂዱ",
+          "om": "Gara waajjira dachee ykn qonnaa deemaa",
+          "en": "Go to the land or agriculture office"
+        }
+      },
+      {
+        "id": "measure",
+        "icon": "MapPin",
+        "title": {
+          "am": "የመሬቱ መለኪያ ሲደረግ ከምስክሮችዎ ጋር ይኑሩ",
+          "om": "Dacheen yoo safaramu ragootaa waliin iddoo irraa jiraa",
+          "en": "Be present with your witnesses when the plot is measured"
+        }
+      },
+      {
+        "id": "record-boundary",
+        "icon": "ClipboardCheck",
+        "title": {
+          "am": "መጠኑ እና ድንበሩ በመዝገብ ይገባል",
+          "om": "Guddinni fi daangaan dachee galmeefama",
+          "en": "The size and boundary are recorded"
+        }
+      },
+      {
+        "id": "sign",
+        "icon": "PenLine",
+        "title": {
+          "am": "ከምስክሮችዎ ጋር ይፈርሙ",
+          "om": "Ragootaa waliin mallatteessaa",
+          "en": "Sign with your witnesses"
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "የመሬት ወረቀቱን ይውሰዱ",
+          "om": "Ragaa dachee fudhaa",
+          "en": "Collect your land certificate"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "survey-registration",
+        "label": {
+          "am": "የመለኪያ እና ምዝገባ ክፍያ",
+          "om": "Kaffaltii safartuu fi galmee",
+          "en": "Survey and registration fee"
+        },
+        "amount": "PLACEHOLDER — varies by woreda (verify)"
+      },
+      {
+        "id": "copies",
+        "label": {
+          "am": "ኮፒ",
+          "om": "Copy",
+          "en": "Copies"
+        },
+        "amount": "PLACEHOLDER — small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-agri-office-laga-tafo"
+    ],
+    "estimatedTime": {
+      "am": "መለኪያ እና ምዝገባ ለበርካታ ቀናት ወይም ለሳምንታት ሊወስድ ይችላል፤ በቢሮው ያረጋግጡ",
+      "om": "Safartuun fi galmee guyyoota ykn torbanoota fudhachuu danda'a; waajjiratti gaafadhaa",
+      "en": "Survey and registration can take days or weeks — confirm at the office"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-witnesses",
+        "text": {
+          "am": "ምስክሮች ካልተካተቱ በድንበር ግጭት ይፈጠራል",
+          "om": "Ragootaa dhiyeessuu dhiisuun daangaa wal dhabbii uuma",
+          "en": "Leaving out witnesses leads to boundary disputes later"
+        }
+      },
+      {
+        "id": "miss-measuring",
+        "text": {
+          "am": "የመለኪያ ቀኑን አታልፉ፤ ውጤቱን እራስዎ ያረጋግጡ",
+          "om": "Guyyaa safartuuf ta'e hin baasinaa; bu'aa isaa ofiin ilaalaa",
+          "en": "Do not miss the measuring day; check the result yourself"
+        }
+      },
+      {
+        "id": "keep-safe",
+        "text": {
+          "am": "ወረቀቱን ይጠብቁ፤ ጠፍቶ መታደስ ጊዜ ይወስዳል",
+          "om": "Ragaa dachee eegadhaa; dhabeen deebiisuun yeroo fudhata",
+          "en": "Keep the certificate safe; replacing a lost one takes time"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "farm-field",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "livestock-permit",
+    "category": "farming",
+    "name": {
+      "am": "የእንስሳት ዝውውር ፈቃድ እና የእንስሳት ሕክምና ማረጋገጫ",
+      "om": "Hayyama sooressaa kessinee fi mirkaneessa vetaariinaariyaa",
+      "en": "Livestock movement permit and veterinary certificate"
+    },
+    "shortDescription": {
+      "am": "እንስሳት ሲያስተላልፉ ፈቃድ ያስፈልጋል።",
+      "om": "Sooressa gatiijjirsuu danda'uu hayyama barbaachisa.",
+      "en": "Moving livestock requires a permit and vet certificate."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id-card",
+        "text": {
+          "am": "የመታወቂያ ካርድዎ",
+          "om": "Qindaa'a kee",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "vaccine-cert",
+        "text": {
+          "am": "የእንስሳት ክትባት ማረጋገጫ",
+          "om": "Mirkaneessa kattabbalataa loonii",
+          "en": "Vaccination certificate"
+        }
+      },
+      {
+        "id": "livestock-details",
+        "text": {
+          "am": "የእንስሳት መረጃ (ብዛት፣ ዓይነት)",
+          "om": "Odeeffannoo loonii (lakkoofsa, gosa)",
+          "en": "Livestock details (number, type)"
+        }
+      },
+      {
+        "id": "sale-proof",
+        "text": {
+          "am": "የሽያጭ ማስረጃ (ቢሮው ከጠየቀ)",
+          "om": "Ragaa gurgurtaa (yoo waajjirichi gaafate)",
+          "en": "Proof of sale, if the office asks"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "go-vet",
+        "icon": "HeartPulse",
+        "title": {
+          "am": "ወደ የእንስሳት ሕክምና ቢሮ ወይም ባለሙያ ይሂዱ",
+          "om": "Gara waajjira fayyaa loonii ykn ogeessaa deemaa",
+          "en": "Go to the veterinary office or officer"
+        }
+      },
+      {
+        "id": "inspect",
+        "icon": "Search",
+        "title": {
+          "am": "እንስሳትዎ ይፈተሻሉ",
+          "om": "Loon kee ilaalama",
+          "en": "Your animals are inspected"
+        },
+        "detail": {
+          "am": "ክትባት ያልተሰጠው እንስሳ ክትባቱን ይቀበላል።",
+          "om": "Kattabbalataa malee jiraate, kennama.",
+          "en": "Unvaccinated animals get the vaccination."
+        }
+      },
+      {
+        "id": "get-permit",
+        "icon": "FileCheck",
+        "title": {
+          "am": "የዝውውር ፈቃዱን ያግኙ",
+          "om": "Hayyama sooressaa kessinee argadhaa",
+          "en": "Get the movement permit"
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያ ይክፈሉ እና ደረሰኝ ይውሰዱ",
+          "om": "Kaffalaa; raasasa qabadhaa",
+          "en": "Pay the fee and keep the receipt"
+        }
+      },
+      {
+        "id": "travel",
+        "icon": "Truck",
+        "title": {
+          "am": "ፈቃዱን እና ማረጋገጫውን ከእንስሳትዎ ጋር ይያዙ",
+          "om": "Hayyama fi mirkaneessa loonii waliin baataa",
+          "en": "Carry the permit and certificate with your animals"
+        },
+        "detail": {
+          "am": "በመንገድ ላይ ሲጠየቁ ያሳዩ።",
+          "om": "Karaa irratti yoo gaafatame agarsiisaa.",
+          "en": "Show them if asked on the way."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "permit-fee",
+        "label": {
+          "am": "የዝውውር ፈቃድ ክፍያ",
+          "om": "Kaffaltii hayyamaa",
+          "en": "Movement permit fee"
+        },
+        "amount": "PLACEHOLDER — varies by number of animals (verify)"
+      },
+      {
+        "id": "vaccine-fee",
+        "label": {
+          "am": "የክትባት ክፍያ (ካስፈለገ)",
+          "om": "Kaffaltii kattabbalataa (yoo kenname)",
+          "en": "Vaccination fee (if given)"
+        },
+        "amount": "PLACEHOLDER — per animal (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-agri-office-laga-tafo"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ በቀን ውስጥ ይፈፀማል፤ በሽያጭ ወቅት ወረፋ ሊኖር ይችላል (ያረጋግጡ)",
+      "om": "Yeroo baay'ee guyyaa tokko keessatti xumurama; yeroo gurgurtaa dandamni akka jiru gaafadhaa",
+      "en": "Often done within a day; market season can be busy (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-permit",
+        "text": {
+          "am": "ያለ ፈቃድ እንስሳት ማስተላለፍ በመንገድ ላይ ማቆም ወይም ቅጣት ሊያመጣ ይችላል",
+          "om": "Hayyama malee loon sochoosuun karaa irratti itti dhaabbachuu ykn adabbii fiduu danda'a",
+          "en": "Moving animals without a permit can lead to being stopped or fined on the road"
+        }
+      },
+      {
+        "id": "permit-validity",
+        "text": {
+          "am": "ፈቃዱ ለአንድ ጉዞ ወይም ለአጭር ጊዜ ሊሆን ይችላል፤ ከመጓዝ በፊት ያረጋግጡ",
+          "om": "Hayyamni immoo guyyaa tokkoof ykn yeroo gabaabaa ta'uu danda'a — imala dura mirkaneessaa",
+          "en": "The permit may be for one trip or a short time — check before you travel"
+        }
+      },
+      {
+        "id": "no-vaccine-record",
+        "text": {
+          "am": "የክትባት ማረጋገጫውን ይያዙ፤ ያለ ማረጋገጫ ፈቃድ አይሰጥም",
+          "om": "Mirkaneessa kattabbalataa baataa; malee hayyamni hin kennamu",
+          "en": "Keep the vaccination certificate; without it no permit is given"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "farm-field",
+    "contentStatus": "ready"
+  }
+]

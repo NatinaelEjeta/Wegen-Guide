@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "school-enrollment",
+    "category": "education",
+    "name": {
+      "am": "የትምህርት ቤት መመዝገብ እና ማስተላለፍ",
+      "om": "Galmee manneen barnootaa fi naannuu",
+      "en": "School enrollment and transfer"
+    },
+    "shortDescription": {
+      "am": "ልጅዎን ትምህርት ቤት ያስመዝግቡ ወይም ያስተላልፉ።",
+      "om": "Da'umsa kee manneen barnootaa galmeessaa ykn naannoo.",
+      "en": "Enroll or transfer your child to a school."
+    },
+    "requiredDocuments": [
+      {
+        "id": "child-birth-cert",
+        "text": {
+          "am": "የልጁ የትውልድ ወረቀት",
+          "om": "Ragaa dhalachaa ijolleetii",
+          "en": "Child's birth certificate"
+        }
+      },
+      {
+        "id": "parent-id",
+        "text": {
+          "am": "የወላጅ መታወቂያ",
+          "om": "Qindaa'a waaliitii",
+          "en": "Parent's ID"
+        }
+      },
+      {
+        "id": "previous-record",
+        "text": {
+          "am": "ከቀድሞ ትምህርት ቤት፦ የትምህርት ማስታወሻ",
+          "om": "Mana barnootaa duraatiif: galmee barattootaa",
+          "en": "From the previous school: student record"
+        },
+        "optional": true
+      },
+      {
+        "id": "photo",
+        "text": {
+          "am": "የልጁ ፎቶግራፍ",
+          "om": "Suuraa ijolleetii",
+          "en": "Photo of the child"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "find-school",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ቀበሌዎ ትምህርት ቤት ወይም ወደ ትምህርት ቢሮ ይሂዱ",
+          "om": "Gara mana barnootaa naannoo keessani ykn gara waajjira barnootaa deemaa",
+          "en": "Go to your local school or the education office"
+        },
+        "detail": {
+          "am": "ልጁን ከትምህርት ቤት ወደ ትምህርት ቤት ከማስተላለፍ ቢሮውን መጀመሪያ ይጠይቁ።",
+          "om": "Ijolle mana barnootaa gara mana barnootaa naannuuf dura waajjira barnootaa gaafadhaa.",
+          "en": "For a transfer between schools, ask the office first."
+        }
+      },
+      {
+        "id": "bring-docs",
+        "icon": "FileText",
+        "title": {
+          "am": "ሁሉንም ወረቀቶች ይውሰዱ",
+          "om": "Docsii hunda olkaa'aa",
+          "en": "Bring all the documents"
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የምዝገባ ቅጹን በልጁ መረጃ ይሙሉ",
+          "om": "Foomii galmeesaa odeeffannoo ijolleetiin guutaa",
+          "en": "Fill the registration form with your child's details"
+        }
+      },
+      {
+        "id": "review",
+        "icon": "ClipboardCheck",
+        "title": {
+          "am": "ትምህርት ቤቱ ወረቀቶቹን ያረጋግጣል",
+          "om": "Mana barnootaans docsii mirkaneessa",
+          "en": "The school checks the documents"
+        }
+      },
+      {
+        "id": "assigned",
+        "icon": "GraduationCap",
+        "title": {
+          "am": "ልጁ ተመዝግቦ ክፍል ይመደባል",
+          "om": "Ijolleen galmeefamee kutaa kennameef",
+          "en": "Your child is enrolled and assigned to a class"
+        },
+        "detail": {
+          "am": "የምዝገባው ወቅት ብዙ ጊዜ ትምህርቱ ከመጀመሩ በፊት ነው።",
+          "om": "Yeroon galmeesaa baay'een barnootaan eegaluun dura ti.",
+          "en": "Registration usually opens before the school year starts."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "የምዝገባ ክፍያ",
+          "om": "Kaffaltii galmeesaa",
+          "en": "Registration fee"
+        },
+        "amount": "PLACEHOLDER — often free at government schools (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-education-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "በትምህርት ቤቱ ከ30 ደቂቃ እስከ 1 ሰዓት፤ የምዝገባውን ወቅት በቅድሚያ ያረጋግጡ",
+      "om": "Mana barnootaatti daqiiqaa 30 hanga sa'aatii 1; yeroon galmeesaa duraan mirkaneessaa",
+      "en": "About 30 minutes to 1 hour at the school; confirm the registration season first"
+    },
+    "commonMistakes": [
+      {
+        "id": "late",
+        "text": {
+          "am": "ምዝገባው ትምህርቱ ከመጀመሩ በፊት ይከፈታል፤ ቀኑን እንዳያለፍብዎት ያረጋግጡ",
+          "om": "Galmee barnootaan eegaluun dura bana; guyyoota mirkaneessaa",
+          "en": "Registration opens before the school year starts; check the dates so you don't miss them"
+        }
+      },
+      {
+        "id": "birth-cert",
+        "text": {
+          "am": "የትውልድ ወረቀት ከሌለ ምዝገባው ሊዘገይ ይችላል",
+          "om": "Ragaa dhalachaa dhabee galmeesii hedduminaa",
+          "en": "Without the birth certificate, enrollment can be delayed"
+        }
+      },
+      {
+        "id": "transfer-record",
+        "text": {
+          "am": "ከትምህርት ቤት የሚተላለፍ ልጅ የቀድሞውን የትምህርት ማስታወሻ ካልያዘ ሊመለስ ይችላል",
+          "om": "Ijolle mana barnootaa naannuu galmee barattootaa dhabee deebi'uu mala",
+          "en": "A transferring child without a record from the old school may be sent back"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "book-cap",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "grade12-exam",
+    "category": "education",
+    "name": {
+      "am": "የ12ኛ ክፍል ብሔራዊ ፈተና ምዝገባ እና ውጤት",
+      "om": "Galmee qormaata biyyoolessaa kutaa 12ffaa fi bu'aa",
+      "en": "Grade 12 national exam registration and results"
+    },
+    "shortDescription": {
+      "am": "የ12ኛ ክፍል ፈተና ምዝገባ እና ውጤት መማረስ።",
+      "om": "Galmee fi bu'aa qormaata kutaa 12ffaa.",
+      "en": "Register for the Grade 12 exam and check results."
+    },
+    "requiredDocuments": [
+      {
+        "id": "student-id",
+        "text": {
+          "am": "የተማሪ መታወቂያ ወይም የምዝገባ ወረቀት",
+          "om": "Qindaa'a barattootaa ykn waraqaa galmeesaa",
+          "en": "Student ID or registration slip"
+        }
+      },
+      {
+        "id": "birth-cert",
+        "text": {
+          "am": "የትውልድ ወረቀት",
+          "om": "Ragaa dhalachaa",
+          "en": "Birth certificate"
+        }
+      },
+      {
+        "id": "photo",
+        "text": {
+          "am": "ፎቶግራፍ",
+          "om": "Suuraa",
+          "en": "Photo"
+        }
+      },
+      {
+        "id": "grade-records",
+        "text": {
+          "am": "ከ9ኛ እስከ 11ኛ ክፍል የውጤት ማስታወሻ",
+          "om": "Bu'aa kutaa 9ffaa hanga 11ffaa",
+          "en": "Grade records from Grade 9 to 11"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "school",
+        "icon": "GraduationCap",
+        "title": {
+          "am": "ምዝገባው በትምህርት ቤትዎ ወይም በትምህርት ቢሮ ይሠራል",
+          "om": "Galmee mana barnootaa keessani ykn waajjira barnootaatti hojjeta",
+          "en": "Registration is done through your school or education office"
+        },
+        "detail": {
+          "am": "የምዝገባውን ጊዜ ከመምህርዎ ወይም ከቢሮው ያረጋግጡ።",
+          "om": "Yeroon galmeesaa qormaatootaa ykn waajjiraan mirkaneessaa.",
+          "en": "Ask your teacher or the office for the registration period."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "ቅጹን ይሙሉ እና ስምዎን ያረጋግጡ",
+          "om": "Foomii guutaa maqaa kee mirkaneessaa",
+          "en": "Fill the form and check your name carefully"
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያ ካለ ይክፈሉ እና ደረሰኙን ይውሰዱ",
+          "om": "Kaffaltii yoo jiraate kaffalaa kataaalaa fudhaa",
+          "en": "Pay the exam fee if there is one, and keep the receipt"
+        }
+      },
+      {
+        "id": "exam-slip",
+        "icon": "Receipt",
+        "title": {
+          "am": "የፈተና መግቢያ ወረቀትዎን ይውሰዱ",
+          "om": "Waraqaa seenxaa qormaataa fudhaa",
+          "en": "Collect your exam entry slip"
+        },
+        "detail": {
+          "am": "ስምዎ፣ ምስልዎ እና የፈተናው ቦታ ላይ ትክክለኛ መሆናቸውን ያረጋግጡ።",
+          "om": "Maqaa, suuraa fi iddoo qormaatii sirrii ta'uu isaanii mirkaneessaa.",
+          "en": "Check that your name, photo and exam site are correct."
+        }
+      },
+      {
+        "id": "results",
+        "icon": "Search",
+        "title": {
+          "am": "ውጤቱን በኢንተርኔት ወይም በትምህርት ቤት ያረጋግጡ",
+          "om": "Bu'aa intaneetii ykn mana barnootaatti mirkaneessaa",
+          "en": "Check your results online or at your school"
+        },
+        "detail": {
+          "am": "ውጤቱ የሚለቀቅበትን ቀን ቢሮውን ይጠይቁ።",
+          "om": "Guyyaa bu'aan olka'amu waajjiraan gaafadhaa.",
+          "en": "Ask the office when results will be released."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "exam-fee",
+        "label": {
+          "am": "የፈተና ምዝገባ",
+          "om": "Galmee qormaata",
+          "en": "Exam registration"
+        },
+        "amount": "PLACEHOLDER — if charged (verify)"
+      },
+      {
+        "id": "result-check",
+        "label": {
+          "am": "የውጤት መመልከቻ",
+          "om": "Bu'aa ilaaluu",
+          "en": "Result check"
+        },
+        "amount": "PLACEHOLDER — online check often free (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-education-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ምዝገባው በትምህርት ቤትዎ አጭር ጊዜ ይወስዳል፤ ውጤቱ የሚለቀቅበትን ቀን ቢሮውን ይጠይቁ",
+      "om": "Galmee mana barnootaa keessani yeroo gabaabaa fudhata; guyyaa bu'aan olka'amu waajjiraan gaafadhaa",
+      "en": "Registration takes a short time at your school; ask the office when results are released"
+    },
+    "commonMistakes": [
+      {
+        "id": "wrong-details",
+        "text": {
+          "am": "በምዝገባ ወረቀቱ ላይ ስምዎን እና ምስልዎን ያረጋግጡ፤ ስህተት ውጤትዎን ይዘግያል",
+          "om": "Waraqaa galmeesaa irratti maqaa fi suuraa kee mirkaneessaa; dogoggoraan bu'aa heddummeessa",
+          "en": "Check your name and photo on the slip; a mistake delays your result"
+        }
+      },
+      {
+        "id": "deadline",
+        "text": {
+          "am": "የምዝገባውን ጊዜ አትቆርጡ፤ ዘግይተው ሲመዘገቡ ላይቻል ይችላል",
+          "om": "Yeroon galmeesaa hin dhihaatin; namni dhiyate galmeessuu dadhabuu mala",
+          "en": "Don't miss the registration deadline; late students may not be registered"
+        }
+      },
+      {
+        "id": "keep-slip",
+        "text": {
+          "am": "የምዝገባ ወረቀቱን ያስቀምጡ፤ ለፈተናው እና ለውጤቱ ይጠቅማል",
+          "om": "Waraqaa galmeesaa olkaa'aa; qormaatii fi bu'aaf ni barbaachisa",
+          "en": "Keep your registration slip; you need it for the exam and results"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": true,
+    "objectType": "book-cap",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "certificate-verification",
+    "category": "education",
+    "name": {
+      "am": "የሰርተፍኬት/ዲግሪ ማረጋገጫ",
+      "om": "Mirkaneessa ragaa/digrii",
+      "en": "Certificate / transcript verification"
+    },
+    "shortDescription": {
+      "am": "ዲግሪዎ ልክ መሆኑን ያረጋግጡ።",
+      "om": "Digriin kee akka dhugaatti mirkaneessaa.",
+      "en": "Verify that your degree or transcript is genuine."
+    },
+    "requiredDocuments": [
+      {
+        "id": "original-cert",
+        "text": {
+          "am": "ዋናው ሰርተፍኬት ወይም ዲግሪ",
+          "om": "Ragaa ykn digrii duraa",
+          "en": "Original certificate or degree"
+        }
+      },
+      {
+        "id": "id",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "transcript",
+        "text": {
+          "am": "ትራንስክሪፕት (የውጤት ማስታወሻ)",
+          "om": "Galmee bu'aa (traanskriipitii)",
+          "en": "Transcript (grade record)"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ትምህርት ቢሮ ወይም ወደ ያዘጋጀው ተቋም ይሂዱ",
+          "om": "Gara waajjira barnootaa ykn gara dhaabbata raabsaa deemaa",
+          "en": "Go to the education office or the institution that issued it"
+        },
+        "detail": {
+          "am": "ዲግሪዎ ከዩኒቨርሲቲ ከመጣ ማረጋገጫውን ከዩኒቨርሲቲው መጠየቅ ሊያስፈልግ ይችላል።",
+          "om": "Digriin kee yuunivarsitii irraa yoo dhufe, mirkaneessa isii yuunivarsitii irraa gaafatamuu mala.",
+          "en": "For a university degree, the university itself may issue the verification first."
+        }
+      },
+      {
+        "id": "submit",
+        "icon": "FileText",
+        "title": {
+          "am": "ዋናውን ወረቀት ከኮፒው ጋር ያቅርቡ",
+          "om": "Docsii duraa kopiin isaa waliin dhiyeessaa",
+          "en": "Submit the original with a copy"
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "የማረጋገጫ ክፍያውን ይክፈሉ",
+          "om": "Kaffaltii mirkaneessaa kaffalaa",
+          "en": "Pay the verification fee"
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "የማረጋገጫ ወረቀቱን በተሰጠው ቀን ይውሰዱ",
+          "om": "Mirkaneessa guyyaa kennameen fudhaa",
+          "en": "Collect the verification letter on the given day"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "verification",
+        "label": {
+          "am": "የማረጋገጫ ክፍያ",
+          "om": "Kaffaltii mirkaneessaa",
+          "en": "Verification fee"
+        },
+        "amount": "PLACEHOLDER — ask office"
+      },
+      {
+        "id": "copies",
+        "label": {
+          "am": "ኮፒ",
+          "om": "Copy",
+          "en": "Copies"
+        },
+        "amount": "PLACEHOLDER — small fee"
+      }
+    ],
+    "providerIds": [
+      "sample-education-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ ከ1 ቀን እስከ 1 ሳምንት፤ በቢሮው ያረጋግጡ",
+      "om": "Baay'een guyyaa 1 hanga torbanii 1; waajjiratti mirkaneessaa",
+      "en": "Usually 1 day to 1 week; confirm at the office"
+    },
+    "commonMistakes": [
+      {
+        "id": "copy-only",
+        "text": {
+          "am": "በኮፒ ብቻ ማረጋገጫ አይሠራም፤ ዋናውን ወረቀት ይውሰዱ",
+          "om": "Koppiin qofaa hin fudhatamu; docsii duraa olkaa'aa",
+          "en": "A copy alone is not accepted; bring the original"
+        }
+      },
+      {
+        "id": "receipt",
+        "text": {
+          "am": "ደረሰኙን አይርሱ፤ ለማግኘት ይጠቅማል",
+          "om": "Kataaalaa hin balleessina; fudhuuf ni barbaachisa",
+          "en": "Keep the receipt; you need it to collect"
+        }
+      },
+      {
+        "id": "unknown-school",
+        "text": {
+          "am": "ያልታወቀ ትምህርት ቤት ከሰጠው ሰርተፍኬት ማረጋገጫ ሊያልቅ ይችላል፤ ከቢሮው ይጠይቁ",
+          "om": "Ragaan mana barnootaa beekamaa hin ta'in irraa dhufe mirkaneessuu dadhabuu mala; waajjiraan gaafadhaa",
+          "en": "Certificates from unrecognized schools may fail verification; ask the office first"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "book-cap",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "credential-equivalence",
+    "category": "education",
+    "name": {
+      "am": "የውጭ ሀገር ዲግሪ እኩልነት ማወቅ",
+      "om": "Walqixa digrii biyya alaa",
+      "en": "Foreign credential equivalence"
+    },
+    "shortDescription": {
+      "am": "የውጭ ሀገር ዲግሪዎ ከኢትዮጵያ ጋር እኩል እንዲቆጠር።",
+      "om": "Digrii biyya alaa Itoophiyaan waliin walqixa ta'uuf.",
+      "en": "Get your foreign degree recognized as equivalent."
+    },
+    "requiredDocuments": [
+      {
+        "id": "cert-transcript",
+        "text": {
+          "am": "ዋናው ዲግሪ እና ትራንስክሪፕት",
+          "om": "Digrii fi galmee bu'aa duraa",
+          "en": "Original certificate and transcript"
+        }
+      },
+      {
+        "id": "passport",
+        "text": {
+          "am": "ፓስፖርት",
+          "om": "Paaspoortii",
+          "en": "Passport"
+        }
+      },
+      {
+        "id": "translation",
+        "text": {
+          "am": "በአማርኛ ወይም በእንግሊዝኛ ካልሆነ፦ የተረጎመ እና የተረጋገጠ ኮፒ",
+          "om": "Afaan Amaaraa ykn Ingilizii malee yoo ta'e: hiikkaa mirkaneessaa qabame",
+          "en": "If not in Amharic or English: certified translation"
+        }
+      },
+      {
+        "id": "id",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "Your ID"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "office",
+        "icon": "Building2",
+        "title": {
+          "am": "የውጭ ትምህርት ጉዳይ የሚያስተናግድ ቢሮ ይጠይቁ",
+          "om": "Dhimma barnoota biyya alaa bulchu waajjira gaafadhaa",
+          "en": "Ask which office handles foreign qualifications"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ ትምህርት ሚኒስቴር ወይም የክልል ትምህርት ቢሮ ነው፤ ያረጋግጡ።",
+          "om": "Baay'een ministeera barnootaa ykn waajjira barnootaa naannooti; mirkaneessaa.",
+          "en": "Usually the Ministry of Education or the regional bureau — confirm first."
+        }
+      },
+      {
+        "id": "submit",
+        "icon": "FileText",
+        "title": {
+          "am": "ዋናዎቹን ወረቀቶች ከትርጉማቸው ጋር ያቅርቡ",
+          "om": "Docsii duraa hiikkaan isaa waliin dhiyeessaa",
+          "en": "Submit the originals with translations if needed"
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "የማመልከቻ ክፍያውን ይክፈሉ",
+          "om": "Kaffaltii iyyannoo kaffalaa",
+          "en": "Pay the application fee"
+        }
+      },
+      {
+        "id": "review",
+        "icon": "FileSearch",
+        "title": {
+          "am": "ቢሮው ከኢትዮጵያ ትምህርት ጋር እኩል መሆኑን ያጠናል",
+          "om": "Waajjirichi barnoota Itoophiyaa waliin walqixa isaa qorata",
+          "en": "The office compares your program with Ethiopian standards"
+        },
+        "detail": {
+          "am": "አንዳንድ ጊዜ ተጨማሪ ማስረጃ ሊጠይቁ ይችላሉ።",
+          "om": "Yeroo tokko tokko ragaa dabalataa gaafatamuu mala.",
+          "en": "They may ask for extra proof."
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "የእኩልነት ወረቀቱን ይውሰዱ",
+          "om": "Ragaa walqixaa fudhaa",
+          "en": "Collect the equivalence letter"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "application",
+        "label": {
+          "am": "የማመልከቻ ክፍያ",
+          "om": "Kaffaltii iyyannoo",
+          "en": "Application fee"
+        },
+        "amount": "PLACEHOLDER — ask office"
+      },
+      {
+        "id": "translation-cost",
+        "label": {
+          "am": "ትርጉም እና ኮፒ (ከቢሮው ውጭ ይከፈላል)",
+          "om": "Hiikkaa fi kopiin (waajjira alatti kaffalama)",
+          "en": "Translation and copies (paid outside the office)"
+        },
+        "amount": "PLACEHOLDER — external cost (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-education-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ ከሳምንታት በላይ ይወስዳል፤ ጊዜውን በቢሮው ያረጋግጡ",
+      "om": "Baay'een torbanoota ol fudhata; yeroon waajjiratti mirkaneessaa",
+      "en": "Usually takes several weeks; confirm the timing at the office"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-translation",
+        "text": {
+          "am": "ወረቀቱ በአማርኛ ወይም በእንግሊዝኛ ካልሆነ ያለ ትርጉም አይቀበልም",
+          "om": "Docsii Afaan Amaaraa ykn Ingilizii malee yoo ta'e hiikkaa malee hin fudhatamu",
+          "en": "Documents in other languages are rejected without certified translation"
+        }
+      },
+      {
+        "id": "copies-only",
+        "text": {
+          "am": "ኮፒ ብቻ በቂ አይደለም፤ ዋናዎቹን ወረቀቶች ይውሰዱ",
+          "om": "Koppiin qofaa gaha miti; docsii duraa olkaa'aa",
+          "en": "Copies alone are not enough; bring the originals"
+        }
+      },
+      {
+        "id": "name-mismatch",
+        "text": {
+          "am": "ስምዎ በፓስፖርት እና በዲግሪ ላይ የተለያየ ከሆነ ማስረጃ ይውሰዱ",
+          "om": "Maqan kee paaspoortii fi digrii irratti adda yoo ta'e ragaa walitti olkaa'aa",
+          "en": "If your name differs between passport and degree, bring supporting proof"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "book-cap",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "scholarship-placement",
+    "category": "education",
+    "name": {
+      "am": "የስኮላርሺፕ እና ዩኒቨርሲቲ ቦታ ማመልከቻ",
+      "om": "Skaalashiipii fi bakka yuunivarsitii",
+      "en": "Scholarship and university placement information"
+    },
+    "shortDescription": {
+      "am": "የስኮላርሺፕ እና የመቀለብ መረጃ።",
+      "om": "Odeeffannoo skaalashiipii fi filannoo yuunivarsitii.",
+      "en": "Information on scholarships and placements."
+    },
+    "requiredDocuments": [
+      {
+        "id": "result-slip",
+        "text": {
+          "am": "የፈተና ውጤት ወረቀት",
+          "om": "Waraqaa bu'aa qormaataa",
+          "en": "Exam result slip"
+        }
+      },
+      {
+        "id": "id",
+        "text": {
+          "am": "መታወቂያ ወይም የትውልድ ወረቀት",
+          "om": "Qindaa'a ykn ragaa dhalachaa",
+          "en": "ID or birth certificate"
+        }
+      },
+      {
+        "id": "application-letter",
+        "text": {
+          "am": "የማመልከቻ ደብዳቤ (ለስኮላርሺፕ)",
+          "om": "Barreeffama iyyannoo (skaalashiipiif)",
+          "en": "Application letter (for scholarships)"
+        },
+        "optional": true
+      },
+      {
+        "id": "photo",
+        "text": {
+          "am": "ፎቶግራፍ",
+          "om": "Suuraa",
+          "en": "Photo"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "ask",
+        "icon": "BookOpen",
+        "title": {
+          "am": "በትምህርት ቤትዎ ወይም በትምህርት ቢሮ ስለሚኖሩ ቦታዎች ይጠይቁ",
+          "om": "Mana barnootaa keessani ykn waajjira barnootaa bakka jiru gaafadhaa",
+          "en": "Ask your school or education office about available places"
+        },
+        "detail": {
+          "am": "መረጃው በየዓመቱ ይለወጣል።",
+          "om": "Odeeffannoon waggaa waggaa ni jijjiirama.",
+          "en": "The information changes every year."
+        }
+      },
+      {
+        "id": "prepare",
+        "icon": "FileText",
+        "title": {
+          "am": "የውጤት ወረቀቱን እና ሌሎች ወረቀቶች ያዘጋጁ",
+          "om": "Waraqaa bu'aa fi docsii dabalataa qopheessaa",
+          "en": "Prepare your result slip and other papers"
+        }
+      },
+      {
+        "id": "apply",
+        "icon": "PenLine",
+        "title": {
+          "am": "እንደተመለከተው የማመልከቻ ወይም የምርጫ ቅጹን ይሙሉ",
+          "om": "Akka itti himame foomii iyyannoo ykn filannoo guutaa",
+          "en": "Fill the application or choice form as instructed"
+        }
+      },
+      {
+        "id": "submit",
+        "icon": "ClipboardCheck",
+        "title": {
+          "am": "ከጊዜው በፊት ያቅርቡ እና ኮፒውን ያስቀምጡ",
+          "om": "Yeroon isaa dura dhiyeessaa koppii olkaa'aa",
+          "en": "Submit before the deadline and keep a copy"
+        }
+      },
+      {
+        "id": "follow-up",
+        "icon": "PhoneCall",
+        "title": {
+          "am": "ማስታወቂያውን ተከታተሉ",
+          "om": "Beeksisa hordofaa",
+          "en": "Follow the announcements"
+        },
+        "detail": {
+          "am": "ውጤቱ ብዙ ጊዜ በትምህርት ቤቱ ወይም በቢሮው ይገለጻል።",
+          "om": "Bu'aan baay'een mana barnootaa ykn waajjiratti olka'ama.",
+          "en": "Results are usually announced through the school or office."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "application",
+        "label": {
+          "am": "የማመልከቻ ክፍያ (ካለ)",
+          "om": "Kaffaltii iyyannoo (yoo jiraate)",
+          "en": "Application fee, if any"
+        },
+        "amount": "PLACEHOLDER — many are free (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-education-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "መረጃ ለማግኘት አጭር ጉብኝት ብቻ፤ የማመልከቻው ጊዜ ከዓመቱ ጋር ይለያያል፤ ያረጋግጡ",
+      "om": "Odeeffannoo arguuf imala gabaabaa qofa; yeroo iyyannoo waggaa waggaa adda; mirkaneessaa",
+      "en": "A short visit to get information; deadlines differ each year (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "deadline",
+        "text": {
+          "am": "ከጊዜው በኋላ የተላከ ማመልከቻ አይቀበልም፤ የመጨረሻውን ቀን ያውቁ",
+          "om": "Iyyannoo yeroon isaa booda dhufe hin fudhatamu; guyyaa dhuma beekaa",
+          "en": "Late applications are not accepted; know the final date"
+        }
+      },
+      {
+        "id": "scam",
+        "text": {
+          "am": "'ቦታዎ ተረጋግጧል' የሚል ከሰው ገንዘብ ከመክፈል በፊት ከትምህርት ቤቱ ወይም ከቢሮው ያረጋግጡ",
+          "om": "'Bakkan kee mirkaneessame' jedhee nama biraatti kaffaluun dura mana barnootaa ykn waajjiraan mirkaneessaa",
+          "en": "Before paying anyone who says 'your place is confirmed', verify with the school or office"
+        }
+      },
+      {
+        "id": "keep-copies",
+        "text": {
+          "am": "ያቀረቡትን ሁሉ ወረቀቶች ኮፒ ያስቀምጡ",
+          "om": "Docsii dhiyeessine hunda koppii olkaa'aa",
+          "en": "Keep copies of everything you submit"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "book-cap",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "cbhi-registration",
+    "category": "health",
+    "name": {
+      "am": "የማህበረሰብ ባህርይ ጤና መድን (CBHI)",
+      "om": "Mimd insuraa fayyaa hawaasaa (CBHI)",
+      "en": "Community-based health insurance (CBHI)"
+    },
+    "shortDescription": {
+      "am": "የገጠር ጤና መድን ይመዝገቡ ወይም ያድሱ።",
+      "om": "Insuraa fayyaa hawaasaa galmeessaa ykn fooyyessaa.",
+      "en": "Register or renew community health insurance."
+    },
+    "requiredDocuments": [
+      {
+        "id": "head-id",
+        "text": {
+          "am": "የቤተሰብ ኃላፊ መታወቂያ",
+          "om": "Qindaa'a abbaa warraanaa",
+          "en": "Household head's ID"
+        }
+      },
+      {
+        "id": "family-details",
+        "text": {
+          "am": "የቤተሰብ አባላት መረጃ (ስሞች እና ዕድሜ)",
+          "om": "Odeeffannoo miseensota warraanaa (maqoota fi umurii)",
+          "en": "Family member details (names and ages)"
+        }
+      },
+      {
+        "id": "premium-receipt",
+        "text": {
+          "am": "የመድን ክፍያ ደረሰኝ",
+          "om": "Kataaalaa kaffaltii insuraa",
+          "en": "Premium payment receipt"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "go",
+        "icon": "Home",
+        "title": {
+          "am": "ወደ ቀበሌዎ ቢሮ ወይም ወደ ጤና ጣቢያው የCBHI ጠረጴዛ ይሂዱ",
+          "om": "Gara waajjira keblee keessani ykn gara gabaa CBHI mani fayyaa deemaa",
+          "en": "Go to your kebele office or the CBHI desk at the health center"
+        },
+        "detail": {
+          "am": "የማህበረሰብ ጤና መድን አገልግሎት ብዙ ጊዜ በቀበሌ ይሠራል።",
+          "om": "Tajaajilli insuraa fayyaa hawaasaa baay'een kebleetti hojjeta.",
+          "en": "CBHI services are usually handled at the kebele."
+        }
+      },
+      {
+        "id": "form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የቤተሰብ ምዝገባ ቅጹን ይሙሉ",
+          "om": "Foomii galmeesaa warraanaa guutaa",
+          "en": "Fill the household registration form"
+        }
+      },
+      {
+        "id": "premium",
+        "icon": "Banknote",
+        "title": {
+          "am": "ዓመታዊውን ክፍያ ይክፈሉ እና ደረሰኙን ይውሰዱ",
+          "om": "Kaffaltii waggaa kaffalaa kataaalaa fudhaa",
+          "en": "Pay the yearly premium and keep the receipt"
+        },
+        "detail": {
+          "am": "ክፍያው በቤተሰብዎ ብዛት እና በደረጃው ይለያያል፤ ለድሆች ቤተሰቦች ምትሃት ሊኖር ይችላል።",
+          "om": "Kaffaltiin lakkoofsa fi sadarkaa warraanaan jijjiirama; hiyyeessotaaf fooyya'a jiraachuu mala.",
+          "en": "The amount depends on your household tier; subsidies may exist for poor families."
+        }
+      },
+      {
+        "id": "card",
+        "icon": "Receipt",
+        "title": {
+          "am": "የቤተሰብ መድን ካርድዎን ይውሰዱ",
+          "om": "Kardii insuraa warraanaa fudhaa",
+          "en": "Collect your family insurance card"
+        }
+      },
+      {
+        "id": "use",
+        "icon": "HeartPulse",
+        "title": {
+          "am": "በካርዱ በመንግሥት የጤና ተቋማት ያገለግሉ",
+          "om": "Kardiin dhaabbilee fayyaa mootummaatti tajaajila argadhaa",
+          "en": "Use the card at public health facilities"
+        },
+        "detail": {
+          "am": "ዓመቱ ሲያልቅ እንደገና ያድሱ።",
+          "om": "Waggaan xumura yommuu ta'u irra deebi'ee fooyyessaa.",
+          "en": "Renew it again when the year ends."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "premium",
+        "label": {
+          "am": "ዓመታዊ የመድን ክፍያ",
+          "om": "Kaffaltii insuraa waggaa",
+          "en": "Yearly premium"
+        },
+        "amount": "PLACEHOLDER — by household tier (verify)",
+        "note": {
+          "am": "በአንዳንድ ቦታ ለድሆች ቤተሰቦች ምትሃት አለ፤ ያረጋግጡ።",
+          "om": "Iddoon tokko tokko hiyyeessotaaf kaffaltii fokkisu jira; mirkaneessaa.",
+          "en": "Some areas subsidize poor households; ask at the office."
+        }
+      }
+    ],
+    "providerIds": [
+      "sample-health-center-gullele"
+    ],
+    "estimatedTime": {
+      "am": "በቢሮው ከ30 ደቂቃ እስከ 1 ሰዓት፤ ካርዱ ብዙ ጊዜ በዚያው ቀን ይሰጣል (ያረጋግጡ)",
+      "om": "Waajjiratti daqiiqaa 30 hanga sa'aatii 1; kardiin baay'een guyyaa sanatti kenna (mirkaneessaa)",
+      "en": "About 30 minutes to 1 hour; the card is often given the same day (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "renew-late",
+        "text": {
+          "am": "የመድን ዓመትዎ ሲያልቅ ከመተካቱ በፊት ያድሱ፤ ጊዜው ያለፈው ካርድ በጤና ጣቢያ አይሠራም",
+          "om": "Waggaan insuraa xumuraa dura fooyyessaa; kardiin dhabe mani fayyaatti hin hojjetu",
+          "en": "Renew before the insurance year ends; an expired card is not accepted at the health center"
+        }
+      },
+      {
+        "id": "missing-member",
+        "text": {
+          "am": "አባላትን ሁሉ ሳታካትቱ አትመዝገቡ፤ ያልተመዘገበ አባል ክፍያውን በራሱ ይከፍላል",
+          "om": "Miseensota hundi galmeessaa; kan galmeefame hin taane kaffaltii kaa'a",
+          "en": "List every family member at registration; an unlisted member pays out of pocket"
+        }
+      },
+      {
+        "id": "keep-receipt",
+        "text": {
+          "am": "የክፍያ ደረሰኙን ያስቀምጡ፤ ማስረጃው ይጠቅማል",
+          "om": "Kataaalaa kaffaltii olkaa'aa; ragaa isaa ni barbaachisa",
+          "en": "Keep the payment receipt as proof"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "heart-shield",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "vaccination-card",
+    "category": "health",
+    "name": {
+      "am": "የክትባት ካርድ እና የጤና መዝገብ መተካት",
+      "om": "Kaardii kaltuu fi kitaaba fayyaa bakka buusuu",
+      "en": "Vaccination card and health record replacement"
+    },
+    "shortDescription": {
+      "am": "የጠፋ የክትባት ካርድ ወይም የጤና መዝገብ ይተኩ።",
+      "om": "Kaardii kaltuu ykn kitaaba fayyaa dhabee bakka buusaa.",
+      "en": "Replace a lost vaccination card or health record."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id",
+        "text": {
+          "am": "የእናት ወይም የልጅ መታወቂያ ወይም ፋይዳ",
+          "om": "Qindaa'a haadhaa ykn ijollee ykn Faydaa",
+          "en": "Mother's or child's ID, or Fayda"
+        }
+      },
+      {
+        "id": "birth-cert",
+        "text": {
+          "am": "የልጁ የትውልድ ወረቀት",
+          "om": "Ragaa dhalachaa ijolleetii",
+          "en": "Child's birth certificate"
+        }
+      },
+      {
+        "id": "old-record",
+        "text": {
+          "am": "የቀድሞ ካርድ ወይም መዝገብ ካለ",
+          "om": "Kaardii ykn galmee duraan jira yoo ta'e",
+          "en": "Any old card or record, if you have it"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "go",
+        "icon": "Baby",
+        "title": {
+          "am": "ወደ ልጁ ክትባት የተሰጠበት የጤና ጣቢያ ወይም የጤና ጋሪ ይሂዱ",
+          "om": "Gara mani fayyaa kaltuun ijolleef kenname ykn gara tibbe fayyaa deemaa",
+          "en": "Go to the health center or health post where the child was vaccinated"
+        },
+        "detail": {
+          "am": "መዝገቡ ብዙ ጊዜ በዚያው ጣቢያ ይቀመጣል።",
+          "om": "Galmee baay'een sana itti kayyama.",
+          "en": "The record is usually kept there."
+        }
+      },
+      {
+        "id": "identify",
+        "icon": "Fingerprint",
+        "title": {
+          "am": "መታወቂያዎን ያሳዩ እና የልጁን ስም እና የትውልድ ቀን ይንገሩ",
+          "om": "Qindaa'a kee agarsiisaa maqaa fi guyyaa dhalachaa ijolleetiin himaa",
+          "en": "Show your ID and give the child's name and birth date"
+        }
+      },
+      {
+        "id": "replace",
+        "icon": "FileCheck",
+        "title": {
+          "am": "ከመዝገቡ ካርድ እንዲተካ ይጠይቁ",
+          "om": "Galmee irraa kaardii kaltuu akka bakka bu'u gaafadhaa",
+          "en": "Ask them to issue a replacement card from the record"
+        },
+        "detail": {
+          "am": "እስካሁን የተሰጡትን ክትባቶች ሁሉ በካርዱ ላይ እንዲጻፉ ያድርጉ።",
+          "om": "Kaltuwwan hanga ammaa kennaman hunda kaardiitti akka galmeeffaman godhaa.",
+          "en": "Make sure all doses already given are written on the card."
+        }
+      },
+      {
+        "id": "continue",
+        "icon": "CalendarClock",
+        "title": {
+          "am": "ካርዱን እያንዳንዱ ጊዜ ይውሰዱ",
+          "om": "Kaardii yeroon hundatti olkaa'aa",
+          "en": "Take the card to every vaccination visit"
+        },
+        "detail": {
+          "am": "ቀሪዎቹን ክትባቶች በተሰጠው መርሃ ግብር ይቀጥሉ።",
+          "om": "Kaltuu hafan akka saffisaatti itti fufaa.",
+          "en": "Continue the remaining doses on schedule."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "replacement",
+        "label": {
+          "am": "ካርድ መተካት",
+          "om": "Bakka buusuu kaardii",
+          "en": "Replacement card"
+        },
+        "amount": "PLACEHOLDER — usually free (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-health-center-gullele"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ ከ30 ደቂቃ እስከ 1 ሰዓት (ያረጋግጡ)",
+      "om": "Baay'een daqiiqaa 30 hanga sa'aatii 1 (mirkaneessaa)",
+      "en": "Usually 30 minutes to 1 hour (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "wrong-center",
+        "text": {
+          "am": "በመጀመሪያ ልጁ ክትባት የተሰጠበት ጣቢያ ይሂዱ፤ መዝገቡ እዚያው ነው",
+          "om": "Duraan gara iddoo kaltuun kenname deemaa; galmee sana irra jira",
+          "en": "Go back to the original vaccination site first; the record is there"
+        }
+      },
+      {
+        "id": "lose-again",
+        "text": {
+          "am": "አዲሱን ካርድ በጥንቃቄ ያስቀምጡ፤ ማጣቱ ክትባት ሊደገም ያደርጋል",
+          "om": "Kaardii haaraa haqaa olkaa'aa; dhabuun kaltuu irra deebi'a",
+          "en": "Keep the new card safe; losing it again may mean repeated doses"
+        }
+      },
+      {
+        "id": "skip-visit",
+        "text": {
+          "am": "ቀሪ የክትባት ቀናትን አትርሱ፤ ልጁ በጊዜው ይጠበቃል",
+          "om": "Guyyaa kaltuu hafan hin dhihaatin; ijolleen yeroon kan ittisa",
+          "en": "Don't miss the remaining vaccination dates; your child stays protected on time"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "shield-syringe",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "medical-certificate",
+    "category": "health",
+    "name": {
+      "am": "የጤና ማረጋገጫ ወረቀት",
+      "om": "Ragaa fayyaa",
+      "en": "Medical certificate"
+    },
+    "shortDescription": {
+      "am": "ለሥራ፣ ለመንጃ ወይም ለጉዞ የጤና ማረጋገጫ።",
+      "om": "Ragaa fayyaa hojii, konkolaachisaa ykn imalaa.",
+      "en": "Medical certificate for work, driving or travel."
+    },
+    "requiredDocuments": [
+      {
+        "id": "id",
+        "text": {
+          "am": "መታወቂያ",
+          "om": "Qindaa'a",
+          "en": "Your ID"
+        }
+      },
+      {
+        "id": "photo",
+        "text": {
+          "am": "ፎቶግራፍ (አንዳንድ ጊዜ ይጠየቃል)",
+          "om": "Suuraa (yeroo tokko tokko gaafatama)",
+          "en": "Photo (sometimes requested)"
+        }
+      },
+      {
+        "id": "request-letter",
+        "text": {
+          "am": "ከሠራተኛ ቤትዎ ወይም ከተቋሙ ካገኙት የማመልከቻ ወረቀት",
+          "om": "Iyyannoo hojjettootaa ykn dhaabbataa irraa yoo argattan",
+          "en": "A request letter from your employer or institution, if they give one"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "clinic",
+        "icon": "HeartPulse",
+        "title": {
+          "am": "ወደ ጤና ጣቢያ ወይም ክሊኒክ ይሂዱ እና ወረቀቱ ለምን እንደሚያስፈልግ ይንገሩ",
+          "om": "Gara mani fayyaa ykn kliiniikii deemaa; ragichi maaf barbaachise himaa",
+          "en": "Go to a health center or clinic and say what the certificate is for"
+        },
+        "detail": {
+          "am": "ለሥራ፣ ለመንጃ ወይም ለጉዞ የተለያዩ ምርመራዎች ሊጠየቁ ይችላሉ።",
+          "om": "Hojii, konkolaachisaa ykn imalaaf ramaddii adda adda gaafatamuu mala.",
+          "en": "Work, driving and travel often need different checks."
+        }
+      },
+      {
+        "id": "exam",
+        "icon": "ClipboardCheck",
+        "title": {
+          "am": "የጤና ባለሙያው ይመርምርዎታል",
+          "om": "Ogeessi fayyaa si ramada",
+          "en": "The nurse or doctor examines you"
+        },
+        "detail": {
+          "am": "አንዳንድ ጊዜ ቀላል የላብ ምርመራ ሊያስፈልግ ይችላል።",
+          "om": "Yeroo tokko tokko ramaddii laabii barbaachisa.",
+          "en": "Simple lab tests may be needed."
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "የምርመራ ክፍያውን ይክፈሉ",
+          "om": "Kaffaltii ramaddii kaffalaa",
+          "en": "Pay the examination fee"
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "የተፈረመ እና የተተመ ወረቀቱን ይውሰዱ",
+          "om": "Ragaa mallatteessame fi teeme fudhaa",
+          "en": "Collect the signed and stamped certificate"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "exam-fee",
+        "label": {
+          "am": "የምርመራ ክፍያ",
+          "om": "Kaffaltii ramaddii",
+          "en": "Examination fee"
+        },
+        "amount": "PLACEHOLDER — varies by clinic (verify)"
+      },
+      {
+        "id": "lab",
+        "label": {
+          "am": "የላብ ምርመራ (ካስፈለገ)",
+          "om": "Ramaddii laabii (yoo barbaachise)",
+          "en": "Lab tests, if required"
+        },
+        "amount": "PLACEHOLDER — extra (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-health-center-gullele"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ በዚያው ቀን ይሰራል፤ የላብ ምርመራ ካስፈልገ ወደ ኋላ ይቀረባል (ያረጋግጡ)",
+      "om": "Baay'een guyyaa sanatti kennama; ramaddii laabii yoo barbaachise heddumina (mirkaneessaa)",
+      "en": "Often the same day; longer if lab tests are needed (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "purpose",
+        "text": {
+          "am": "በመጀመሪያ ወረቀቱ ለምን እንደሚያስፈልግ ይንገሩ፤ የተለያዩ ዓላማዎች የተለያዩ ምርመራ ይጠይቃሉ",
+          "om": "Durutti ragichi maaf barbaachise himaa; kaayyoon adda adda ramaddii adda adda gaafata",
+          "en": "Say what the certificate is for; different purposes need different checks"
+        }
+      },
+      {
+        "id": "no-stamp",
+        "text": {
+          "am": "ያለፊርማ እና ያለማህተም ወረቀት አይቀበልም",
+          "om": "Ragaa mallatteessaa fi teeme malee hin fudhatamu",
+          "en": "A certificate without signature and stamp will be rejected"
+        }
+      },
+      {
+        "id": "validity",
+        "text": {
+          "am": "ወረቀቱ ብዙ ጊዜ ለወሰነ ጊዜ ብቻ የሚሠራ ነው፤ የተቋሙን ሁኔታ ያረጋግጡ",
+          "om": "Ragichi baay'een yeroon murtaa'e qofaaf ni hojjeta; haala dhaabbataa mirkaneessaa",
+          "en": "Certificates often have limited validity; check what your institution requires"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "shield-syringe",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "health-license-renewal",
+    "category": "health",
+    "name": {
+      "am": "የጤና ባለሙያ ፈቃድ መደስተካከል",
+      "om": "Fooyyessuu hayyama ogeessa fayyaa",
+      "en": "Health professional license renewal"
+    },
+    "shortDescription": {
+      "am": "የጤና ባለሙያ ፈቃድዎን ያድሱ።",
+      "om": "Hayyama ogeessa fayyaa kee fooyyessaa.",
+      "en": "Renew your health professional license."
+    },
+    "requiredDocuments": [
+      {
+        "id": "old-license",
+        "text": {
+          "am": "የቀድሞው ፈቃድ",
+          "om": "Hayyama duraatiif",
+          "en": "The old (expiring) license"
+        }
+      },
+      {
+        "id": "id",
+        "text": {
+          "am": "የባለቤት መታወቂያ",
+          "om": "Qindaa'a abbootii",
+          "en": "Owner's ID"
+        }
+      },
+      {
+        "id": "premises-docs",
+        "text": {
+          "am": "ማስረጃ ቦታው ላይ (የይዞታ ወይም የኪራይ ውል)",
+          "om": "Docsii iddoo hojii (qabdumaa ykn kirayii)",
+          "en": "Premises documents (ownership or lease)"
+        }
+      },
+      {
+        "id": "inspection-slip",
+        "text": {
+          "am": "የፍተሻ ወረቀት",
+          "om": "Ragaa sakatta'umsaa",
+          "en": "Inspection slip"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "go",
+        "icon": "Building2",
+        "title": {
+          "am": "ፈቃድዎ ከመውደቁ በፊት ወደ ከተማ አስተዳደሩ የጤና ቢሮ ይሂዱ",
+          "om": "Hayyaman kee dhaawwachuun dura gara waajjira fayyaa magaalaan deemaa",
+          "en": "Go to the city administration health office before your license expires"
+        }
+      },
+      {
+        "id": "submit",
+        "icon": "FileText",
+        "title": {
+          "am": "የቀድሞውን ፈቃድ እና ሌሎች ወረቀቶች ያቅርቡ",
+          "om": "Hayyama duraatii fi docsii dabalataa dhiyeessaa",
+          "en": "Submit the old license and other documents"
+        }
+      },
+      {
+        "id": "inspection",
+        "icon": "Search",
+        "title": {
+          "am": "ፍተሻ ለቦታው ይታያል",
+          "om": "Iddoon sakatta'iif ni ba'ama",
+          "en": "Inspectors will visit the premises"
+        },
+        "detail": {
+          "am": "ችግር ካስተውሉ ያስተካክሉት እና እንደገና እንዲመለከቱ ያድርጉ።",
+          "om": "Rakko yoo mul'ise fooyyessaa irra deebi'inee akka ilaalan godhaa.",
+          "en": "If they find problems, fix them and ask for another check."
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "የእድሳት ክፍያውን ይክፈሉ እና ደረሰኙን ይውሰዱ",
+          "om": "Kaffaltii fooyyessuu kaffalaa kataaalaa fudhaa",
+          "en": "Pay the renewal fee and keep the receipt"
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "የታደሰውን ፈቃድ ይውሰዱ",
+          "om": "Hayyama haaraa fudhaa",
+          "en": "Collect the renewed license"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "renewal",
+        "label": {
+          "am": "የፈቃድ እድሳት ክፍያ",
+          "om": "Kaffaltii fooyyessuu hayyamaa",
+          "en": "License renewal fee"
+        },
+        "amount": "PLACEHOLDER — by facility size (verify)"
+      },
+      {
+        "id": "inspection",
+        "label": {
+          "am": "የፍተሻ ክፍያ (ካለ)",
+          "om": "Kaffaltii sakatta'umsaa (yoo jiraate)",
+          "en": "Inspection fee, if any"
+        },
+        "amount": "PLACEHOLDER — ask office"
+      }
+    ],
+    "providerIds": [
+      "sample-city-admin-bole"
+    ],
+    "estimatedTime": {
+      "am": "ብዙ ጊዜ ፍተሻን ጨምሮ ከ1 ቀን እስከ 1 ሳምንት፤ ያረጋግጡ",
+      "om": "Baay'een sakatta'umsa dabalatee guyyaa 1 hanga torbanii 1; mirkaneessaa",
+      "en": "Usually 1 day to 1 week including the inspection (confirm)"
+    },
+    "commonMistakes": [
+      {
+        "id": "expired",
+        "text": {
+          "am": "ፈቃዱ ከመውደቁ በፊት ያድሱ፤ ያለፈቃድ ሥራ ቅጣት ያመጣል",
+          "om": "Hayyaman dhaawwachuu isaa dura fooyyessaa; hayyama malee hojjachuun adabbii fidata",
+          "en": "Renew before it expires; operating without a license can bring penalties"
+        }
+      },
+      {
+        "id": "not-ready",
+        "text": {
+          "am": "ፍተሻው ይመጣ በፊት ቦታውን ያጽዱ፤ ችግር እድሳቱን ያዘግያል",
+          "om": "Sakatta'umsi dhufuu dura iddoo qulqullessaa; rakkoon fooyyessuu heddummeessa",
+          "en": "Prepare the premises before inspection; problems delay the renewal"
+        }
+      },
+      {
+        "id": "receipt",
+        "text": {
+          "am": "ደረሰኙን እና የፈቃድ ኮፒ በሥራ ቦታዎ ያስቀምጡ",
+          "om": "Kataaalaa fi koppii hayyama iddoo hojii kee olkaa'aa",
+          "en": "Keep the receipt and a copy of the license on site"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": true,
+    "canBeDoneOnline": true,
+    "objectType": "heart-shield",
+    "contentStatus": "ready"
+  }
+]

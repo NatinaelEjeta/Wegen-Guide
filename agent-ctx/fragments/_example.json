@@ -1,0 +1,149 @@
+{
+  "id": "marriage-certificate",
+  "category": "identity",
+  "name": {
+    "am": "የጋብቻ ወረቀት",
+    "om": "Ragaa gaa'elaa",
+    "en": "Marriage certificate"
+  },
+  "shortDescription": {
+    "am": "ጋብቻዎን በሲቪል ምዝገባ ያረጋግጡ እና ወረቀት ያግኙ።",
+    "om": "Gaa'ela keessan galmee siviilii keessatti galmeessinee ragaa argadhaa.",
+    "en": "Register your marriage at civil registration and get the certificate."
+  },
+  "requiredDocuments": [
+    {
+      "id": "both-ids",
+      "text": {
+        "am": "የሁለቱም ትዕግስተኞች መታወቂያ",
+        "om": "Qindaa'a lamaanu walitti qabamee",
+        "en": "ID of both partners"
+      }
+    },
+    {
+      "id": "witness-ids",
+      "text": {
+        "am": "የሁለት ምስክሮች መታወቂያ",
+        "om": "Qindaa'a ragootaa lamaan",
+        "en": "IDs of two witnesses"
+      }
+    },
+    {
+      "id": "divorce-cert",
+      "text": {
+        "am": "ከቀድሞ ጋብቻ፦ የፍቺ ወረቀት",
+        "om": "Gaa'ela duraatiif: ragaa hiikkaa",
+        "en": "If previously married: divorce certificate"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "id": "both-go",
+      "icon": "Users",
+      "title": {
+        "am": "ሁለቱም ትዕግስተኞች ወደ ሲቪል ምዝገባ ይሂዱ",
+        "om": "Lamaanu gara galmee siviilii deemaa",
+        "en": "Both partners go to civil registration"
+      },
+      "detail": {
+        "am": "ሁለቱም መኖር ይጠበቃል።",
+        "om": "Lamaanu akka jiraatan barbaachisa.",
+        "en": "Both must be present in person."
+      }
+    },
+    {
+      "id": "sign-forms",
+      "icon": "PenLine",
+      "title": {
+        "am": "ቅጾቹን ከምስክሮች ጋር ይሙሉ እና ይፈርሙ",
+        "om": "Foomii ragootaa waliin guutaa fi mallatteessaa",
+        "en": "Fill and sign the forms with your witnesses"
+      }
+    },
+    {
+      "id": "review",
+      "icon": "ClipboardCheck",
+      "title": {
+        "am": "መዝጋቢው ያረጋግጣል",
+        "om": "Galmeeffatun mirkaneessa",
+        "en": "The registrar reviews everything"
+      }
+    },
+    {
+      "id": "collect",
+      "icon": "Stamp",
+      "title": {
+        "am": "የጋብቻ ወረቀቱን ይውሰዱ",
+        "om": "Ragaa gaa'elaa fudhaa",
+        "en": "Collect the marriage certificate"
+      },
+      "detail": {
+        "am": "ብዙ ጊዜ በተወሰነ ቀን ወይም በቀጠሮ ይሰጣል።",
+        "om": "Baay'een guyyaa murtaa'e ykn koodiin kennama.",
+        "en": "Usually given on a set day or by appointment."
+      }
+    }
+  ],
+  "fees": [
+    {
+      "id": "registration",
+      "label": {
+        "am": "የጋብቻ ምዝገባ",
+        "om": "Galmee gaa'elaa",
+        "en": "Marriage registration"
+      },
+      "amount": "PLACEHOLDER — ask office"
+    },
+    {
+      "id": "copies",
+      "label": {
+        "am": "ኮፒ",
+        "om": "Copy",
+        "en": "Copies"
+      },
+      "amount": "PLACEHOLDER — small fee"
+    }
+  ],
+  "providerIds": [
+    "sample-kebele-08-office"
+  ],
+  "estimatedTime": {
+    "am": "በቢሮው ከ1 ሰዓት ገደማ፤ ወረቀቱ በ2–7 ቀናት (ያረጋግጡ)",
+    "om": "Waajjiratti sa'aatii 1 dhiyoo; ragaan guyyoota 2–7 booda (mirkaneessaa)",
+    "en": "About 1 hour at the office; certificate in 2–7 days (confirm)"
+  },
+  "commonMistakes": [
+    {
+      "id": "both-present",
+      "text": {
+        "am": "አንድ ትዕግስተኛ ካልተኖረ ምዝገባው አይሠራም",
+        "om": "Tokko yoo hin jiraatin galmee hin hojjetu",
+        "en": "Registration fails if one partner is absent"
+      }
+    },
+    {
+      "id": "witness-id",
+      "text": {
+        "am": "ምስክሮች መታወቂያቸውን ከአልተያዙት ወደኋላ ይመለሳሉ",
+        "om": "Ragoonni qindaa'a dhabee deebi'uu dirqama",
+        "en": "Witnesses without their IDs will be sent back"
+      }
+    },
+    {
+      "id": "divorce",
+      "text": {
+        "am": "ከቀድሞ ጋብቻ ያለ የፍቺ ወረቀት አዲስ ጋብቻ አይመዘገብም",
+        "om": "Ragaa hiikkaa malee gaa'ela haaraan hin galmeeffamu",
+        "en": "A new marriage cannot be registered without a divorce certificate from the previous one"
+      }
+    }
+  ],
+  "lastVerified": "2025-06-01",
+  "sourceLink": "",
+  "usesFayda": false,
+  "canBeDoneOnline": false,
+  "objectType": "ribbon-rings",
+  "contentStatus": "ready",
+  "popular": true
+}

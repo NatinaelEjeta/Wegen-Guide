@@ -1,0 +1,923 @@
+[
+  {
+    "id": "divorce-registration",
+    "category": "identity",
+    "name": {
+      "am": "የፍቺ ምዝገባ",
+      "om": "Galmee hiikkaa",
+      "en": "Divorce registration"
+    },
+    "shortDescription": {
+      "am": "የፍቺ ውሳኔዎን በሲቪል ምዝገባ ያረጋግጡ።",
+      "om": "Murtoo hiikkaa keessan galmee siviilii keessatti galmeessaa.",
+      "en": "Register your divorce decision at civil registration."
+    },
+    "requiredDocuments": [
+      {
+        "id": "ids-both",
+        "text": {
+          "am": "የሁለቱም ትዕግስተኞች መታወቂያ",
+          "om": "Qindaa'a lamaanu walitti qabamee",
+          "en": "ID of both partners"
+        }
+      },
+      {
+        "id": "marriage-cert",
+        "text": {
+          "am": "የጋብቻ ወረቀት",
+          "om": "Ragaa gaa'elaa",
+          "en": "Marriage certificate"
+        }
+      },
+      {
+        "id": "court-decision",
+        "text": {
+          "am": "በፍርድ ቤት ከተፈታ የፍቺ ውሳኔ",
+          "om": "Mana murtiin yoo hiikame murtoo hiikkaa",
+          "en": "Court divorce decision, if divorced by court"
+        }
+      },
+      {
+        "id": "witness-ids",
+        "text": {
+          "am": "የሁለት ምስክሮች መታወቂያ",
+          "om": "Qindaa'a ragootaa lamaan",
+          "en": "IDs of two witnesses"
+        }
+      },
+      {
+        "id": "photocopies",
+        "text": {
+          "am": "ያሉትን ሰነዶች ኮፒ",
+          "om": "Kopii docsii qabdanii",
+          "en": "Photocopies of your documents"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "both-go",
+        "icon": "Users",
+        "title": {
+          "am": "ሁለቱም ትዕግስተኞች ወደ ሲቪል ምዝገባ ይሂዱ",
+          "om": "Lamaanu gara galmee siviilii deemaa",
+          "en": "Both partners go to civil registration"
+        },
+        "detail": {
+          "am": "በቀበሌዎ ያለውን የሲቪል ምዝገባ ቢሮ ይጠይቁ።",
+          "om": "Waajjira galmee siviilii qe'ee keessanii gaafadhaa.",
+          "en": "Ask for the civil registration office in your kebele."
+        }
+      },
+      {
+        "id": "show-papers",
+        "icon": "FileText",
+        "title": {
+          "am": "የጋብቻ ወረቀትና ሌሎች ሰነዶችን ያሳዩ",
+          "om": "Ragaa gaa'elaa fi docsii dabalataa agarsiisaa",
+          "en": "Show the marriage certificate and other papers"
+        },
+        "detail": {
+          "am": "በፍርድ ቤት ከተፈታ የፍቺ ውሳኔውን ይያዙ።",
+          "om": "Mana murtiin yoo hiikame murtoo hiikkaa fudhaa.",
+          "en": "If a court divorced you, bring the court decision."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "ቅጹን ይሙሉና ይፈርሙ",
+          "om": "Foomii guutaa fi mallatteessaa",
+          "en": "Fill and sign the form"
+        }
+      },
+      {
+        "id": "review",
+        "icon": "ClipboardCheck",
+        "title": {
+          "am": "መዝጋቢው ያረጋግጣል",
+          "om": "Galmeeffatun mirkaneessa",
+          "en": "The registrar reviews everything"
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "የፍቺ ወረቀቱን ይውሰዱ",
+          "om": "Ragaa hiikkaa fudhaa",
+          "en": "Collect the divorce certificate"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ በተመሳሳይ ቀን ይሰጣል፤ ቢሮውን ይጠይቁ።",
+          "om": "Baay'een guyyaa tokkotti kennama; waajjiratti gaafadhaa.",
+          "en": "Usually given the same day; ask the office."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "የፍቺ ምዝገባ",
+          "om": "Galmee hiikkaa",
+          "en": "Divorce registration"
+        },
+        "amount": "PLACEHOLDER — often free (verify)"
+      },
+      {
+        "id": "copies",
+        "label": {
+          "am": "የወረቀት ኮፒ",
+          "om": "Kopii ragaa",
+          "en": "Certificate copies"
+        },
+        "amount": "PLACEHOLDER — small fee (verify at office)"
+      }
+    ],
+    "providerIds": [
+      "sample-kebele-08-office"
+    ],
+    "estimatedTime": {
+      "am": "ሰነዶች ዝግጁ ከሆኑ በዚያው ቀን (ያረጋግጡ)",
+      "om": "Docsii qopheessan guyyaa tokkotti (mirkaneessi)",
+      "en": "Same day if documents are ready (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "both-present",
+        "text": {
+          "am": "አንድ ትዕግስተኛ ካልተኖረ ምዝገባው አይሠራም",
+          "om": "Tokko yoo hin jiraatin galmee hin hojjetu",
+          "en": "Registration fails if one partner is absent"
+        }
+      },
+      {
+        "id": "name-mismatch",
+        "text": {
+          "am": "ስም በመታወቂያና በጋብቻ ወረቀት መካከል ካልመሳሰለ ወደኋላ ይመለሳሉ",
+          "om": "Maqaan qindaa'aa fi ragaa gaa'elaa gidduu hin wal qabne deebi'uu dirqama",
+          "en": "A name mismatch between ID and marriage certificate sends you back"
+        }
+      },
+      {
+        "id": "court-decision",
+        "text": {
+          "am": "በፍርድ ቤት ከተፈታ ያለ የፍቺ ውሳኔ አይመዘገብም",
+          "om": "Mana murtiin yoo hiikame murtoo malee hin galmeeffamu",
+          "en": "A court divorce cannot be registered without the court decision"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "paper-folder",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "death-certificate",
+    "category": "identity",
+    "name": {
+      "am": "የሞት ወረቀት",
+      "om": "Ragaa du'aa",
+      "en": "Death certificate"
+    },
+    "shortDescription": {
+      "am": "የሞት ማሳወቂያ ከሆስፒታል ወይም ከቀበሌ ያግኙ እና ይመዝገቡ።",
+      "om": "Beekssa du'aa hospitaalaa ykn qe'ee irraa argadhaa galmeessinee.",
+      "en": "Get a death notification from the hospital or kebele and register it."
+    },
+    "requiredDocuments": [
+      {
+        "id": "death-notification",
+        "text": {
+          "am": "የሞት ማሳወቂያ (ከሆስፒታል ወይም ከቀበሌ)",
+          "om": "Beekssa du'aa (hospitaalaa ykn qe'ee irraa)",
+          "en": "Death notification from hospital or kebele"
+        }
+      },
+      {
+        "id": "deceased-id",
+        "text": {
+          "am": "የሟች መታወቂያ (ያለ ከሆነ)",
+          "om": "Qindaa'a nama du'e (yoo jiraate)",
+          "en": "ID of the deceased, if available"
+        }
+      },
+      {
+        "id": "applicant-id",
+        "text": {
+          "am": "የምዝገባው ሰው መታወቂያ",
+          "om": "Qindaa'a kan galmeessu",
+          "en": "ID of the person registering"
+        }
+      },
+      {
+        "id": "photocopies",
+        "text": {
+          "am": "ያሉትን ሰነዶች ኮፒ",
+          "om": "Kopii docsii qabdanii",
+          "en": "Photocopies of your documents"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "get-notification",
+        "icon": "FileText",
+        "title": {
+          "am": "የሞት ማሳወቂያውን ያግኙ",
+          "om": "Beekssa du'aa argadhaa",
+          "en": "Get the death notification"
+        },
+        "detail": {
+          "am": "በሆስፒታል ከሞተ ከሆስፒታሉ፤ በቤት ከሞተ ከቀበሌው ይውሰዱ።",
+          "om": "Hospitaalatti yoo du'e hospitaalaa irraa; manaatti yoo du'e qe'ee irraa fudhaa.",
+          "en": "From the hospital if death was there; from the kebele if death was at home."
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ሲቪል ምዝገባ ቢሮ ይሂዱ",
+          "om": "Gara waajjira galmee siviilii deemaa",
+          "en": "Go to the civil registration office"
+        },
+        "detail": {
+          "am": "የሟች የኖረበትን ቀበሌ ይጠቀሙ።",
+          "om": "Qe'ee nama du'e jiraatee ture fayyadamaa.",
+          "en": "Use the kebele where the deceased lived."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የሞት ምዝገባ ቅጹን ይሙሉ",
+          "om": "Foomii galmee du'aa guutaa",
+          "en": "Fill the death registration form"
+        },
+        "detail": {
+          "am": "ስም፣ እድሜና የሟችን መረጃ በትክክል ይጻፉ።",
+          "om": "Maqaa, umurii fi odeeffannoo nama du'e sirritti barreessaa.",
+          "en": "Write the deceased's name, age and details correctly."
+        }
+      },
+      {
+        "id": "review",
+        "icon": "ClipboardCheck",
+        "title": {
+          "am": "መዝጋቢው ያረጋግጣል",
+          "om": "Galmeeffatun mirkaneessa",
+          "en": "The registrar reviews everything"
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "የሞት ወረቀቱን ይውሰዱ",
+          "om": "Ragaa du'aa fudhaa",
+          "en": "Collect the death certificate"
+        },
+        "detail": {
+          "am": "ብዙ ጊዜ በተመሳሳይ ቀን ይሰጣል፤ ቢሮውን ይጠይቁ።",
+          "om": "Baay'een guyyaa tokkotti kennama; waajjiratti gaafadhaa.",
+          "en": "Usually given the same day; ask the office."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "የሞት ምዝገባ",
+          "om": "Galmee du'aa",
+          "en": "Death registration"
+        },
+        "amount": "PLACEHOLDER — usually free (verify)"
+      },
+      {
+        "id": "copies",
+        "label": {
+          "am": "የወረቀት ኮፒ",
+          "om": "Kopii ragaa",
+          "en": "Certificate copies"
+        },
+        "amount": "PLACEHOLDER — small fee (verify at office)"
+      }
+    ],
+    "providerIds": [
+      "sample-kebele-08-office"
+    ],
+    "estimatedTime": {
+      "am": "ሰነዶች ዝግጁ ከሆኑ በዚያው ቀን (ያረጋግጡ)",
+      "om": "Docsii qopheessan guyyaa tokkotti (mirkaneessi)",
+      "en": "Same day if documents are ready (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "no-notification",
+        "text": {
+          "am": "ያለ የሞት ማሳወቂያ ምዝገባ አይሠራም",
+          "om": "Beekssa du'aa malee galmee hin hojjetu",
+          "en": "You cannot register without the death notification"
+        }
+      },
+      {
+        "id": "name-mismatch",
+        "text": {
+          "am": "ስም በሰነዶቹ መካከል እንዲመሳሰል ከመፈረምዎ በፊት ያረጋግጡ፤ በኋላ ማስተካከል ከባድ ነው",
+          "om": "Mallatteessuu dura maqaan docsii gidduu wal qaba akka ta'e mirkaneessaa; booda sirreeffuun rakkisaa dha",
+          "en": "Before signing, check the name matches on all papers; fixing it later is hard"
+        }
+      },
+      {
+        "id": "delay",
+        "text": {
+          "am": "ምዝገባውን ለብዙ ጊዜ ማላመድ ተጨማሪ ሰነዶችን ሊጠይቅ ይችላል (ያረጋግጡ)",
+          "om": "Galmee dheeraa kan tuqamuu docsii dabalataa gaafachuu danda'a (mirkaneessi)",
+          "en": "Registering long after the death may need extra papers (verify)"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "paper-folder",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "lost-id-replacement",
+    "category": "identity",
+    "name": {
+      "am": "የጠፋ መታወቂያ/ወረቀት መተካት",
+      "om": "Qindaa'a/ragaa dhabee bakka buusuu",
+      "en": "Replacement of a lost ID or certificate"
+    },
+    "shortDescription": {
+      "am": "የጠፋ መታወቂያ ወይም ሰርተፍኬት እንዴት እንደሚተካ።",
+      "om": "Qindaa'a ykn ragaan dhabee akkamitti akka bakka bu'u.",
+      "en": "How to replace a lost ID or certificate."
+    },
+    "requiredDocuments": [
+      {
+        "id": "police-loss-report",
+        "text": {
+          "am": "ከፖሊስ የተሰጠ የጠፋ ሰነድ ማሳወቂያ",
+          "om": "Poolisii irraa kenname beekssa dhabaa",
+          "en": "Police loss report"
+        }
+      },
+      {
+        "id": "fayda-number",
+        "text": {
+          "am": "ፋይዳ መታወቂያ ወይም የፋይዳ ቁጥር",
+          "om": "Qindaa'a Faydaa ykn lakkoobsa Faydaa",
+          "en": "Fayda ID or Fayda number"
+        }
+      },
+      {
+        "id": "photo",
+        "text": {
+          "am": "የፓስፖርት መጠን ፎቶግራፍ (ቢሮውን ይጠይቁ)",
+          "om": "Suuraa pasiphootii (waajjiratti gaafadhaa)",
+          "en": "Passport-size photo (ask the office)"
+        }
+      },
+      {
+        "id": "old-id-copy",
+        "text": {
+          "am": "የጠፋው መታወቂያ ኮፒ (ካለ)",
+          "om": "Kopii qindaa'a dhabee (yoo jiraate)",
+          "en": "Photocopy of the lost ID, if you have one"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "report-police",
+        "icon": "ShieldCheck",
+        "title": {
+          "am": "በአቅራቢያ በሚገኝ ፖሊስ ስቴሽን ያሳወቁ",
+          "om": "Poolisii dhiyoo irratti himaa",
+          "en": "Report the loss at the nearest police station"
+        },
+        "detail": {
+          "am": "የጠፋ ሰነድ ማሳወቂያ ወረቀቱን ይውሰዱ።",
+          "om": "Beekssa dhabaa baafadhaa.",
+          "en": "Get the written loss report."
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ቀበሌዎ ቢሮ ወይም ወደ ፋይዳ ማዕከል ይሂዱ",
+          "om": "Gara waajjira qe'ee keessanii ykn manaa Faydaa deemaa",
+          "en": "Go to your kebele office or a Fayda center"
+        },
+        "detail": {
+          "am": "የፋይዳ ካርድ ከጠፋ ወደ ፋይዳ ማዕከል ይሂዱ።",
+          "om": "Kaardii Faydaa yoo dhabee gara manaa Faydaa deemaa.",
+          "en": "If the Fayda card is lost, go to a Fayda center."
+        }
+      },
+      {
+        "id": "fill-form",
+        "icon": "PenLine",
+        "title": {
+          "am": "የመተካት ቅጹን ይሙሉ",
+          "om": "Foomii bakka bu'iinsaa guutaa",
+          "en": "Fill the replacement form"
+        }
+      },
+      {
+        "id": "photo",
+        "icon": "Camera",
+        "title": {
+          "am": "ፎቶግራፍ ይንሱ ወይም ያቅርቡ",
+          "om": "Suuraa kaasaa ykn dhiyeessaa",
+          "en": "Have your photo taken or submit one"
+        }
+      },
+      {
+        "id": "pay",
+        "icon": "Banknote",
+        "title": {
+          "am": "ክፍያውን ይክፈሉ",
+          "om": "Kaffalaa kaffalaa",
+          "en": "Pay the fee"
+        },
+        "detail": {
+          "am": "እባክዎ ደረሰኝ ይቀበሉ።",
+          "om": "Maaloo risiishii fudhaa.",
+          "en": "Please always take a receipt."
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "CalendarClock",
+        "title": {
+          "am": "አዲሱን መታወቂያ በተነገረዎት ቀን ይውሰዱ",
+          "om": "Qindaa'a haaraa guyyaa isinitti himame fudhaa",
+          "en": "Collect your new ID on the day they tell you"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "replacement-fee",
+        "label": {
+          "am": "የመታወቂያ መተካት ክፍያ",
+          "om": "Kaffalaa bakka bu'iinsa qindaa'aa",
+          "en": "ID replacement fee"
+        },
+        "amount": "PLACEHOLDER — varies, ask the office"
+      },
+      {
+        "id": "police-fee",
+        "label": {
+          "am": "የፖሊስ የጠፋ ሰነድ ማሳወቂያ ክፍያ",
+          "om": "Kaffalaa beekssa dhabaa poolisii",
+          "en": "Police loss report fee"
+        },
+        "amount": "PLACEHOLDER — often free or small fee (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-kebele-08-office",
+      "sample-fayda-center-kirkos"
+    ],
+    "estimatedTime": {
+      "am": "በጥቂት ቀናት ውስጥ፤ ቢሮው የመውሰድ ቀኑን ይነግርዎታል (ያረጋግጡ)",
+      "om": "Guyyoota muraasitti; waajjirri guyyaa fudhatan isinitti hima (mirkaneessi)",
+      "en": "A few days; the office tells you when to collect (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "police-first",
+        "text": {
+          "am": "ያለ የፖሊስ የጠፋ ሰነድ ማሳወቂያ ወደ ቀበሌ አይሂዱ",
+          "om": "Beekssa dhabaa poolisii malee gara qe'ee hin deemin",
+          "en": "Do not go to the kebele without the police loss report"
+        }
+      },
+      {
+        "id": "name-mismatch",
+        "text": {
+          "am": "ስምዎ በፖሊስ ወረቀትና በፋይዳ መዝገብ መካከል እንዲመሳሰል ያረጋግጡ",
+          "om": "Maqaan kee beekssa poolisii fi galmeera Faydaa gidduu wal qaba akka ta'e mirkaneessaa",
+          "en": "Your name must match on the police report and Fayda records"
+        }
+      },
+      {
+        "id": "receipt",
+        "text": {
+          "am": "ያለ ደረሰኝ ክፍያ አይክፈሉ",
+          "om": "Risiishii malee hin kaffalinaa",
+          "en": "Never pay without asking for a receipt"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": true,
+    "canBeDoneOnline": false,
+    "objectType": "holographic-card",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "visa-residence-permit",
+    "category": "travel",
+    "name": {
+      "am": "ቪዛ እና የመኖሪያ ፈቃድ",
+      "om": "Viizaa fi hayyama jiraachaa",
+      "en": "Visa and residence permit"
+    },
+    "shortDescription": {
+      "am": "ለውጭ ሀገር ዜጎች ቪዛ እና የመኖሪያ ፈቃድ አሰጣጥ።",
+      "om": "Namoota biyya alaa viizaa fi hayyama jiraachaa.",
+      "en": "Visa and residence permit for foreigners."
+    },
+    "requiredDocuments": [
+      {
+        "id": "passport",
+        "text": {
+          "am": "ፓስፖርት",
+          "om": "Pasiphootee",
+          "en": "Valid passport"
+        }
+      },
+      {
+        "id": "photo",
+        "text": {
+          "am": "የፓስፖርት መጠን ፎቶግራፍ",
+          "om": "Suuraa pasiphootii",
+          "en": "Passport-size photos"
+        }
+      },
+      {
+        "id": "entry-visa",
+        "text": {
+          "am": "በፓስፖርቱ ውስጥ የመግቢያ ቪዛ ወይም ማህተም",
+          "om": "Keessaa pasiphootii viizaa seensaa ykn mallatteessa seensaa",
+          "en": "Entry visa or entry stamp in the passport"
+        }
+      },
+      {
+        "id": "reason-doc",
+        "text": {
+          "am": "የሚያስረዳ ሰነድ (ሥራ፣ ኢንቨስትመንት ወይም ቤተሰብ)",
+          "om": "Docsii sababa agarsiisu (hojii, invistimentii ykn maatii)",
+          "en": "Document showing your reason (work, investment or family)"
+        }
+      },
+      {
+        "id": "photocopies",
+        "text": {
+          "am": "የፓስፖርትና የቪዛ ኮፒ",
+          "om": "Kopii pasiphootii fi viizaa",
+          "en": "Photocopies of passport and visa"
+        },
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "check-requirements",
+        "icon": "FileSearch",
+        "title": {
+          "am": "ከመሄድዎ በፊት መስፈርቶቹን ያረጋግጡ",
+          "om": "Dhaqsaa dura hammangaa barbaachisoo mirkaneessaa",
+          "en": "Check current requirements before you go"
+        },
+        "detail": {
+          "am": "መስፈርቶቹ ሊለወጡ ይችላሉ፤ ቢሮውን መጠየቅ ጥሩ ነው።",
+          "om": "Hammangaan jijiirachuu danda'a; waajjiratti gaafachuun gaarii dha.",
+          "en": "Rules can change; asking the office first is best."
+        }
+      },
+      {
+        "id": "prepare-docs",
+        "icon": "ClipboardList",
+        "title": {
+          "am": "ፓስፖርት፣ ፎቶግራፍና ደጋፊ ሰነዶችን ያዘጋጁ",
+          "om": "Pasiphootee, suuraa fi docsii deeggarsaa qopheessaa",
+          "en": "Prepare your passport, photos and supporting papers"
+        }
+      },
+      {
+        "id": "go-office",
+        "icon": "Building2",
+        "title": {
+          "am": "ወደ ዋናው የስደተኞች ቢሮ ይሂዱ",
+          "om": "Gara waajjira guddaa immigraashinii deemaa",
+          "en": "Go to the immigration main office"
+        },
+        "detail": {
+          "am": "ከጠዋቱ መሄድ ጥሩ ነው።",
+          "om": "Ganama deemuu gaarii dha.",
+          "en": "Going early in the day is best."
+        }
+      },
+      {
+        "id": "submit",
+        "icon": "PenLine",
+        "title": {
+          "am": "ማመልከቻውን ይሙሉና ያስረክቡ",
+          "om": "Iyyannoo guutaa fi dhiyeessaa",
+          "en": "Fill and submit the application"
+        }
+      },
+      {
+        "id": "biometrics",
+        "icon": "Fingerprint",
+        "title": {
+          "am": "ከተጠየቁ አሻራና ፎቶግራፍ ይስጡ",
+          "om": "Yoo gaafataman ashaaraa fi suuraa kennaa",
+          "en": "Give fingerprints and photo if asked"
+        }
+      },
+      {
+        "id": "collect",
+        "icon": "Stamp",
+        "title": {
+          "am": "ቪዛውን ወይም ፈቃዱን ይውሰዱ",
+          "om": "Viizaa ykn hayyama fudhaa",
+          "en": "Collect the visa or permit"
+        },
+        "detail": {
+          "am": "ተመልሶ የመምጣት ቀኑን ይጠይቁ፤ ደረሰኝ ይያዙ።",
+          "om": "Guyyaa deebi'anii dhufu gaafadhaa; risiishii qabadhaa.",
+          "en": "Ask when to come back and keep your receipt."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "visa-fee",
+        "label": {
+          "am": "የቪዛ ክፍያ",
+          "om": "Kaffalaa viizaa",
+          "en": "Visa fee"
+        },
+        "amount": "PLACEHOLDER — depends on type and duration (verify at office)"
+      },
+      {
+        "id": "permit-fee",
+        "label": {
+          "am": "የመኖሪያ ፈቃድ ክፍያ",
+          "om": "Kaffalaa hayyama jiraachaa",
+          "en": "Residence permit fee"
+        },
+        "amount": "PLACEHOLDER — depends on duration (verify at office)"
+      }
+    ],
+    "providerIds": [
+      "sample-immigration-main-office"
+    ],
+    "estimatedTime": {
+      "am": "በዓይነቱ መሠረት በዚያው ቀን ወይም በጥቂት ቀናት (ያረጋግጡ)",
+      "om": "Akkataa isaatiin guyyaa tokkotti ykn guyyoota muraasitti (mirkaneessi)",
+      "en": "Same day to a few days depending on the type (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "passport-expiry",
+        "text": {
+          "am": "ፓስፖርቱና የመግቢያ ማህተሙ እስከሚሰሩ ብቻ ያመልክቱ",
+          "om": "Pasiphooteen fi mallatteessi seensaa kan hojjetutti qofa iyyannoo kennaa",
+          "en": "Apply only while your passport and entry stamp are still valid"
+        }
+      },
+      {
+        "id": "late-apply",
+        "text": {
+          "am": "የመግቢያ ማህተሙ እስከሚያልቅ አይመቱ፤ በሰዓት ያመልክቱ",
+          "om": "Mallatteessi seensaa hin dhumne eegaa; yeroo barbaachisu iyyannoo kennaa",
+          "en": "Do not wait until your entry stamp expires; apply early"
+        }
+      },
+      {
+        "id": "receipt",
+        "text": {
+          "am": "ያለ ደረሰኝ ክፍያ አይክፈሉ",
+          "om": "Risiishii malee hin kaffalinaa",
+          "en": "Never pay without asking for a receipt"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": false,
+    "canBeDoneOnline": false,
+    "objectType": "globe-plane",
+    "contentStatus": "ready"
+  },
+  {
+    "id": "overseas-employment",
+    "category": "travel",
+    "name": {
+      "am": "የውጭ ሀገር ሥራ ምዝገባ እና የመውጫ ሰነዶች",
+      "om": "Galmee hojii biyya alaa fi docsii imalaa",
+      "en": "Overseas employment registration and exit documents"
+    },
+    "shortDescription": {
+      "am": "በሕጋዊ መንገድ ለውጭ ሀገር ሥራ ለመሄድ ምዝገባ።",
+      "om": "Hojii biyya alaa seeraan deemuuf galmee.",
+      "en": "Register legally to work abroad."
+    },
+    "requiredDocuments": [
+      {
+        "id": "passport",
+        "text": {
+          "am": "ፓስፖርት",
+          "om": "Pasiphootee",
+          "en": "Valid passport"
+        }
+      },
+      {
+        "id": "police-clearance",
+        "text": {
+          "am": "የፖሊስ የተጣራ ማስረጃ",
+          "om": "Ragaa poolisii",
+          "en": "Police clearance certificate"
+        }
+      },
+      {
+        "id": "medical-certificate",
+        "text": {
+          "am": "የጤና የምርመራ ሰርተፍኬት",
+          "om": "Ragaa fayyaa (medikaalaa)",
+          "en": "Medical certificate"
+        }
+      },
+      {
+        "id": "fayda-id",
+        "text": {
+          "am": "ፋይዳ መታወቂያ (ወይም የቀበሌ መታወቂያ)",
+          "om": "Qindaa'a Faydaa (ykn qindaa'a qe'ee)",
+          "en": "Fayda ID or kebele ID"
+        }
+      },
+      {
+        "id": "employment-contract",
+        "text": {
+          "am": "የሥራ ውል ወይም የሥራ መደወያ መርጃ",
+          "om": "Waliigaltee hojii ykn dhiyeessa hojii",
+          "en": "Employment contract or job offer"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "check-agency",
+        "icon": "Search",
+        "title": {
+          "am": "የሥራ መደወያው ፈቃድ ያለው መሆኑን ያረጋግጡ",
+          "om": "Dhaabbanni hojii hayyama qabaachuu isaa mirkaneessaa",
+          "en": "Check the agency has a licence"
+        },
+        "detail": {
+          "am": "የፈቀደላቸው ወኪሎች ዝርዝር በሥራ ቢሮው ይገኛል፤ እባክዎ ይጠይቁ።",
+          "om": "Tarreewwan hayyama qaban waajjira hojii keessa jira; maaloo gaafadhaa.",
+          "en": "The labor office has the list of licensed agencies — please ask."
+        }
+      },
+      {
+        "id": "gather-docs",
+        "icon": "ClipboardList",
+        "title": {
+          "am": "ሰነዶችዎን ያዘጋጁ",
+          "om": "Docsii kee qopheessaa",
+          "en": "Prepare your documents"
+        },
+        "detail": {
+          "am": "ፓስፖርት፣ የፖሊስ ማስረጃ፣ የጤና ሰርተፍኬትና ፋይዳ ይያዙ።",
+          "om": "Pasiphootee, ragaa poolisii, ragaa fayyaa fi Faydaa qabadhaa.",
+          "en": "Bring passport, police clearance, medical certificate and Fayda ID."
+        }
+      },
+      {
+        "id": "register",
+        "icon": "Building2",
+        "title": {
+          "am": "ከወኪሉ ጋር ወደ ሥራ ቢሮ ይሂዱ",
+          "om": "Wakilii kee waliin gara waajjira hojii deemaa",
+          "en": "Go to the labor office with your agent"
+        }
+      },
+      {
+        "id": "sign-contract",
+        "icon": "PenLine",
+        "title": {
+          "am": "ቅጾቹን ይሙሉና የሥራ ውሉን ይፈርሙ",
+          "om": "Foomii guutaa fi waliigaltee hojii mallatteessaa",
+          "en": "Fill the forms and sign the employment contract"
+        },
+        "detail": {
+          "am": "ውሉን ከመፈረምዎ በፊት በደንብ ያንብቡ።",
+          "om": "Mallatteessuu dura akkaataa dubbisaa.",
+          "en": "Read the contract carefully before signing."
+        }
+      },
+      {
+        "id": "orientation",
+        "icon": "GraduationCap",
+        "title": {
+          "am": "የመውጫ ትምህርት ከተሰጠ ተሳተፉ",
+          "om": "Qajeelfama imalaa yoo kenname hirmaadhaa",
+          "en": "Attend pre-departure training if given"
+        }
+      },
+      {
+        "id": "exit-docs",
+        "icon": "Plane",
+        "title": {
+          "am": "የመውጫ ሰነዶችዎን ይውሰዱ",
+          "om": "Docsii imalaa kee fudhaa",
+          "en": "Collect your exit documents"
+        },
+        "detail": {
+          "am": "የውል ቅጂንና ደረሰኞችን ይያዙ።",
+          "om": "Kopii waliigaltee fi risiishii qabadhaa.",
+          "en": "Keep a copy of the contract and all receipts."
+        }
+      }
+    ],
+    "fees": [
+      {
+        "id": "registration",
+        "label": {
+          "am": "የምዝገባ ክፍያ",
+          "om": "Kaffalaa galmee",
+          "en": "Registration fee"
+        },
+        "amount": "PLACEHOLDER — ask the labor office",
+        "note": {
+          "am": "ወኪሉ ከሕጋዊው ክፍያ በላይ ከፍተኛ ገንዘብ ከጠየቀ የሥራ ቢሮውን ያማክሩ።",
+          "om": "Wakiliin kaffalaa seeraa caalaa baay'ee yoo gaafate waajjira hojii komaa.",
+          "en": "If the agency asks for large extra money, consult the labor office."
+        }
+      },
+      {
+        "id": "medical-police",
+        "label": {
+          "am": "የጤና ምርመራ እና የፖሊስ ማስረጃ ክፍያ",
+          "om": "Kaffalaa ragaa fayyaa fi ragaa poolisii",
+          "en": "Medical and police clearance fees"
+        },
+        "amount": "PLACEHOLDER — paid at the hospital or police (verify)"
+      }
+    ],
+    "providerIds": [
+      "sample-labor-office-bole"
+    ],
+    "estimatedTime": {
+      "am": "ምዝገባ በአንድ ጉብኝት፤ የመውጫ ሰነዶች ተጨማሪ ቀናት ይወስዳሉ (ያረጋግጡ)",
+      "om": "Galmee daawwanna tokkotti; docsii imalaa guyyoota dabalataa fudhata (mirkaneessi)",
+      "en": "Registration in one visit; exit papers take more days (verify)"
+    },
+    "commonMistakes": [
+      {
+        "id": "unlicensed-agency",
+        "text": {
+          "am": "ያለፈቃድ ወኪሎችንና የገበያ ወኪሎችን አይተማመኑ",
+          "om": "Wakiloota hayyama malee hin amaninaa",
+          "en": "Never trust unlicensed brokers"
+        }
+      },
+      {
+        "id": "contract-copy",
+        "text": {
+          "am": "ያለ የውል ቅጂ ወደ ውጭ ሀገር አይሂዱ",
+          "om": "Kopii waliigaltee malee gara biyya alaa hin deemin",
+          "en": "Do not travel without a signed copy of your contract"
+        }
+      },
+      {
+        "id": "receipt",
+        "text": {
+          "am": "ያለ ደረሰኝ ክፍያ አይክፈሉ",
+          "om": "Risiishii malee hin kaffalinaa",
+          "en": "Never pay without asking for a receipt"
+        }
+      }
+    ],
+    "lastVerified": "2025-06-01",
+    "sourceLink": "",
+    "usesFayda": true,
+    "canBeDoneOnline": false,
+    "objectType": "globe-plane",
+    "contentStatus": "ready"
+  }
+]

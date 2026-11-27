@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ---- Wegen Guide ----
+// Community tips are anonymous and moderated before publishing.
+model CommunityTip {
+  id           String    @id @default(cuid())
+  targetType   String // "service" | "provider"
+  targetId     String // service id or provider id
+  text         String
+  language     String    @default("am") // am | om | en
+  status       String    @default("pending") // pending | published | rejected | expired
+  createdAt    DateTime  @default(now())
+  moderatedAt  DateTime?
+  moderatorNote String?
+}
+
+// Office suggestions submitted by users (held for moderation, Phase 3 UI)
+model OfficeSuggestion {
+  id          String   @id @default(cuid())
+  name        String
+  nameAm      String?
+  nameOm      String?
+  providerType String  @default("other")
+  serviceIds  String // comma-separated service ids (SQLite: no list types)
+  latitude    Float
+  longitude   Float
+  address     String?
+  landmark    String?
+  phone       String?
+  workingHours String?
+  note        String?
+  region      String?
+  zone        String?
+  woreda      String?
+  status      String   @default("pending") // pending | approved | rejected
+  createdAt   DateTime @default(now())
+  moderatedAt DateTime?
+}
