@@ -23,6 +23,9 @@ interface Suggestion {
   phone?: string | null;
   workingHours?: string | null;
   note?: string | null;
+  region?: string | null;
+  zone?: string | null;
+  woreda?: string | null;
   status: Status;
   createdAt: string;
 }
@@ -122,6 +125,7 @@ export function OfficeSuggestionsAdmin() {
             {s.phone ? <p>Phone: {s.phone}</p> : null}
             {s.workingHours ? <p>Hours: {s.workingHours}</p> : null}
             {s.serviceIds ? <p>Services: {s.serviceIds}</p> : null}
+            {s.region ? <p>Area: {[s.woreda, s.zone, s.region].filter(Boolean).join(", ")}</p> : null}
             {s.note ? <p>Note: {s.note}</p> : null}
             <p className="text-muted-foreground">
               {s.latitude.toFixed(5)}, {s.longitude.toFixed(5)}
